@@ -1,7 +1,0 @@
-ID = "ba656f16-7a5b-4aed-8b25-47a42f1b6499"
-
-# The following redirect is intended for use with most SPA's that handles routing internally.
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
