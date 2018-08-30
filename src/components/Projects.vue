@@ -96,6 +96,12 @@
                 in, mollis iriure nec cu, alienum argumentum ius ad. Pri eu justo aeque torquatos.`,
                 cards: [
                     {
+                        title: 'Trump News', link: 'http://agonizing-shirt.surge.sh/#/',
+                        text: 'Goal: Build a news list about President Trump. Technologies: Vue, Vue-Resource, Vuetify, JavaScript, ES6',
+                        src: "https://cdn.buttercms.com/gRQpSAHmToKvahSVWxsA", flex: 6
+
+                    },
+                    {
                         title: 'vue/axios', link: 'http://extra-small-stick.surge.sh',
                         text: 'Goal: Build Hacker-News Clone. Technologies: Vue, Axios, Firestore, JavaScript, ES6',
                         src: "https://cdn.buttercms.com/cJPqFLNdSyaK30Bw7kbN", flex: 6
