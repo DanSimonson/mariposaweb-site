@@ -42,7 +42,10 @@
     <v-footer height="auto" id='show'>
         <v-card flat tile class="flex blue-grey darken-3 myBtn ">
             <v-card-text class="text-xs-center">
-                <strong class="subheading">This site is powered with Buttercms and Vue. Get connected with me on social networks!</strong>
+                <strong class="subheading">This site is powered with <a style="color:#BDBDBD;text-decoration: none;font-weight: bold"
+                        href="https://buttercms.com/" target="_blank">Buttercms</a>
+                    and <a style="color:#BDBDBD;text-decoration: none;font-weight: bold" href="https://vuejs.org/" target="_blank">Vue</a>.
+                    Get connected with me on social networks!</strong>
                 <v-spacer></v-spacer>
                 <v-btn v-for="icon in icons" :key="icon" icon dark class="mx-3" v-on:click.native="show(icon)">
                     <v-icon size="24px">{{ icon }}</v-icon>

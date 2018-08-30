@@ -28,14 +28,15 @@
         data() {
             return {
                 post: {},
-                page_id: ''
+                page_id: '',
+                url: ''
             }
         },
         methods: {
             getPost() {
                 butter.post.retrieve(this.$route.params.slug)
                     .then((res) => {
-                        console.log(res.data)
+                        //console.log(res.data)
                         this.post = res.data
                     }).catch((res) => {
                         console.log(res)
@@ -53,7 +54,7 @@
             /*var url = "https://mariposaweb.net"
             var slug = window.location.pathname;
             var urlSlug = url + slug;*/
-            console.log('my slug: ' + this.page_id);
+            //console.log('my slug: ' + this.page_id);
         }
     }
 </script>

@@ -23,7 +23,7 @@
             this.getPosts()
         }
     }
-
+    /*
     function changeColor() {
         let animation = document.getElementById('jumboAnimation');
 
@@ -47,6 +47,7 @@
     changeColor();
     //Animate every 6 seconds
     setInterval(changeColor, 6000);
+    */
 </script>
 
 <template>
@@ -55,11 +56,11 @@
         <app-header></app-header>
         <div id="blog-home">
 
-            <div id='container' class="hidden-md-and-down">
+            <!--<div id='container' class="hidden-md-and-down">
                 <div class="circleBase type1" id='jumboAnimation'>
                     Blogging
                 </div>
-            </div>
+            </div>-->
             <div class='spacing'></div>
             <!--<h1>{{ page_title }}</h1>-->
             <div class='grey lighten-3' style="max-width: 600px; margin: auto;">
@@ -175,6 +176,10 @@
         color: #BDBDBD;
         font-weight: 900;
         text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    }
+
+    .v-btn {
+        color: black
     }
 
     /*
