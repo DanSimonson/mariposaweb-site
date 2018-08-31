@@ -7,6 +7,8 @@
     name: 'customer-page',
     data() {
       return {
+        showh1: true,
+        showp: true,
         page: {
           fields: {}
         }
@@ -38,9 +40,17 @@
     <app-header></app-header>
 
     <header id="showcase">
+      <!--<button @click="show = !show">
+        Toggle render
+      </button>-->
       <div>
-        <h1>Welcome To The Mariposaweb</h1>
-        <p> I make progressive apps using the latest JavaScript techniques and Vue. </p>
+        <transition appear appear-name="custom-classes-transition" appear-active-class="animated rubberBand">
+          <h1 v-if="showh1">Welcome To The Mariposaweb</h1>
+
+        </transition>
+        <transition appear appear-name="custom-classes-transition" appear-active-class="animated jello">
+          <p v-if="showp"> I make progressive apps using the latest JavaScript techniques and Vue.</p>
+        </transition>
       </div>
 
       <!--
@@ -103,6 +113,9 @@
   }
 
   #showcase p {
+    animation-delay: 1s;
+    animation-duration: 16s;
+    animation-iteration-count: infinite;
     font-size: 21px;
     font-weight: 900;
     text-shadow: 0 1px #808d93,
@@ -125,6 +138,10 @@
 
 
   #showcase h1 {
+    font-size: 3em;
+    animation-delay: 1s;
+    animation-duration: 14s;
+    animation-iteration-count: infinite;
     font-weight: 500;
     /*text-shadow: 2px 2px 4px #000000;*/
     text-shadow: 1px 0px 1px #ccc, 0px 1px 1px #eee,
