@@ -36,7 +36,7 @@
 
 <template>
 
-  <div id="customer-page page">
+  <div id="customer-page">
     <app-header></app-header>
     <header id="showcase">
       <!--<button @click="show = !show">
@@ -48,7 +48,7 @@
 
         </transition>
         <transition appear appear-name="custom-classes-transition" appear-active-class="animated jello">
-          <p v-if="showp"> I make progressive apps using the latest JavaScript techniques and Vue.</p>
+          <p v-if="showp"> modern web development using the latest JavaScript techniques and Vue.</p>
         </transition>
       </div>
 
