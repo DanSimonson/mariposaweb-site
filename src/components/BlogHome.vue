@@ -52,7 +52,6 @@
 
 <template>
     <div>
-
         <app-header></app-header>
         <div id="blog-home">
 
@@ -180,6 +179,11 @@
 
     .v-btn {
         color: black
+    }
+
+    .page {
+        position: fixed;
+        width: inherit;
     }
 
     /*

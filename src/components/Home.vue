@@ -38,7 +38,6 @@
 
   <div id="customer-page">
     <app-header></app-header>
-
     <header id="showcase">
       <!--<button @click="show = !show">
         Toggle render
@@ -59,13 +58,8 @@
       -->
     </header>
     <app-footer></app-footer>
-
-
   </div>
-
 </template>
-
-
 
 <style>
   * {
@@ -82,7 +76,6 @@
     line-height: 1.6;
   }
 
-
   header {
     margin-bottom: 0;
   }
@@ -91,7 +84,6 @@
     color: white;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   }
-
 
   #showcase {
     background-image: url('https://cdn.buttercms.com/LqR4DK4TyKOPJBog0xv3');
@@ -114,7 +106,7 @@
 
   #showcase p {
     animation-delay: 1s;
-    animation-duration: 16s;
+    animation-duration: 5s;
     animation-iteration-count: infinite;
     font-size: 21px;
     font-weight: 900;
@@ -140,7 +132,7 @@
   #showcase h1 {
     font-size: 3em;
     animation-delay: 1s;
-    animation-duration: 14s;
+    animation-duration: 4s;
     animation-iteration-count: infinite;
     font-weight: 500;
     /*text-shadow: 2px 2px 4px #000000;*/
@@ -199,6 +191,12 @@
   #section-c .box-2 {
     background: #f9f9f9;
   }
+
+  .page {
+    position: fixed;
+    width: inherit;
+  }
+
 
   /*
   main {}

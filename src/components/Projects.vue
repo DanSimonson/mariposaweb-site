@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class='page'>
         <app-header></app-header>
         <v-app id="inspire">
             <div id='spacer'></div>
@@ -238,5 +238,10 @@
 
     #spacer {
         height: 70px;
+    }
+
+    .page {
+        position: fixed;
+        width: inherit;
     }
 </style>
