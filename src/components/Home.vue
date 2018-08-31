@@ -36,7 +36,7 @@
 
 <template>
 
-  <div id="customer-page">
+  <div id="customer-page page">
     <app-header></app-header>
     <header id="showcase">
       <!--<button @click="show = !show">

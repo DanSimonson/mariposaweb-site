@@ -180,17 +180,4 @@
     .v-btn {
         color: black
     }
-
-    .page {
-        position: fixed;
-        width: inherit;
-    }
-
-    /*
-    .type1 {
-        width: 100px;
-        height: 100px;
-        background: yellow;
-        border: 3px solid red;
-    }*/
 </style>
