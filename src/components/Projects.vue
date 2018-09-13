@@ -2,12 +2,14 @@
     <div>
         <app-header></app-header>
         <v-app id="inspire">
-            <div id='spacer'></div>
+            <!--<div id='spacer'></div>-->
             <v-container fluid grid-list-md>
                 <v-layout row wrap>
-                    <v-flex class='card-border' d-flex xs12 md6 mt-3 v-for="card in cards" v-bind="{ [`xs${card.flex}`]: true }" :key="card.title">
+                    <v-flex class='card-border' d-flex xs12 md6 mt-3 v-for="card in cards" v-bind="{ [`xs${card.flex}`]: true }"
+                        :key="card.title">
                         <v-card>
-                            <v-card-media :src="card.src" height="200px"></v-card-media>
+                            <v-img :src="card.src" height="200px"></v-img>
+                            <!--<v-img :src="card.src" height="200px"></v-img>-->
                             <v-card-actions>
                                 <v-btn ripple flat class='cardBtn'>{{card.title}}</v-btn>
                                 <v-spacer></v-spacer>
@@ -96,6 +98,12 @@
                 in, mollis iriure nec cu, alienum argumentum ius ad. Pri eu justo aeque torquatos.`,
                 cards: [
                     {
+                        title: 'Online Store', link: 'https://vue-blog-ed03b.firebaseapp.com/',
+                        text: 'Goal: Build a Vue.js online store while using vuex for state management and firebase as database. Technologies: Vue, Vuex, Firebase Realtime Database, MaterializeCSS, Vuetify, JavaScript, ES6',
+                        src: "https://cdn.buttercms.com/OUEb12H8TT6nV2fOPPSE", flex: 6
+
+                    },
+                    {
                         title: 'Trump News', link: 'http://agonizing-shirt.surge.sh/#/',
                         text: 'Goal: Build a news list about President Trump. Technologies: Vue, Vue-Resource, Vuetify, JavaScript, ES6',
                         src: "https://cdn.buttercms.com/gRQpSAHmToKvahSVWxsA", flex: 6
@@ -180,7 +188,7 @@
         },
         methods: {
             display(card) {
-                console.log(card.link)
+                //console.log(card.link)
                 var win = window.open(card.link, '_blank');
                 win.focus();
             }
@@ -203,7 +211,7 @@
 
     .btnStrng {
         box-shadow: inset 5px 5px 10px #000000,
-        inset -5px -5px 10px blue;
+            inset -5px -5px 10px blue;
     }
 
     .cardBtn {
@@ -226,11 +234,12 @@
         -8px 7px #cdd2d5;*/
     }
 
+    /*
     .strngBtn {
         color: #BDBDBD;
         font-weight: 900;
         text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-    }
+    }*/
 
     #footSpace {
         height: 100px;

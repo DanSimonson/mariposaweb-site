@@ -38,8 +38,9 @@
                 </v-list-tile>
             </v-list>
         </v-navigation-drawer>
-        <v-toolbar class="white black-text">
-            <!--class='grey lighten-4 black--text'-->
+        <v-toolbar>
+            <!--class='white black--text'>-->
+            <!--class='grey lighten-4 black-text'-->
             <v-toolbar-side-icon @click.stop="drawer= !drawer" class='strngBtn'></v-toolbar-side-icon>
             <router-link to='/' tag='span' style='cursor:pointer'>
                 <v-toolbar-title class='strngBtn'>mariposaweb</v-toolbar-title>
@@ -64,14 +65,14 @@
 
 
 </template>
-<style>
+<style scoped>
     /*this button background style controls the background for all button on site since 
     it is not scoped*/
 
-    .btn__content::before {
-        /*background: black;
-        border-radius: 8px;*/
-    }
+    /*.btn__content::before {
+        background: black;
+        border-radius: 8px;
+    }*/
 
     .strngBtn {
         color: #BDBDBD;
