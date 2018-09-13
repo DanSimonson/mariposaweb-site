@@ -15,7 +15,7 @@
 </script>
 <template>
     <div>
-        <v-navigation-drawer v-model="drawer" temporary absolute height='400px' class='grey darken-4 white--text'>
+        <v-navigation-drawer v-model="drawer" temporary absolute height='400px' class='blue-grey white--text'>
             <v-list class="pa-1">
                 <v-list-tile avatar>
                     <v-list-tile-avatar>
