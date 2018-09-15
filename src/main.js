@@ -10,9 +10,18 @@ import AppHeader from "./components/AppHeader.vue";
 Vue.component("app-footer", AppFooter);
 Vue.component("app-header", AppHeader);
 import VueDisqus from "vue-disqus";
-
+import jQuery from "jquery";
+global.jQuery = jQuery;
+//global.jQuery = $;
 Vue.use(VueDisqus);
+/*
+import BootstrapVue from "bootstrap-vue";
+import "bootstrap/dist/css/bootstrap.css";
+import "bootstrap-vue/dist/bootstrap-vue.css";*/
+import "bootstrap/dist/css/bootstrap.min.css";
+import "mdbvue/build/css/mdb.css";
 Vue.use(Vuetify);
+//Vue.use(BootstrapVue);
 
 Vue.config.productionTip = false;
 

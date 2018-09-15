@@ -5,15 +5,21 @@ import BlogHome from "@/components/BlogHome";
 import BlogPost from "@/components/BlogPost";
 import Projects from "@/components/Projects";
 import Contact from "@/components/Contact";
+import Parahome from "@/components/Parahome";
 Vue.use(Router);
 
 export default new Router({
-  mode: "history",
+  mode: "hash",
   routes: [
     {
       path: "/",
       name: "home",
       component: Home
+    },
+    {
+      path: "/parahome/",
+      name: "parahome",
+      component: Parahome
     },
     {
       path: "/projects",

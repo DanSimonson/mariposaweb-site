@@ -1,10 +1,15 @@
 <script>
   //const butter = Butter('34d3d54d8f742ba36133328ca6b67a50a85ddfe1');
-  import butter from '@/buttercms';
   //import { butter } from '@/buttercms'
   //var butter = Butter('34d3d54d8f742ba36133328ca6b67a50a85ddfe1');
+  import butter from '@/buttercms';
+  import Parallax from "vue-parallaxy";
+
   export default {
     name: 'customer-page',
+    components: {
+      Parallax
+    },
     data() {
       return {
         showh1: true,
@@ -57,6 +62,13 @@
       <a href="#" class="button">Read More</a>
       -->
     </header>
+
+    <!--<parallax :speed-factor="0.3" breakpoint="(min-width: 80px)">
+        <img :src="image" />
+      </parallax>
+      <parallax :fixed='true'>
+        <img :src="image" />
+      </parallax>-->
     <app-footer></app-footer>
   </div>
 </template>
@@ -83,6 +95,24 @@
   .strngBtn {
     color: white;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  }
+
+  #section-a {
+    padding: 20px;
+    background: #926239;
+    color: #fff;
+    text-align: center;
+  }
+
+  #section-c {
+    padding: 20px;
+    background: #f4f4f4;
+    text-align: center;
+  }
+
+  img {
+    width: 500px;
+    max-height: 400px;
   }
 
   #showcase {
