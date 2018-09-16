@@ -7,6 +7,8 @@ import Vuetify from "vuetify";
 import "vuetify/dist/vuetify.min.css";
 import AppFooter from "./components/AppFooter.vue";
 import AppHeader from "./components/AppHeader.vue";
+import Parahome from "./components/Parahome.vue";
+Vue.component("para-home", Parahome);
 Vue.component("app-footer", AppFooter);
 Vue.component("app-header", AppHeader);
 import VueDisqus from "vue-disqus";

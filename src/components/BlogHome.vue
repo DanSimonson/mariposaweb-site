@@ -71,7 +71,7 @@
                                 <!--hover-->
                                 <v-container fluid style="min-height: 0;" grid-list-lg>
                                     <router-link style="text-decoration: none; color: black " :to=" '/blog/' + post.slug ">
-                                        <article class="media ">
+                                        <article class="media" style="display: inline-block">
                                             <figure>
                                                 <!-- Bind results using a ':' -->
                                                 <!--Use a v-if/else if their is a featured_image -->

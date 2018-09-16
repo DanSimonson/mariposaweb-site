@@ -5,7 +5,7 @@
                 drawer: null,
                 items: [
                     { title: 'Home', icon: 'home', link: '/' },
-                    { title: 'Projects', icon: 'build', link: '/projects' },
+                    //{ title: 'Projects', icon: 'build', link: '/projects' },
                     { title: 'Blog', icon: 'message', link: '/blog/' },
                     { title: 'Contact', icon: 'message', link: '/contact/' }
                 ]
@@ -15,22 +15,22 @@
 </script>
 <template>
     <div>
-        <v-navigation-drawer v-model="drawer" temporary absolute height='400px' class='blue-grey white--text'>
+        <v-navigation-drawer v-model="drawer" temporary absolute height='400px' class='blue-grey'>
             <v-list class="pa-1">
                 <v-list-tile avatar>
                     <v-list-tile-avatar>
                         <img src="https://cdn.buttercms.com/lEfaO9dLTOWcieVcTL7a">
                     </v-list-tile-avatar>
                     <v-list-tile-content>
-                        <v-list-tile-title>Dan Simonson</v-list-tile-title>
+                        <v-list-tile-title class='white--text'>Dan Simonson</v-list-tile-title>
                     </v-list-tile-content>
                 </v-list-tile>
             </v-list>
             <v-list class="pt-0" dense>
                 <v-divider></v-divider>
-                <v-list-tile v-for="item in items" :key="item.title" router :to="item.link">
+                <v-list-tile class='white--text' v-for="item in items" :key="item.title" router :to="item.link">
                     <v-list-tile-action>
-                        <v-icon>{{ item.icon }}</v-icon>
+                        <v-icon class='white--text'>{{ item.icon }}</v-icon>
                     </v-list-tile-action>
                     <v-list-tile-content>
                         <v-list-tile-title>{{ item.title }}</v-list-tile-title>
@@ -41,18 +41,18 @@
         <v-toolbar>
             <!--class='white black--text'>-->
             <!--class='grey lighten-4 black-text'-->
-            <v-toolbar-side-icon @click.stop="drawer= !drawer" class='strngBtn'></v-toolbar-side-icon>
+            <v-toolbar-side-icon @click.stop="drawer= !drawer"></v-toolbar-side-icon>
             <router-link to='/' tag='span' style='cursor:pointer'>
                 <v-toolbar-title class='strngBtn'>mariposaweb</v-toolbar-title>
             </router-link>
-            <v-spacer></v-spacer>
+            <v-spacer class="transparent"></v-spacer>
             <div class="hidden-sm-and-down">
                 <router-link to='/' tag='span'>
                     <v-btn class='strngBtn' flat>home</v-btn>
                 </router-link>
-                <router-link to='/projects' tag='span'>
+                <!--<router-link to='/projects' tag='span'>
                     <v-btn class='strngBtn' flat>projects</v-btn>
-                </router-link>
+                </router-link>-->
                 <router-link to='/blog/' tag='span'>
                     <v-btn class='strngBtn' flat>blog</v-btn>
                 </router-link>

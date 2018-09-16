@@ -62,6 +62,8 @@
       <a href="#" class="button">Read More</a>
       -->
     </header>
+    <div class="divider"></div>
+    <para-home />
 
     <!--<parallax :speed-factor="0.3" breakpoint="(min-width: 80px)">
         <img :src="image" />
@@ -78,6 +80,19 @@
     margin: 0;
     padding: 0;
   }
+
+  .divider {
+    height: 2px;
+    background: #000428;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #004e92, #000428);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #004e92, #000428);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  }
+
+
 
   body {
     margin: 0;
@@ -116,7 +131,7 @@
   }
 
   #showcase {
-    background-image: url('https://cdn.buttercms.com/LqR4DK4TyKOPJBog0xv3');
+    background-image: url('https://res.cloudinary.com/dmglopmul/image/upload/v1537088446/background2.jpg');
     background-size: cover;
     background-position: center;
     height: 100vh;

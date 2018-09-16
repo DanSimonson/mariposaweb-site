@@ -44,7 +44,8 @@
             <v-card-text class="text-xs-center">
                 <strong class="subheading">This site is powered with <a style="color:#BDBDBD;text-decoration: none;font-weight: bold"
                         href="https://buttercms.com/" target="_blank">Buttercms</a>
-                    and <a style="color:#BDBDBD;text-decoration: none;font-weight: bold" href="https://vuejs.org/" target="_blank">Vue</a>.
+                    and <a style="color:#BDBDBD;text-decoration: none;font-weight: bold" href="https://vuejs.org/"
+                        target="_blank">Vue</a>.
                     Get connected with me on social networks!</strong>
                 <v-spacer></v-spacer>
                 <v-btn v-for="icon in icons" :key="icon" icon dark class="mx-3" v-on:click.native="show(icon)">
