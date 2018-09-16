@@ -60,7 +60,7 @@
                     </carousel-item>
                     <carousel-item>
                         <row>
-                            <column md="4">
+                            <column md="4" class="clearfix d-none d-md-block">
                                 <card class="mb-2">
                                     <card-img src="https://res.cloudinary.com/dmglopmul/image/upload/v1537109174/projectPhotos/mariposaImageP.jpg"
                                         alt="Card image cap" waves></card-img>
