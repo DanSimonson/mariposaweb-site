@@ -37,7 +37,7 @@
                                     <card-body>
                                         <card-title>Trump News</card-title>
                                         <card-text>A news list about President Trump, utilizing news API,vue.js,
-                                            Vuetify and Javascript</card-text>
+                                            Vuetify and Javascript.</card-text>
                                         <btn tag="a" href='http://agonizing-shirt.surge.sh/#/' target="_blank" color="primary">See
                                             More</btn>
                                     </card-body>
@@ -50,7 +50,7 @@
                                     <card-body>
                                         <card-title>Hacker-News Clone</card-title>
                                         <card-text>A Hacker-News Clone, utilizing Vue, Axios, Firestore, JavaScript,
-                                            ES6</card-text>
+                                            ES6.</card-text>
                                         <btn tag="a" href='http://extra-small-stick.surge.sh' target="_blank" color="primary">See
                                             More</btn>
                                     </card-body>
@@ -65,9 +65,9 @@
                                     <card-img src="https://res.cloudinary.com/dmglopmul/image/upload/v1537109174/projectPhotos/mariposaImageP.jpg"
                                         alt="Card image cap" waves></card-img>
                                     <card-body>
-                                        <card-title>Store and Update Client information</card-title>
+                                        <card-title>Client information</card-title>
                                         <card-text>A create, read, update, delete applictions with Vue, Firestore,
-                                            Bootstrap 4, JavaScript, ES6</card-text>
+                                            Bootstrap 4.</card-text>
                                         <btn tag="a" href='https://human-resources-cb42b.firebaseapp.com/' target="_blank"
                                             color="primary">See More</btn>
                                     </card-body>
@@ -80,8 +80,7 @@
                                     <card-body>
                                         <card-title>Spa Business Website</card-title>
                                         <card-text>A Spa Business Website with Vue, Firestore, Firestore
-                                            Authentication,
-                                            MaterializeCSS, Vuetify, JavaScript,</card-text>
+                                            Authentication, MaterializeCSS, Vuetify, JavaScript.</card-text>
                                         <btn tag="a" href='https://user-info-ee17c.firebaseapp.com/' target="_blank"
                                             color="primary">See
                                             More</btn>
@@ -127,7 +126,7 @@
                                     <card-body>
                                         <card-title>Wikipedia Search</card-title>
                                         <card-text>A Wikipedia search engine that uses the Wikipedia API, vanilla
-                                            Javascript, CSS3, HTML</card-text>
+                                            Javascript, CSS3, HTML.</card-text>
                                         <btn tag="a" href='https://dansimonson.github.io/wikiviewer/' target="_blank"
                                             color="primary">See
                                             More</btn>
@@ -141,7 +140,7 @@
                                     <card-body>
                                         <card-title>Twitch</card-title>
                                         <card-text>An application using the twitch API for live streaming, applying
-                                            Javascript, CSS3, HTML</card-text>
+                                            Javascript, CSS3, HTML.</card-text>
                                         <btn tag="a" href='https://dansimonson.github.io/twitchtv/' target="_blank"
                                             color="primary">See
                                             More</btn>
