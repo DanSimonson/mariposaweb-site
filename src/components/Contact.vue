@@ -1,6 +1,6 @@
 <template>
     <div id='outer'>
-        <app-header></app-header>
+        <nav-bar></nav-bar>
         <div id='spacer'></div>
         <v-container class='bordered'>
 
@@ -72,7 +72,7 @@
     }
 
     #spacer {
-        height: 70px;
+        height: 100px;
     }
 
     .mapouter {

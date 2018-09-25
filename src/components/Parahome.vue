@@ -10,9 +10,93 @@
             </v-layout>
         </v-parallax>
         <div class="dividertwo"></div>
-        <div id="two" style="text-align: center;">
+        <div class="container-fluid" id="two">
             <h1 class='title-text'>Portfolio Projects</h1>
-            <container mt-5 mb-5 style="display: inline-block;">
+            <div class="row">
+                <div class="col s12 l4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="https://cdn.buttercms.com/OUEb12H8TT6nV2fOPPSE" alt="">
+                            <a href="" class="halfway-fab btn-floating pink pulse">
+                                <i class="material-icons">favorite</i>
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title">Mango & Chickpea Curry</span>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean quis aliquam orci.
+                                Orci
+                                varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="">More details</a>
+                            <a href="">View Ingredients</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 l4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="https://res.cloudinary.com/dmglopmul/image/upload/v1537108170/projectPhotos/hackerNews.png"
+                                alt="">
+                            <a href="" class="halfway-fab btn-floating pink pulse">
+                                <i class="material-icons">favorite</i>
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title">Rainbow Pasta Salad</span>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean quis aliquam orci.
+                                Orci
+                                varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="">More details</a>
+                            <a href="">View Ingredients</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 l4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="https://res.cloudinary.com/dmglopmul/image/upload/v1537109174/projectPhotos/mariposaImageP.jpg"
+                                alt="">
+                            <a href="" class="halfway-fab btn-floating pink pulse">
+                                <i class="material-icons">favorite</i>
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title">Mango & Chickpea Curry</span>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean quis aliquam orci.
+                                Orci
+                                varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="">More details</a>
+                            <a href="">View Ingredients</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--<div class="container" id="two">
+            <h1 class='title-text'>Portfolio Projects</h1>
+            <div class="row">
+                <div class="col l4">
+                    <div class="card  small blue-grey darken-1">
+                        <div class="card-content white-text">
+                            <span class="card-title">Card Title</span>
+                            <p>I am a very simple card. I am good at containing small bits of information.
+                                I am convenient because I require little markup to use effectively.</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="#">This is a link</a>
+                            <a href="#">This is a link</a>
+                        </div>
+                    </div>
+                </div>
+            </div>-->
+
+        <!--<container mt-5 mb-5 style="display: inline-block;">
                 <carousel :interval=" 8000" showControls multi slide>
                     <carousel-item>
                         <row>
@@ -150,8 +234,8 @@
                         </row>
                     </carousel-item>
                 </carousel>
-            </container>
-        </div>
+            </container>-->
+
         <div class="dividertwo"></div>
 
         <v-parallax dark :src="imagetwo" height="380"></v-parallax>
@@ -197,29 +281,31 @@
         <!--<app-footer></app-footer>-->
     </div>
 
+
+
 </template>
 
 <script>
     import image1 from "../assets/butterfly.jpg"
     import imagetwo from "../assets/butterfly2.jpg"
-    import { Carousel, CarouselItem, CarouselCaption, Container, Row, Column, Card, CardImg, CardBody, CardTitle, CardText, Btn } from 'mdbvue';
+    //import { Carousel, CarouselItem, CarouselCaption, Container, Row, Column, Card, CardImg, CardBody, CardTitle, CardText, Btn } from 'mdbvue';
 
 
     export default {
         name: 'Parahome',
         components: {
-            Carousel,
-            CarouselItem,
-            CarouselCaption,
-            Container,
-            Row,
-            Column,
-            Card,
-            CardImg,
-            CardBody,
-            CardTitle,
-            CardText,
-            Btn
+            /* Carousel,
+             CarouselItem,
+             CarouselCaption,
+             Container,
+             Row,
+             Column,
+             Card,
+             CardImg,
+             CardBody,
+             CardTitle,
+             CardText,
+             Btn*/
         },
         data() {
             return {
@@ -239,6 +325,8 @@
         margin: 0;
         padding: 0;
     }
+
+
 
     /*@media screen and (min-width: 500px) {
         *[data-v-6c4fdd22] {
@@ -265,6 +353,10 @@
         margin-bottom: 30px;
     }
 
+    .col {
+        display: inline-block
+    }
+
     #two {
         background: #00B4DB;
         /* fallback for old browsers */
@@ -272,8 +364,6 @@
         /* Chrome 10-25, Safari 5.1-6 */
         background: linear-gradient(to right, #0083B0, #00B4DB);
         /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-
     }
 
     promoBox {

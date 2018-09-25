@@ -61,15 +61,17 @@
 <template>
     <div>
         <div id="blog-post">
-            <app-header></app-header>
+            <nav-bar></nav-bar>
             <h1>{{ post.data.title }}</h1>
             <h4>{{ post.data.author.first_name }} {{ post.data.author.last_name }}</h4>
             <div v-html="post.data.body"></div>
 
-            <router-link style="text-decoration: none" v-if="post.meta.previous_post" :to="/blog/ + post.meta.previous_post.slug" class="button">
+            <router-link style="text-decoration: none" v-if="post.meta.previous_post" :to="/blog/ + post.meta.previous_post.slug"
+                class="button">
                 <!--{{ post.meta.previous_post.title }}-->Previous&nbsp
             </router-link>
-            <router-link style="text-decoration: none" v-if="post.meta.next_post" :to="/blog/ + post.meta.next_post.slug" class="button">
+            <router-link style="text-decoration: none" v-if="post.meta.next_post" :to="/blog/ + post.meta.next_post.slug"
+                class="button">
                 <!--{{ post.meta.next_post.title }}-->Next
             </router-link>
         </div>

@@ -42,7 +42,8 @@
 <template>
 
   <div id="customer-page">
-    <app-header></app-header>
+    <nav-bar></nav-bar>
+    <!--<app-header></app-header>-->
     <header id="showcase">
       <!--<button @click="show = !show">
         Toggle render
@@ -146,7 +147,7 @@
   }
 
   #showcase:before {
-    background: #E8EAF6;
+    /*background: #E8EAF6;*/
   }
 
   #showcase p {

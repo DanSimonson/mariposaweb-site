@@ -52,7 +52,7 @@
 
 <template>
     <div>
-        <app-header></app-header>
+        <nav-bar></nav-bar>
         <div id="blog-home">
 
             <!--<div id='container' class="hidden-md-and-down">
