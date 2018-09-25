@@ -1,0 +1,378 @@
+
+.custom-loader {
+  animation: loader 1s infinite;
+  display: flex;
+}
+@-moz-keyframes loader {
+from {
+    transform: rotate(0);
+}
+to {
+    transform: rotate(360deg);
+}
+}
+@-webkit-keyframes loader {
+from {
+    transform: rotate(0);
+}
+to {
+    transform: rotate(360deg);
+}
+}
+@-o-keyframes loader {
+from {
+    transform: rotate(0);
+}
+to {
+    transform: rotate(360deg);
+}
+}
+@keyframes loader {
+from {
+    transform: rotate(0);
+}
+to {
+    transform: rotate(360deg);
+}
+}
+
+
+#example-custom-transition .fade-enter-active,
+#example-custom-transition .fade-leave-active,
+#example-custom-transition .fade-leave-to {
+  transition: 0.3s ease-out;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#example-custom-transition .fade-enter,
+#example-custom-transition .fade-leave,
+#example-custom-transition .fade-leave-to {
+  opacity: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* This is for documentation purposes and will not be needed in your application */
+#lateral .v-speed-dial,
+#lateral .v-btn--floating {
+  position: absolute;
+}
+#lateral .v-btn--floating {
+  margin: 0 0 16px 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* This is for documentation purposes and will not be needed in your application */
+#create .v-speed-dial {
+  position: absolute;
+}
+#create .v-btn--floating {
+  position: relative;
+}
+
+
+.resultContainer[data-v-97b3ef6a] {
+  height: 350px;
+}
+.item[data-v-97b3ef6a] {
+  min-height: 50px;
+  min-width: 80px;
+  margin: 10px;
+}
+
+
+.v-card--reveal {
+  align-items: center;
+  bottom: 0;
+  justify-content: center;
+  opacity: .5;
+  position: absolute;
+  width: 100%;
+}
+
+
+.group {
+  display: flex;
+  flex: 1;
+  justify-content: space-around;
+}
+
+
+.bottom-gradient[data-v-587cecd7] {
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.4) 0%, transparent 72px);
+}
+.repeating-gradient[data-v-587cecd7] {
+  background-image: repeating-linear-gradient(-45deg,
+                      rgba(255,0,0,.25),
+                      rgba(255,0,0,.25) 5px,
+                      rgba(0,0,255,.25) 5px,
+                      rgba(0,0,255,.25) 10px
+                    );
+}
+
+
+.v-navigation-drawer[data-v-a62e4450] {
+  transition: none;
+}
+.lightbox[data-v-a62e4450] {
+  box-shadow: 0 0 20px inset rgba(0, 0, 0, 0.2);
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.4) 0%, transparent 72px);
+}
+
+
+#input-usage .v-input__prepend-outer,
+#input-usage .v-input__append-outer,
+#input-usage .v-input__slot,
+#input-usage .v-messages {
+  border: 1px dashed rgba(0,0,0, .4);
+}
+
+
+#keep .v-navigation-drawer__border {
+  display: none;
+}
+
+
+.portrait.v-card[data-v-86aec9c6] {
+  margin: 0 auto;
+  max-width: 600px;
+  width: 100%;
+}
+
+
+.v-progress-circular[data-v-09a5f7c5] {
+  margin: 1rem;
+}
+
+
+.v-progress-circular[data-v-b6dc061c] {
+  margin: 1rem;
+}
+
+
+.v-progress-circular[data-v-d64098f6] {
+  margin: 1rem;
+}
+
+
+.v-progress-circular[data-v-5d786fcf] {
+  margin: 1rem;
+}
+
+
+.v-progress-circular[data-v-754c4e0e] {
+  margin: 1rem;
+}
+
+
+.custom-ripple {
+  user-select: none;
+}
+
+
+.e4 {
+  width: 400px;
+  margin: auto;
+}
+
+
+.card--flex-toolbar {
+  margin-top: -64px;
+}
+

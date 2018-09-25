@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<!-- saved from url=(0044)https://vuetifyjs.com/en/components/parallax -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>Parallax Component — Vuetify.js</title>
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="description" content="The v-parallax component creates a 3d effect that makes an image appear to scroll slower than the window.">
+    <meta name="twitter:card" content="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-300.png">
+    <meta property="og:url" content="https://vuetifyjs.com/en/components/parallax">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Parallax Component — Vuetify.js">
+    <meta property="og:description" content="The v-parallax component creates a 3d effect that makes an image appear to scroll slower than the window.">
+    <meta property="og:image" content="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-300.png">
+    <meta property="fb:app_id" content="542948969434243">
+    <meta name="keywords" content="parallax, components">
+    <link rel="shortcut icon" href="https://vuetifyjs.com/favicon.ico">
+    <link rel="manifest" href="https://vuetifyjs.com/manifest.json">
+    <link href="./Parallax Component — Vuetify.js_files/all.css" rel="stylesheet">
+    <link href="./Parallax Component — Vuetify.js_files/css" rel="stylesheet" type="text/css">
+    <link rel="alternate" hreflang="en" href="https://vuetifyjs.com/en/components/parallax"><link rel="alternate" hreflang="es-MX" href="https://vuetifyjs.com/es-MX/components/parallax"><link rel="alternate" hreflang="pt-BR" href="https://vuetifyjs.com/pt-BR/components/parallax"><link rel="alternate" hreflang="ru" href="https://vuetifyjs.com/ru/components/parallax"><link rel="alternate" hreflang="zh-Hans" href="https://vuetifyjs.com/zh-Hans/components/parallax"><link rel="alternate" hreflang="ko" href="https://vuetifyjs.com/ko/components/parallax"><link rel="alternate" hreflang="ja" href="https://vuetifyjs.com/ja/components/parallax">
+  <style type="text/css" id="vuetify-theme-stylesheet">a { color: #1867c0; }
+.primary {
+  background-color: #1867c0 !important;
+  border-color: #1867c0 !important;
+}
+.primary--text {
+  color: #1867c0 !important;
+  caret-color: #1867c0 !important;
+}
+.primary.lighten-5 {
+  background-color: #c0ecff !important;
+  border-color: #c0ecff !important;
+}
+.primary--text.text--lighten-5 {
+  color: #c0ecff !important;
+  caret-color: #c0ecff !important;
+}
+.primary.lighten-4 {
+  background-color: #a2cfff !important;
+  border-color: #a2cfff !important;
+}
+.primary--text.text--lighten-4 {
+  color: #a2cfff !important;
+  caret-color: #a2cfff !important;
+}
+.primary.lighten-3 {
+  background-color: #84b4ff !important;
+  border-color: #84b4ff !important;
+}
+.primary--text.text--lighten-3 {
+  color: #84b4ff !important;
+  caret-color: #84b4ff !important;
+}
+.primary.lighten-2 {
+  background-color: #6599f9 !important;
+  border-color: #6599f9 !important;
+}
+.primary--text.text--lighten-2 {
+  color: #6599f9 !important;
+  caret-color: #6599f9 !important;
+}
+.primary.lighten-1 {
+  background-color: #4480dc !important;
+  border-color: #4480dc !important;
+}
+.primary--text.text--lighten-1 {
+  color: #4480dc !important;
+  caret-color: #4480dc !important;
+}
+.primary.darken-1 {
+  background-color: #004fa4 !important;
+  border-color: #004fa4 !important;
+}
+.primary--text.text--darken-1 {
+  color: #004fa4 !important;
+  caret-color: #004fa4 !important;
+}
+.primary.darken-2 {
+  background-color: #00398a !important;
+  border-color: #00398a !important;
+}
+.primary--text.text--darken-2 {
+  color: #00398a !important;
+  caret-color: #00398a !important;
+}
+.primary.darken-3 {
+  background-color: #002570 !important;
+  border-color: #002570 !important;
+}
+.primary--text.text--darken-3 {
+  color: #002570 !important;
+  caret-color: #002570 !important;
+}
+.primary.darken-4 {
+  background-color: #001057 !important;
+  border-color: #001057 !important;
+}
+.primary--text.text--darken-4 {
+  color: #001057 !important;
+  caret-color: #001057 !important;
+}
+.secondary {
+  background-color: #5cbbf6 !important;
+  border-color: #5cbbf6 !important;
+}
+.secondary--text {
+  color: #5cbbf6 !important;
+  caret-color: #5cbbf6 !important;
+}
+.secondary.lighten-5 {
+  background-color: #f6ffff !important;
+  border-color: #f6ffff !important;
+}
+.secondary--text.text--lighten-5 {
+  color: #f6ffff !important;
+  caret-color: #f6ffff !important;
+}
+.secondary.lighten-4 {
+  background-color: #d7ffff !important;
+  border-color: #d7ffff !important;
+}
+.secondary--text.text--lighten-4 {
+  color: #d7ffff !important;
+  caret-color: #d7ffff !important;
+}
+.secondary.lighten-3 {
+  background-color: #b9ffff !important;
+  border-color: #b9ffff !important;
+}
+.secondary--text.text--lighten-3 {
+  color: #b9ffff !important;
+  caret-color: #b9ffff !important;
+}
+.secondary.lighten-2 {
+  background-color: #9af3ff !important;
+  border-color: #9af3ff !important;
+}
+.secondary--text.text--lighten-2 {
+  color: #9af3ff !important;
+  caret-color: #9af3ff !important;
+}
+.secondary.lighten-1 {
+  background-color: #7cd7ff !important;
+  border-color: #7cd7ff !important;
+}
+.secondary--text.text--lighten-1 {
+  color: #7cd7ff !important;
+  caret-color: #7cd7ff !important;
+}
+.secondary.darken-1 {
+  background-color: #38a0d9 !important;
+  border-color: #38a0d9 !important;
+}
+.secondary--text.text--darken-1 {
+  color: #38a0d9 !important;
+  caret-color: #38a0d9 !important;
+}
+.secondary.darken-2 {
+  background-color: #0086bd !important;
+  border-color: #0086bd !important;
+}
+.secondary--text.text--darken-2 {
+  color: #0086bd !important;
+  caret-color: #0086bd !important;
+}
+.secondary.darken-3 {
+  background-color: #006da2 !important;
+  border-color: #006da2 !important;
+}
+.secondary--text.text--darken-3 {
+  color: #006da2 !important;
+  caret-color: #006da2 !important;
+}
+.secondary.darken-4 {
+  background-color: #005588 !important;
+  border-color: #005588 !important;
+}
+.secondary--text.text--darken-4 {
+  color: #005588 !important;
+  caret-color: #005588 !important;
+}
+.accent {
+  background-color: #005caf !important;
+  border-color: #005caf !important;
+}
+.accent--text {
+  color: #005caf !important;
+  caret-color: #005caf !important;
+}
+.accent.lighten-5 {
+  background-color: #b5dfff !important;
+  border-color: #b5dfff !important;
+}
+.accent--text.text--lighten-5 {
+  color: #b5dfff !important;
+  caret-color: #b5dfff !important;
+}
+.accent.lighten-4 {
+  background-color: #97c3ff !important;
+  border-color: #97c3ff !important;
+}
+.accent--text.text--lighten-4 {
+  color: #97c3ff !important;
+  caret-color: #97c3ff !important;
+}
+.accent.lighten-3 {
+  background-color: #79a8ff !important;
+  border-color: #79a8ff !important;
+}
+.accent--text.text--lighten-3 {
+  color: #79a8ff !important;
+  caret-color: #79a8ff !important;
+}
+.accent.lighten-2 {
+  background-color: #5a8ee7 !important;
+  border-color: #5a8ee7 !important;
+}
+.accent--text.text--lighten-2 {
+  color: #5a8ee7 !important;
+  caret-color: #5a8ee7 !important;
+}
+.accent.lighten-1 {
+  background-color: #3974cb !important;
+  border-color: #3974cb !important;
+}
+.accent--text.text--lighten-1 {
+  color: #3974cb !important;
+  caret-color: #3974cb !important;
+}
+.accent.darken-1 {
+  background-color: #004594 !important;
+  border-color: #004594 !important;
+}
+.accent--text.text--darken-1 {
+  color: #004594 !important;
+  caret-color: #004594 !important;
+}
+.accent.darken-2 {
+  background-color: #002f7a !important;
+  border-color: #002f7a !important;
+}
+.accent--text.text--darken-2 {
+  color: #002f7a !important;
+  caret-color: #002f7a !important;
+}
+.accent.darken-3 {
+  background-color: #001c60 !important;
+  border-color: #001c60 !important;
+}
+.accent--text.text--darken-3 {
+  color: #001c60 !important;
+  caret-color: #001c60 !important;
+}
+.accent.darken-4 {
+  background-color: #000048 !important;
+  border-color: #000048 !important;
+}
+.accent--text.text--darken-4 {
+  color: #000048 !important;
+  caret-color: #000048 !important;
+}
+.error {
+  background-color: #ff5252 !important;
+  border-color: #ff5252 !important;
+}
+.error--text {
+  color: #ff5252 !important;
+  caret-color: #ff5252 !important;
+}
+.error.lighten-5 {
+  background-color: #ffe4d5 !important;
+  border-color: #ffe4d5 !important;
+}
+.error--text.text--lighten-5 {
+  color: #ffe4d5 !important;
+  caret-color: #ffe4d5 !important;
+}
+.error.lighten-4 {
+  background-color: #ffc6b9 !important;
+  border-color: #ffc6b9 !important;
+}
+.error--text.text--lighten-4 {
+  color: #ffc6b9 !important;
+  caret-color: #ffc6b9 !important;
+}
+.error.lighten-3 {
+  background-color: #ffa99e !important;
+  border-color: #ffa99e !important;
+}
+.error--text.text--lighten-3 {
+  color: #ffa99e !important;
+  caret-color: #ffa99e !important;
+}
+.error.lighten-2 {
+  background-color: #ff8c84 !important;
+  border-color: #ff8c84 !important;
+}
+.error--text.text--lighten-2 {
+  color: #ff8c84 !important;
+  caret-color: #ff8c84 !important;
+}
+.error.lighten-1 {
+  background-color: #ff6f6a !important;
+  border-color: #ff6f6a !important;
+}
+.error--text.text--lighten-1 {
+  color: #ff6f6a !important;
+  caret-color: #ff6f6a !important;
+}
+.error.darken-1 {
+  background-color: #df323b !important;
+  border-color: #df323b !important;
+}
+.error--text.text--darken-1 {
+  color: #df323b !important;
+  caret-color: #df323b !important;
+}
+.error.darken-2 {
+  background-color: #bf0025 !important;
+  border-color: #bf0025 !important;
+}
+.error--text.text--darken-2 {
+  color: #bf0025 !important;
+  caret-color: #bf0025 !important;
+}
+.error.darken-3 {
+  background-color: #9f0010 !important;
+  border-color: #9f0010 !important;
+}
+.error--text.text--darken-3 {
+  color: #9f0010 !important;
+  caret-color: #9f0010 !important;
+}
+.error.darken-4 {
+  background-color: #800000 !important;
+  border-color: #800000 !important;
+}
+.error--text.text--darken-4 {
+  color: #800000 !important;
+  caret-color: #800000 !important;
+}
+.info {
+  background-color: #2196f3 !important;
+  border-color: #2196f3 !important;
+}
+.info--text {
+  color: #2196f3 !important;
+  caret-color: #2196f3 !important;
+}
+.info.lighten-5 {
+  background-color: #d4ffff !important;
+  border-color: #d4ffff !important;
+}
+.info--text.text--lighten-5 {
+  color: #d4ffff !important;
+  caret-color: #d4ffff !important;
+}
+.info.lighten-4 {
+  background-color: #b5ffff !important;
+  border-color: #b5ffff !important;
+}
+.info--text.text--lighten-4 {
+  color: #b5ffff !important;
+  caret-color: #b5ffff !important;
+}
+.info.lighten-3 {
+  background-color: #95e8ff !important;
+  border-color: #95e8ff !important;
+}
+.info--text.text--lighten-3 {
+  color: #95e8ff !important;
+  caret-color: #95e8ff !important;
+}
+.info.lighten-2 {
+  background-color: #75ccff !important;
+  border-color: #75ccff !important;
+}
+.info--text.text--lighten-2 {
+  color: #75ccff !important;
+  caret-color: #75ccff !important;
+}
+.info.lighten-1 {
+  background-color: #51b0ff !important;
+  border-color: #51b0ff !important;
+}
+.info--text.text--lighten-1 {
+  color: #51b0ff !important;
+  caret-color: #51b0ff !important;
+}
+.info.darken-1 {
+  background-color: #007cd6 !important;
+  border-color: #007cd6 !important;
+}
+.info--text.text--darken-1 {
+  color: #007cd6 !important;
+  caret-color: #007cd6 !important;
+}
+.info.darken-2 {
+  background-color: #0064ba !important;
+  border-color: #0064ba !important;
+}
+.info--text.text--darken-2 {
+  color: #0064ba !important;
+  caret-color: #0064ba !important;
+}
+.info.darken-3 {
+  background-color: #004d9f !important;
+  border-color: #004d9f !important;
+}
+.info--text.text--darken-3 {
+  color: #004d9f !important;
+  caret-color: #004d9f !important;
+}
+.info.darken-4 {
+  background-color: #003784 !important;
+  border-color: #003784 !important;
+}
+.info--text.text--darken-4 {
+  color: #003784 !important;
+  caret-color: #003784 !important;
+}
+.success {
+  background-color: #4caf50 !important;
+  border-color: #4caf50 !important;
+}
+.success--text {
+  color: #4caf50 !important;
+  caret-color: #4caf50 !important;
+}
+.success.lighten-5 {
+  background-color: #dcffd6 !important;
+  border-color: #dcffd6 !important;
+}
+.success--text.text--lighten-5 {
+  color: #dcffd6 !important;
+  caret-color: #dcffd6 !important;
+}
+.success.lighten-4 {
+  background-color: #beffba !important;
+  border-color: #beffba !important;
+}
+.success--text.text--lighten-4 {
+  color: #beffba !important;
+  caret-color: #beffba !important;
+}
+.success.lighten-3 {
+  background-color: #a2ff9e !important;
+  border-color: #a2ff9e !important;
+}
+.success--text.text--lighten-3 {
+  color: #a2ff9e !important;
+  caret-color: #a2ff9e !important;
+}
+.success.lighten-2 {
+  background-color: #85e783 !important;
+  border-color: #85e783 !important;
+}
+.success--text.text--lighten-2 {
+  color: #85e783 !important;
+  caret-color: #85e783 !important;
+}
+.success.lighten-1 {
+  background-color: #69cb69 !important;
+  border-color: #69cb69 !important;
+}
+.success--text.text--lighten-1 {
+  color: #69cb69 !important;
+  caret-color: #69cb69 !important;
+}
+.success.darken-1 {
+  background-color: #2d9437 !important;
+  border-color: #2d9437 !important;
+}
+.success--text.text--darken-1 {
+  color: #2d9437 !important;
+  caret-color: #2d9437 !important;
+}
+.success.darken-2 {
+  background-color: #00791e !important;
+  border-color: #00791e !important;
+}
+.success--text.text--darken-2 {
+  color: #00791e !important;
+  caret-color: #00791e !important;
+}
+.success.darken-3 {
+  background-color: #006000 !important;
+  border-color: #006000 !important;
+}
+.success--text.text--darken-3 {
+  color: #006000 !important;
+  caret-color: #006000 !important;
+}
+.success.darken-4 {
+  background-color: #004700 !important;
+  border-color: #004700 !important;
+}
+.success--text.text--darken-4 {
+  color: #004700 !important;
+  caret-color: #004700 !important;
+}
+.warning {
+  background-color: #ffc107 !important;
+  border-color: #ffc107 !important;
+}
+.warning--text {
+  color: #ffc107 !important;
+  caret-color: #ffc107 !important;
+}
+.warning.lighten-5 {
+  background-color: #ffffae !important;
+  border-color: #ffffae !important;
+}
+.warning--text.text--lighten-5 {
+  color: #ffffae !important;
+  caret-color: #ffffae !important;
+}
+.warning.lighten-4 {
+  background-color: #ffff91 !important;
+  border-color: #ffff91 !important;
+}
+.warning--text.text--lighten-4 {
+  color: #ffff91 !important;
+  caret-color: #ffff91 !important;
+}
+.warning.lighten-3 {
+  background-color: #ffff74 !important;
+  border-color: #ffff74 !important;
+}
+.warning--text.text--lighten-3 {
+  color: #ffff74 !important;
+  caret-color: #ffff74 !important;
+}
+.warning.lighten-2 {
+  background-color: #fff956 !important;
+  border-color: #fff956 !important;
+}
+.warning--text.text--lighten-2 {
+  color: #fff956 !important;
+  caret-color: #fff956 !important;
+}
+.warning.lighten-1 {
+  background-color: #ffdd37 !important;
+  border-color: #ffdd37 !important;
+}
+.warning--text.text--lighten-1 {
+  color: #ffdd37 !important;
+  caret-color: #ffdd37 !important;
+}
+.warning.darken-1 {
+  background-color: #e0a600 !important;
+  border-color: #e0a600 !important;
+}
+.warning--text.text--darken-1 {
+  color: #e0a600 !important;
+  caret-color: #e0a600 !important;
+}
+.warning.darken-2 {
+  background-color: #c18c00 !important;
+  border-color: #c18c00 !important;
+}
+.warning--text.text--darken-2 {
+  color: #c18c00 !important;
+  caret-color: #c18c00 !important;
+}
+.warning.darken-3 {
+  background-color: #a27300 !important;
+  border-color: #a27300 !important;
+}
+.warning--text.text--darken-3 {
+  color: #a27300 !important;
+  caret-color: #a27300 !important;
+}
+.warning.darken-4 {
+  background-color: #855a00 !important;
+  border-color: #855a00 !important;
+}
+.warning--text.text--darken-4 {
+  color: #855a00 !important;
+  caret-color: #855a00 !important;
+}
+.tertiary {
+  background-color: #e57373 !important;
+  border-color: #e57373 !important;
+}
+.tertiary--text {
+  color: #e57373 !important;
+  caret-color: #e57373 !important;
+}
+.tertiary.lighten-5 {
+  background-color: #fffffb !important;
+  border-color: #fffffb !important;
+}
+.tertiary--text.text--lighten-5 {
+  color: #fffffb !important;
+  caret-color: #fffffb !important;
+}
+.tertiary.lighten-4 {
+  background-color: #ffe2de !important;
+  border-color: #ffe2de !important;
+}
+.tertiary--text.text--lighten-4 {
+  color: #ffe2de !important;
+  caret-color: #ffe2de !important;
+}
+.tertiary.lighten-3 {
+  background-color: #ffc5c2 !important;
+  border-color: #ffc5c2 !important;
+}
+.tertiary--text.text--lighten-3 {
+  color: #ffc5c2 !important;
+  caret-color: #ffc5c2 !important;
+}
+.tertiary.lighten-2 {
+  background-color: #ffa9a7 !important;
+  border-color: #ffa9a7 !important;
+}
+.tertiary--text.text--lighten-2 {
+  color: #ffa9a7 !important;
+  caret-color: #ffa9a7 !important;
+}
+.tertiary.lighten-1 {
+  background-color: #ff8e8d !important;
+  border-color: #ff8e8d !important;
+}
+.tertiary--text.text--lighten-1 {
+  color: #ff8e8d !important;
+  caret-color: #ff8e8d !important;
+}
+.tertiary.darken-1 {
+  background-color: #c7595a !important;
+  border-color: #c7595a !important;
+}
+.tertiary--text.text--darken-1 {
+  color: #c7595a !important;
+  caret-color: #c7595a !important;
+}
+.tertiary.darken-2 {
+  background-color: #a93f43 !important;
+  border-color: #a93f43 !important;
+}
+.tertiary--text.text--darken-2 {
+  color: #a93f43 !important;
+  caret-color: #a93f43 !important;
+}
+.tertiary.darken-3 {
+  background-color: #8c232d !important;
+  border-color: #8c232d !important;
+}
+.tertiary--text.text--darken-3 {
+  color: #8c232d !important;
+  caret-color: #8c232d !important;
+}
+.tertiary.darken-4 {
+  background-color: #6f0018 !important;
+  border-color: #6f0018 !important;
+}
+.tertiary--text.text--darken-4 {
+  color: #6f0018 !important;
+  caret-color: #6f0018 !important;
+}</style><link rel="preload" href="./Parallax Component — Vuetify.js_files/runtime.4bdb5eb4b3b64d52d6c8.js.download" as="script"><link rel="preload" href="./Parallax Component — Vuetify.js_files/vendors_app.335f557f05c9b51db30e.js.download" as="script"><link rel="preload" href="./Parallax Component — Vuetify.js_files/app.a0b6dd7d86249a75105d.js.download" as="script"><link rel="stylesheet" href="./Parallax Component — Vuetify.js_files/common.98ac50d0fe1d670cd622.css"><link rel="stylesheet" href="./Parallax Component — Vuetify.js_files/common.a0b6dd7d86249a75105d.css"><link rel="stylesheet" href="./Parallax Component — Vuetify.js_files/common.aece645b7c9381822f85.css"><link rel="stylesheet" href="./Parallax Component — Vuetify.js_files/common.003cc9c21d13bdf3c8b3.css"><link rel="stylesheet" href="./Parallax Component — Vuetify.js_files/common.0afada8f237945254e89.css"><link rel="stylesheet" href="./Parallax Component — Vuetify.js_files/common.5039715e5d8a2b7759f7.css"><link rel="stylesheet" href="./Parallax Component — Vuetify.js_files/common.e16c49b5498f74e6d21f.css"><link rel="stylesheet" href="./Parallax Component — Vuetify.js_files/common.90ea3df66015be8f87b7.css"><link rel="stylesheet" href="./Parallax Component — Vuetify.js_files/common.05096905c02a4fa003cd.css"><link rel="stylesheet" href="./Parallax Component — Vuetify.js_files/common.d42647b77fcaae772f5d.css"><link rel="stylesheet" href="./Parallax Component — Vuetify.js_files/common.b58dbfab872c033bb1da.css"><link rel="stylesheet" href="./Parallax Component — Vuetify.js_files/common.a7c8d848ff6c8b14e8b0.css"><link rel="stylesheet" href="./Parallax Component — Vuetify.js_files/common.8c2026f6b28587c7c539.css"><link rel="stylesheet" href="./Parallax Component — Vuetify.js_files/common.2ba49847604dc25f1f46.css"><link rel="stylesheet" href="./Parallax Component — Vuetify.js_files/common.3670bc72e128e603817b.css"><link rel="stylesheet" href="./Parallax Component — Vuetify.js_files/common.30b68d2b56c0902a2374.css"><link rel="stylesheet" href="./Parallax Component — Vuetify.js_files/common.b94cbdcf1a69876c1beb.css"><link rel="stylesheet" href="./Parallax Component — Vuetify.js_files/common.335f557f05c9b51db30e.css"><script async="" src="./Parallax Component — Vuetify.js_files/analytics.js.download" charset="utf8"></script><script charset="utf-8" src="./Parallax Component — Vuetify.js_files/8.5ec97e911de587a5dfcf.js.download"></script><script charset="utf-8" src="./Parallax Component — Vuetify.js_files/49.5d9ccf2c51baf37c0a60.js.download"></script><script charset="utf-8" src="./Parallax Component — Vuetify.js_files/vendors_examples.2d16d9d7e1290203c691.js.download"></script><script charset="utf-8" src="./Parallax Component — Vuetify.js_files/examples.aece645b7c9381822f85.js.download"></script><script charset="utf-8" src="./Parallax Component — Vuetify.js_files/examples-source.d52a4e8d4cffbe8f74a1.js.download"></script><script charset="utf-8" src="./Parallax Component — Vuetify.js_files/4.1dfb37a11bbf5159e4a5.js.download"></script><style type="text/css" id="cf-style">#cf_ad {  margin: 0 auto;  max-width: 330px;}#cf_ad .cf-wrapper {     border-radius: 4px;     display: block;     padding: 15px;     overflow: hidden;     font-size: 14px;     line-height: 1.4;     text-align: left;     background-color: rgba(0,0,0,0.05);     font-family: Helvetica;}#cf_ad .cf-img-wrapper {     float: left;     margin-right: 15px;}#cf_ad .cf-img {     vertical-align: middle;     border-style: none;     max-width: 130px;}#cf_ad .cf-text {     color: #333;     text-decoration: none;}#cf_ad .cf-powered-by {     margin-top: 5px;     font-size: 12px;     display: block;     color: #777;     text-decoration: none;}</style></head>
+  <body>
+    <div data-app="true" id="app" class="application theme--light"><div class="v-tooltip__content" style="left: 1286.5px; opacity: 0; top: 2486px; z-index: 8; display: none;"><span>View source</span></div><div class="v-tooltip__content" style="left: 1286.5px; opacity: 0; top: 323px; z-index: 8; display: none;"><span>View source</span></div><div class="v-menu__content v-menu__content--auto " style="max-height:200px;min-width:16px;max-width:auto;top:12px;left:12px;transform-origin:top left;z-index:0;display:none;"><div class="v-select-list v-card theme--light"><div class="v-list theme--light"><div><a class="v-list__tile v-list__tile--link v-list__tile--active theme--light primary--text"><div class="v-list__tile__content"><div class="v-list__tile__title">v-parallax</div></div></a></div></div></div></div><div class="application--wrap"><div id="ad__container" data-booted="true"><aside class="transparent pa-3 v-navigation-drawer v-navigation-drawer--clipped v-navigation-drawer--fixed v-navigation-drawer--floating v-navigation-drawer--open v-navigation-drawer--right theme--light" data-booted="true" style="height: 100%; margin-top: 58px; max-height: calc(100% - 58px); transform: translateX(0px); width: 192px;"><ul offset="85" class="app-table-of-contents" data-booted="true"><li><div><a href="https://vuetifyjs.com/en/components/parallax#introduction" class="body-2 mb-3 d-block grey--text text--darken-1" style="">Introduction</a></div></li><li><div><a href="https://vuetifyjs.com/en/components/parallax#usage" class="body-2 mb-3 d-block grey--text text--darken-1" style="">Usage</a></div></li><li><div><a href="https://vuetifyjs.com/en/components/parallax#api" class="body-2 mb-3 d-block grey--text text--darken-1" style="">API</a></div></li><li><div><a href="https://vuetifyjs.com/en/components/parallax#examples" class="body-2 mb-3 d-block primary--text" style="border-color: inherit;">Examples</a></div></li></ul><div id="codefund_ad"><span><div id="cf_ad">  <span>    <span class="cf-wrapper">      <a href="https://codefund.io/c/432ecbfc-eb95-476a-91f3-ad3ad19c6620" class="cf-img-wrapper" target="_blank" rel="noopener">        <img src="./Parallax Component — Vuetify.js_files/9bb45f41-5bac-424d-83b5-ede5c62ef2ae_codefund-260x200.png" alt="" border="0" height="100" width="130" class="cf-img">      </a>      <a href="https://codefund.io/c/432ecbfc-eb95-476a-91f3-ad3ad19c6620" class="cf-text" target="_blank" rel="noopener">        <strong>CodeFund</strong> helps sustain this website through ethical ads. Learn more.      </a>            <a href="https://codefund.io/?utm_content=70b0cce1-2093-4936-8991-15602a22a52a" class="cf-powered-by" target="_blank" rel="noopener">        ads via codefund.io        <img src="./Parallax Component — Vuetify.js_files/pixel.png" width="1" height="1" style="width: 1px; height: 1px;">      </a>    </span>  </span></div></span></div><div class="v-navigation-drawer__border"></div></aside><script type="text/javascript" src="./Parallax Component — Vuetify.js_files/embed.js.download"></script></div><nav id="app-toolbar" class="v-toolbar v-toolbar--clipped v-toolbar--fixed theme--dark primary" style="margin-top: 0px; padding-right: 0px; padding-left: 300px; transform: translateY(0px);" data-booted="true"><div class="v-toolbar__content" style="height:58px;"><button type="button" class="v-toolbar__side-icon v-btn v-btn--icon theme--dark"><div class="v-btn__content"><i aria-hidden="true" class="v-icon material-icons theme--dark">menu</i></div></button><a href="https://vuetifyjs.com/en/" class="d-flex router-link-active"><img src="./Parallax Component — Vuetify.js_files/v-alt.svg" height="38px" width="38px"></a><div class="v-toolbar__title pb-1 hidden-xs-only">Vuetify</div><div class="spacer"></div><div class="v-toolbar__items"><a href="https://vuetifyjs.com/en/" class="hidden-xs-only v-btn--active v-btn v-btn--flat v-btn--router theme--dark" style="display:none;min-width:48px;"><div class="v-btn__content"><div></div><span class="hidden-sm-and-down">Documentation</span><i aria-hidden="true" class="v-icon hidden-md-and-up mdi mdi-file-document-box theme--dark"></i></div></a><div class="v-menu v-menu--inline"><div class="v-menu__activator"><button type="button" class="v-btn v-btn--flat theme--dark" style="min-width:48px;"><div class="v-btn__content"><img src="./Parallax Component — Vuetify.js_files/us.webp" width="26px"></div></button></div><div class="v-menu__content" style="max-height:auto;min-width:0px;max-width:auto;top:0px;left:0px;transform-origin:top left;z-index:0;display:none;"><div class="v-list theme--light"><div><a class="v-list__tile v-list__tile--link v-list__tile--avatar theme--light"><div class="v-list__tile__avatar"><div class="v-avatar v-avatar--tile" style="height:24px;width:24px;"><img src="./Parallax Component — Vuetify.js_files/us.webp" width="24px"></div></div><div class="v-list__tile__title">English</div></a></div><div><a class="v-list__tile v-list__tile--link v-list__tile--avatar theme--light"><div class="v-list__tile__avatar"><div class="v-avatar v-avatar--tile" style="height:24px;width:24px;"><img src="./Parallax Component — Vuetify.js_files/mx.webp" width="24px"></div></div><div class="v-list__tile__title">Español</div></a></div><div><a class="v-list__tile v-list__tile--link v-list__tile--avatar theme--light"><div class="v-list__tile__avatar"><div class="v-avatar v-avatar--tile" style="height:24px;width:24px;"><img src="./Parallax Component — Vuetify.js_files/br.webp" width="24px"></div></div><div class="v-list__tile__title">Português</div></a></div><div><a class="v-list__tile v-list__tile--link v-list__tile--avatar theme--light"><div class="v-list__tile__avatar"><div class="v-avatar v-avatar--tile" style="height:24px;width:24px;"><img src="./Parallax Component — Vuetify.js_files/ru.webp" width="24px"></div></div><div class="v-list__tile__title">Русский</div></a></div><div><a class="v-list__tile v-list__tile--link v-list__tile--avatar theme--light"><div class="v-list__tile__avatar"><div class="v-avatar v-avatar--tile" style="height:24px;width:24px;"><img src="./Parallax Component — Vuetify.js_files/cn.webp" width="24px"></div></div><div class="v-list__tile__title">简体中文</div></a></div><div><a class="v-list__tile v-list__tile--link v-list__tile--avatar theme--light"><div class="v-list__tile__avatar"><div class="v-avatar v-avatar--tile" style="height:24px;width:24px;"><img src="./Parallax Component — Vuetify.js_files/kr.webp" width="24px"></div></div><div class="v-list__tile__title">한국어</div></a></div><div><a class="v-list__tile v-list__tile--link v-list__tile--avatar theme--light"><div class="v-list__tile__avatar"><div class="v-avatar v-avatar--tile" style="height:24px;width:24px;"><img src="./Parallax Component — Vuetify.js_files/jp.webp" width="24px"></div></div><div class="v-list__tile__title">日本語</div></a></div><!----></div></div></div></div><div class="v-toolbar__items"><a href="https://vuetifyjs.com/en/store/" class="v-btn v-btn--flat v-btn--router theme--dark" style="min-width:48px;"><div class="v-btn__content"><div></div><span class="v-badge"><span class="hidden-sm-and-down">Store</span><i aria-hidden="true" class="v-icon hidden-md-and-up material-icons theme--dark">store</i><span class="v-badge__badge red lighten-2"><i aria-hidden="true" class="v-icon mdi mdi-tag-outline theme--dark"></i></span></span></div></a></div><div class="v-toolbar__items"><div class="v-menu v-menu--inline"><div class="v-menu__activator"><button type="button" class="v-btn v-btn--flat theme--dark" style="min-width:48px;"><div class="v-btn__content"><div class="hidden-sm-and-down"><span class="mr-1">Ecosystem</span></div><i aria-hidden="true" class="v-icon hidden-sm-and-down mdi mdi-menu-down theme--dark"></i><i aria-hidden="true" class="v-icon hidden-md-and-up mdi mdi-earth theme--dark"></i></div></button></div><div class="v-menu__content" style="max-height:500px;min-width:0px;max-width:auto;top:0px;left:0px;transform-origin:top left;z-index:0;display:none;"><div class="v-list theme--light"><div class="v-subheader theme--light">Quick Links</div><div><a href="https://www.reddit.com/r/vuetifyjs/" target="_blank" rel="noopener" class="v-list__tile v-list__tile--link theme--light"><div class="v-list__tile__action"><i aria-hidden="true" class="v-icon mdi mdi-reddit theme--light"></i></div><div class="v-list__tile__content"><div class="v-list__tile__title">Reddit</div></div></a></div><div><a href="https://medium.com/vuetify" target="_blank" rel="noopener" class="v-list__tile v-list__tile--link theme--light"><div class="v-list__tile__action"><i aria-hidden="true" class="v-icon mdi mdi-medium theme--light"></i></div><div class="v-list__tile__content"><div class="v-list__tile__title">Medium Publication</div></div></a></div><div><a href="https://github.com/vuetifyjs/awesome-vuetify" target="_blank" rel="noopener" class="v-list__tile v-list__tile--link theme--light"><div class="v-list__tile__action"><i aria-hidden="true" class="v-icon mdi mdi-creation theme--light"></i></div><div class="v-list__tile__content"><div class="v-list__tile__title">Awesome Vuetify</div></div></a></div><div><a href="https://template.vuetifyjs.com/" target="_blank" rel="noopener" class="v-list__tile v-list__tile--link theme--light"><div class="v-list__tile__action"><i aria-hidden="true" class="v-icon mdi mdi-codepen theme--light"></i></div><div class="v-list__tile__content"><div class="v-list__tile__title">Codepen Template</div></div></a></div><div><a href="https://github.com/vuetifyjs/vuetify/releases" target="_blank" rel="noopener" class="v-list__tile v-list__tile--link theme--light"><div class="v-list__tile__action"><i aria-hidden="true" class="v-icon mdi mdi-format-list-checks theme--light"></i></div><div class="v-list__tile__content"><div class="v-list__tile__title">Latest Releases</div></div></a></div><hr class="v-divider theme--light"><div class="v-subheader theme--light">Social</div><div><a href="https://github.com/vuetifyjs/vuetify" target="_blank" rel="noopener" class="v-list__tile v-list__tile--link theme--light"><div class="v-list__tile__action"><i aria-hidden="true" class="v-icon mdi mdi-github-box theme--light"></i></div><div class="v-list__tile__content"><div class="v-list__tile__title">GitHub</div></div></a></div><div><a href="https://twitter.com/vuetifyjs" target="_blank" rel="noopener" class="v-list__tile v-list__tile--link theme--light"><div class="v-list__tile__action"><i aria-hidden="true" class="v-icon mdi mdi-twitter-box theme--light"></i></div><div class="v-list__tile__content"><div class="v-list__tile__title">Twitter</div></div></a></div><div><a href="https://www.facebook.com/vuetifyjs" target="_blank" rel="noopener" class="v-list__tile v-list__tile--link theme--light"><div class="v-list__tile__action"><i aria-hidden="true" class="v-icon mdi mdi-facebook-box theme--light"></i></div><div class="v-list__tile__content"><div class="v-list__tile__title">Facebook</div></div></a></div></div></div></div><div class="v-menu v-menu--inline"><div class="v-menu__activator"><button type="button" class="v-btn v-btn--flat theme--dark" style="min-width:48px;"><div class="v-btn__content"><div class="hidden-sm-and-down"><span class="mr-1">Support</span></div><i aria-hidden="true" class="v-icon hidden-sm-and-down mdi mdi-menu-down theme--dark"></i><i aria-hidden="true" class="v-icon hidden-md-and-up mdi mdi-lifebuoy theme--dark"></i></div></button></div><div class="v-menu__content" style="max-height:500px;min-width:0px;max-width:auto;top:0px;left:0px;transform-origin:top left;z-index:0;display:none;"><div class="v-list theme--light"><div><a href="https://community.vuetifyjs.com/" target="_blank" rel="noopener" class="v-list__tile v-list__tile--link theme--light"><div class="v-list__tile__action"><i aria-hidden="true" class="v-icon mdi mdi-discord theme--light"></i></div><div class="v-list__tile__content"><div class="v-list__tile__title">Chat</div></div></a></div><div><a href="https://issues.vuetifyjs.com/" target="_blank" rel="noopener" class="v-list__tile v-list__tile--link theme--light"><div class="v-list__tile__action"><i aria-hidden="true" class="v-icon mdi mdi-alert-octagon theme--light"></i></div><div class="v-list__tile__content"><div class="v-list__tile__title">Create an Issue</div></div></a></div><div><a href="https://github.com/vuetifyjs/vuetify/issues" target="_blank" rel="noopener" class="v-list__tile v-list__tile--link theme--light"><div class="v-list__tile__action"><i aria-hidden="true" class="v-icon mdi mdi-github-face theme--light"></i></div><div class="v-list__tile__content"><div class="v-list__tile__title">GitHub Issue board</div></div></a></div><div><a href="https://stackoverflow.com/search?q=vuetify" target="_blank" rel="noopener" class="v-list__tile v-list__tile--link theme--light"><div class="v-list__tile__action"><i aria-hidden="true" class="v-icon mdi mdi-stack-overflow theme--light"></i></div><div class="v-list__tile__content"><div class="v-list__tile__title">Stack overflow</div></div></a></div></div></div></div><div class="v-menu hidden-xs-only v-menu--inline"><div class="v-menu__activator"><button type="button" class="v-btn v-btn--flat theme--dark"><div class="v-btn__content"><span class="mr-1">1.2.5</span><i aria-hidden="true" class="v-icon mdi mdi-menu-down theme--dark"></i></div></button></div><div class="v-menu__content" style="max-height:auto;min-width:0px;max-width:auto;top:0px;left:0px;transform-origin:top left;z-index:0;display:none;"><div class="v-list theme--light"><div><a href="https://v1.vuetifyjs.com/" class="v-list__tile v-list__tile--link theme--light"><div class="v-list__tile__avatar"><div class="v-avatar" style="height:40px;width:40px;"><i aria-hidden="true" class="v-icon mdi mdi-package theme--light"></i></div></div><div class="v-list__tile__content"><div class="v-list__tile__title">1.0</div></div></a></div><div><a href="https://vuetifyjs.com/releases/0.17" class="v-list__tile v-list__tile--link theme--light"><div class="v-list__tile__avatar"><div class="v-avatar" style="height: 40px; width: 40px;"><i aria-hidden="true" class="v-icon mdi mdi-package theme--light"></i></div></div><div class="v-list__tile__content"><div class="v-list__tile__title">0.17</div></div></a></div><div><a href="https://vuetifyjs.com/releases/0.16" class="v-list__tile v-list__tile--link theme--light"><div class="v-list__tile__avatar"><div class="v-avatar" style="height: 40px; width: 40px;"><i aria-hidden="true" class="v-icon mdi mdi-package theme--light"></i></div></div><div class="v-list__tile__content"><div class="v-list__tile__title">0.16</div></div></a></div><div><a href="https://vuetifyjs.com/releases/0.15" class="v-list__tile v-list__tile--link theme--light"><div class="v-list__tile__avatar"><div class="v-avatar" style="height: 40px; width: 40px;"><i aria-hidden="true" class="v-icon mdi mdi-package theme--light"></i></div></div><div class="v-list__tile__content"><div class="v-list__tile__title">0.15</div></div></a></div></div></div></div></div><!----></div></nav><aside id="app-drawer" class="v-navigation-drawer v-navigation-drawer--fixed v-navigation-drawer--open theme--light" style="height: 100%; margin-top: 0px; max-height: calc(100% - 0px); transform: translateX(0px); width: 300px;" data-booted="true"><div class="text-xs-center pt-3"><div><a href="https://careers.lmax.com/?utm_source=vuetify&amp;utm_medium=logo-link&amp;utm_campaign=lmax-careers" target="_blank" rel="noopener"><img src="./Parallax Component — Vuetify.js_files/lmax-exchange.webp" class="diamond-sponsor"></a></div><div><a href="http://intygrate.com/" target="_blank" rel="noopener"><img src="./Parallax Component — Vuetify.js_files/intygrate.webp" class="diamond-sponsor"></a></div><div><a href="http://resaleai.com/" target="_blank" rel="noopener"><img src="./Parallax Component — Vuetify.js_files/resaleai_logo_blue.svg" class="diamond-sponsor"></a></div><div data-v-3902f72e=""><a href="https://www.patreon.com/vuetify" target="_blank" rel="noopener" class="v-btn v-btn--small theme--dark" style="background-color:#F96854 !important;" data-v-3902f72e=""><div class="v-btn__content"><img src="./Parallax Component — Vuetify.js_files/patreon-dark.webp" width="24px" class="mr-2" data-v-3902f72e=""><span class="caption" data-v-3902f72e="">Become a Patron</span></div></a></div></div><div class="container fluid"><div class="v-input v-text-field v-text-field--single-line v-text-field--solo v-text-field--enclosed theme--light"><div class="v-input__control"><div class="v-input__slot" style="height:undefined;"><div class="v-text-field__slot"><input id="search" type="text" placeholder="Search" value="" class="ds-input" autocomplete="off" spellcheck="false" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-owns="algolia-autocomplete-listbox-0" dir="auto" style=""><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: Roboto, sans-serif; font-size: 16px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: normal; text-indent: 0px; text-rendering: auto; text-transform: none;"></pre></div><div class="v-input__append-inner"><div class="v-input__icon v-input__icon--"><i aria-hidden="true" class="v-icon v-icon--link material-icons theme--light"></i></div></div><div class="v-input__append-inner"><div class="v-input__icon v-input__icon--append"><i aria-hidden="true" class="v-icon material-icons theme--light">search</i></div></div></div><div class="v-text-field__details"><div class="v-messages theme--light"><div class="v-messages__wrapper"></div></div></div></div></div></div><div class="pt-3 text-xs-center"><a href="https://vuejobs.com/?utm_source=vuejobs&amp;utm_medium=banner&amp;utm_campaign=linking&amp;ref=vuetifyjs.com" target="_blank" rel="noopener" class="d-inline-block"><img src="./Parallax Component — Vuetify.js_files/vuejobs-logo.svg" alt="VueJobs" title="VueJobs" width="30%"></a></div><div class="v-list v-list--dense theme--light"><div class="v-subheader grey--text theme--light">Core documentation</div><div class="v-list__group"><div class="v-list__group__header"><div class="v-list__group__header__prepend-icon"><i aria-hidden="true" class="v-icon mdi mdi-speedometer theme--light"></i></div><div><div class="v-list__tile theme--light"><div class="v-list__tile__content"><div class="v-list__tile__title">Getting started</div></div></div></div><div class="v-list__group__header__append-icon"><i aria-hidden="true" class="v-icon material-icons theme--light">keyboard_arrow_down</i></div></div><div class="v-list__group__items v-list__group__items--no-action" style="display:none;"><div><a href="https://vuetifyjs.com/en/getting-started/quick-start" class="v-list__tile v-list__tile--link theme--light"><div class="v-list__tile__content"><div class="v-list__tile__title"><span>Quick Start</span></div></div><!----><!----></a></div><div><a href="https://vuetifyjs.com/en/getting-started/why-vuetify" class="v-list__tile v-list__tile--link theme--light"><div class="v-list__tile__content"><div class="v-list__tile__title"><span>Why Vuetify?</span></div></div><!----><!----></a></div><div><a href="https://vuetifyjs.com/en/getting-started/frequently-asked-questions" class="v-list__tile v-list__tile--link theme--light"><div class="v-list__tile__content"><div class="v-list__tile__title"><span>Frequently asked questions</span></div></div><!----><!----></a></div><div><a href="https://vuetifyjs.com/en/getting-started/sponsors-and-backers" class="v-list__tile v-list__tile--link theme--light"><div class="v-list__tile__content"><div class="v-list__tile__title"><span>Sponsors and backers</span></div></div><!----><!----></a></div><div><a href="https://vuetifyjs.com/en/getting-started/contributing" class="v-list__tile v-list__tile--link theme--light"><div class="v-list__tile__content"><div class="v-list__tile__title"><span>Contributing</span></div></div><!----><!----></a></div><div><a href="https://vuetifyjs.com/en/getting-started/roadmap" class="v-list__tile v-list__tile--link theme--light"><div class="v-list__tile__content"><div class="v-list__tile__title"><span>Roadmap</span></div></div><!----><!----></a></div><div><a href="https://vuetifyjs.com/en/getting-started/consulting" class="v-list__tile v-list__tile--link theme--light"><div class="v-list__tile__content"><div class="v-list__tile__title"><span>Consulting and support</span></div></div><span tabindex="-1" class="v-chip white--text pa-0 v-chip--x-small v-chip--disabled theme--light primary"><span class="v-chip__content">new</span></span><!----></a></div></div></div><div class="v-list__group"><div class="v-list__group__header"><div class="v-list__group__header__prepend-icon"><i aria-hidden="true" class="v-icon mdi mdi-buffer theme--light"></i></div><div><div class="v-list__tile theme--light"><div class="v-list__tile__content"><div class="v-list__tile__title">Framework Options</div></div></div></div><div class="v-list__group__header__append-icon"><i aria-hidden="true" class="v-icon material-icons theme--light">keyboard_arrow_down</i></div></div><div class="v-list__group__items v-list__group__items--no-action" style="display:none;"><div><a href="https://vuetifyjs.com/en/framework/icons" class="v-list__tile v-list__tile--link theme--light"><div class="v-list__tile__content"><div class="v-list__tile__title"><span>Icons</span></div></div><!----><!----></a></div><div><a href="https://vuetifyjs.com/en/framework/internationalization" class="v-list__tile v-list__tile--link theme--light"><div class="v-list__tile__content"><div class="v-list__tile__title"><span>Internationalization</span></div></div><!----><!----></a></div></div></div><div class="v-list__group"><div class="v-list__group__header"><div class="v-list__group__header__prepend-icon"><i aria-hidden="true" class="v-icon mdi mdi-page-layout-body theme--light"></i></div><div><div class="v-list__tile theme--light"><div class="v-list__tile__content"><div class="v-list__tile__title">Application layout</div></div></div></div><div class="v-list__group__header__append-icon"><i aria-hidden="true" class="v-icon material-icons theme--light">keyboard_arrow_down</i></div></div><div class="v-list__group__items v-list__group__items--no-action" style="display:none;"><div><a href="https://vuetifyjs.com/en/layout/pre-defined" class="v-list__tile v-list__tile--link theme--light"><div class="v-list__tile__content"><div class="v-list__tile__title"><span>Pre-defined layouts</span></div></div><!----><!----></a></div><div><a href="https://vuetifyjs.com/en/layout/pre-made-themes" class="v-list__tile v-list__tile--link theme--light"><div class="v-list__tile__content"><div class="v-list__tile__title"><span>Pre-made themes</span></div></div><!----><!----></a></div><div class="v-list__group"><div class="v-list__group__header v-list__group__header--sub-group"><div class="v-list__group__header__prepend-icon"><i aria-hidden="true" class="v-icon material-icons theme--light">arrow_drop_down</i></div><div><div class="v-list__tile theme--light"><div class="v-list__tile__content"><div class="v-list__tile__title">Grid system</div></div></div></div></div><div class="v-list__group__items" style="display:none;"><div><a href="https://vuetifyjs.com/en/layout/grid" class="v-list__tile v-list__tile--link theme--light"><div class="v-list__tile__content"><div class="v-list__tile__title">Grid</div></div><!----></a></div><div><a href="https://vuetifyjs.com/en/layout/grid-lists" class="v-list__tile v-list__tile--link theme--light"><div class="v-list__tile__content"><div class="v-list__tile__title">Grid lists</div></div><!----></a></div></div></div><div><a href="https://vuetifyjs.com/en/layout/breakpoints" class="v-list__tile v-list__tile--link theme--light"><div class="v-list__tile__content"><div class="v-list__tile__title"><span>Breakpoints</span></div></div><!----><!----></a></div><div><a href="https://vuetifyjs.com/en/layout/aspect-ratios" class="v-list__tile v-list__tile--link theme--light"><div class="v-list__tile__content"><div class="v-list__tile__title"><span>Aspect ratios</span></div></div><span tabindex="-1" class="v-chip white--text pa-0 v-chip--x-small v-chip--disabled theme--light primary"><span class="v-chip__content">new</span></span><!----></a></div><div><a href="https://vuetifyjs.com/en/layout/spacing" class="v-list__tile v-list__tile--link theme--light"><div class="v-list__tile__content"><div class="v-list__tile__title"><span>Spacing</span></div></div><span tabindex="-1" class="v-chip white--text pa-0 v-chip--x-small v-chip--disabled theme--light tertiary"><span class="v-chip__content">updated</span></span><!----></a></div><div><a href="https://vuetifyjs.com/en/layout/alignment" class="v-list__tile v-list__tile--link theme--light"><div class="v-list__tile__content"><div class="v-list__tile__title"><span>Text alignment</span></div></div><!----><!----></a></div><div><a href="https://vuetifyjs.com/en/layout/display" class="v-list__tile v-list__tile--link theme--light"><div class="v-list__tile__content"><div class="v-list__tile__title"><span>Display</span></div></div><span tabindex="-1" class="v-chip white--text pa-0 v-chip--x-small v-chip--disabled theme--light tertiary"><span class="v-chip__content">updated</span></span><!----></a></div><div><a href="https://vuetifyjs.com/en/layout/elevation" class="v-list__tile v-list__tile--link theme--light"><div class="v-list__tile__content"><div class="v-list__tile__title"><span>Elevation</span></div></div><!----><!----></a></div><div><a href="https://vuetifyjs.com/en/layout/sandbox" class="v-list__tile v-list__tile--link theme--light"><div class="v-list__tile__content"><div class="v-list__tile__title"><span>Sandbox</span></div></div><!----><!----></a></div></div></div><div class="v-list__group"><div class="v-list__group__header"><div class="v-list__group__header__prepend-icon"><i aria-hidden="true" class="v-icon mdi mdi-format-color-fill theme--light"></i></div><div><div class="v-list__tile theme--light"><div class="v-list__tile__content"><div class="v-list__tile__title">Styles &amp; themes</div></div></div></div><div class="v-list__group__header__append-icon"><i aria-hidden="true" class="v-icon material-icons theme--light">keyboard_arrow_down</i></div></div><div class="v-list__group__items v-list__group__items--no-action" style="display:none;"><div><a href="https://vuetifyjs.com/en/style/colors" class="v-list__tile v-list__tile--link theme--light"><div class="v-list__tile__content"><div class="v-list__tile__title"><span>Colors</span></div></div><!----><!----></a></div><div><a href="https://vuetifyjs.com/en/style/theme" class="v-list__tile v-list__tile--link theme--light"><div class="v-list__tile__content"><div class="v-list__tile__title"><span>Theme</span></div></div><span tabindex="-1" class="v-chip white--text pa-0 v-chip--x-small v-chip--disabled theme--light tertiary"><span class="v-chip__content">updated</span></span><!----></a></div><div><a href="https://vuetifyjs.com/en/style/typography" class="v-list__tile v-list__tile--link theme--light"><div class="v-list__tile__content"><div class="v-list__tile__title"><span>Typography</span></div></div><span tabindex="-1" class="v-chip white--text pa-0 v-chip--x-small v-chip--disabled theme--light tertiary"><span class="v-chip__content">updated</span></span><!----></a></div><div><a href="https://vuetifyjs.com/en/style/content" class="v-list__tile v-list__tile--link theme--light"><div class="v-list__tile__content"><div class="v-list__tile__title"><span>Content</span></div></div><!----><!----></a></div></div></div><div class="v-list__group"><div class="v-list__group__header"><div class="v-list__group__header__prepend-icon"><i aria-hidden="true" class="v-icon mdi mdi-clock-fast theme--light"></i></div><div><div class="v-list__tile theme--light"><div class="v-list__tile__content"><div class="v-list__tile__title">Motion &amp; transitions</div></div></div></div><div class="v-list__group__header__append-icon"><i aria-hidden="true" class="v-icon material-icons theme--light">keyboard_arrow_down</i></div></div><div class="v-list__group__items v-list__group__items--no-action" style="display:none;"><div><a href="https://vuetifyjs.com/en/motion/scrolling" class="v-list__tile v-list__tile--link theme--light"><div class="v-list__tile__content"><div class="v-list__tile__title"><span>Scrolling</span></div></div><!----><!----></a></div><div><a href="https://vuetifyjs.com/en/motion/transitions" class="v-list__tile v-list__tile--link theme--light"><div class="v-list__tile__content"><div class="v-list__tile__title"><span>Transitions</span></div></div><span tabindex="-1" class="v-chip white--text pa-0 v-chip--x-small v-chip--disabled theme--light tertiary"><span class="v-chip__content">updated</span></span><!----></a></div></div></div><div class="v-list__group v-list__group--active"><div class="v-list__group__header v-list__group__header--active"><div class="v-list__group__header__prepend-icon primary--text"><i aria-hidden="true" class="v-icon mdi mdi-view-dashboard theme--light"></i></div><div><div class="v-list__tile theme--light"><div class="v-list__tile__content"><div class="v-list__tile__title">UI components</div></div></div></div><div class="v-list__group__header__append-icon"><i aria-hidden="true" class="v-icon material-icons theme--light">keyboard_arrow_down</i></div></div><div class="v-list__group__items v-list__group__items--no-action" style="display: block;"><div><a href="https://vuetifyjs.com/en/components/api-explorer" class="v-list__tile v-list__tile--link theme--light"><div class="v-list__tile__content"><div class="v-list__tile__title"><span>API explorer</span></div></div><!----><!----></a></div><div><a href="https://vuetifyjs.com/en/components/alerts" class="v-list__tile v-list__tile--link theme--light"><div class="v-list__tile__content"><div class="v-list__tile__title"><span>Alerts</span></div></div><!----><!----></a></div><div><a href="https://vuetifyjs.com/en/components/avatars" class="v-list__tile v-list__tile--link theme--light"><div class="v-list__tile__content"><div class="v-list__tile__title"><span>Avatars</span></div></div><!----><!----></a></div><div><a href="https://vuetifyjs.com/en/components/badges" class="v-list__tile v-list__tile--link theme--light"><div class="v-list__tile__content"><div class="v-list__tile__title"><span>Badges</span></div></div><!----><!----></a></div><div><a href="https://vuetifyjs.com/en/components/bottom-navigation" class="v-list__tile v-list__tile--link theme--light"><div class="v-list__tile__content"><div class="v-list__tile__title"><span>Bottom navigation</span></div></div><!----><!----></a></div><div><a href="https://vuetifyjs.com/en/components/bottom-sheets" class="v-list__tile v-list__tile--link theme--light"><div class="v-list__tile__content"><div class="v-list__tile__title"><span>Bottom sheets</span></div></div><!----><!----></a></div><div><a href="https://vuetifyjs.com/en/components/breadcrumbs" class="v-list__tile v-list__tile--link theme--light"><div class="v-list__tile__content"><div class="v-list__tile__title"><span>Breadcrumbs</span></div></div><!----><!----></a></div><div><a href="https://vuetifyjs.com/en/components/buttons" class="v-list__tile v-list__tile--link theme--light"><div class="v-list__tile__content"><div class="v-list__tile__title"><span>Buttons</span></div></div><!----><!----></a></div><div><a href="https://vuetifyjs.com/en/components/floating-action-buttons" class="v-list__tile v-list__tile--link theme--light"><div class="v-list__tile__content"><div class="v-list__tile__title"><span>Buttons: Floating Action Buttons</span></div></div><!----><!----></a></div><div><a href="https://vuetifyjs.com/en/components/cards" class="v-list__tile v-list__tile--link theme--light"><div class="v-list__tile__content"><div class="v-list__tile__title"><span>Cards</span></div></div><!----><!----></a></div><div><a href="https://vuetifyjs.com/en/components/carousels" class="v-list__tile v-list__tile--link theme--light"><div class="v-list__tile__content"><div class="v-list__tile__title"><span>Carousels</span></div></div><!----><!----></a></div><div><a href="https://vuetifyjs.com/en/components/chips" class="v-list__tile v-list__tile--link theme--light"><div class="v-list__tile__content"><div class="v-list__tile__title"><span>Chips</span></div></div><!----><!----></a></div><div><a href="https://vuetifyjs.com/en/components/data-iterator" class="v-list__tile v-list__tile--link theme--light"><div class="v-list__tile__content"><div class="v-list__tile__title"><span>Data iterator</span></div></div><!----><!----></a></div><div><a href="https://vuetifyjs.com/en/components/data-tables" class="v-list__tile v-list__tile--link theme--light"><div class="v-list__tile__content"><div class="v-list__tile__title"><span>Data tables</span></div></div><!----><!----></a></div><div><a href="https://vuetifyjs.com/en/components/dialogs" class="v-list__tile v-list__tile--link theme--light"><div class="v-list__tile__content"><div class="v-list__tile__title"><span>Dialogs</span></div></div><!----><!----></a></div><div><a href="https://vuetifyjs.com/en/components/dividers" class="v-list__tile v-list__tile--link theme--light"><div class="v-list__tile__content"><div class="v-list__tile__title"><span>Dividers</span></div></div><!----><!----></a></div><div><a href="https://vuetifyjs.com/en/components/expansion-panels" class="v-list__tile v-list__tile--link theme--light"><div class="v-list__tile__content"><div class="v-list__tile__title"><span>Expansion panels</span></div></div><!----><!----></a></div><div><a href="https://vuetifyjs.com/en/components/footer" class="v-list__tile v-list__tile--link theme--light"><div class="v-list__tile__content"><div class="v-list__tile__title"><span>Footer</span></div></div><!----><!----></a></div><div class="v-list__group"><div class="v-list__group__header v-list__group__header--sub-group"><div class="v-list__group__header__prepend-icon"><i aria-hidden="true" class="v-icon material-icons theme--light">arrow_drop_down</i></div><div><div class="v-list__tile theme--light"><div class="v-list__tile__content"><div class="v-list__tile__title">Inputs &amp; controls</div></div></div></div></div><div class="v-list__group__items" style="display:none;"><div><a href="https://vuetifyjs.com/en/components/autocompletes" class="v-list__tile v-list__tile--link theme--light"><div class="v-list__tile__content"><div class="v-list__tile__title">Autocompletes</div></div><!----></a></div><div><a href="https://vuetifyjs.com/en/components/combobox" class="v-list__tile v-list__tile--link theme--light"><div class="v-list__tile__content"><div class="v-list__tile__title">Combobox</div></div><!----></a></div><div><a href="https://vuetifyjs.com/en/components/forms" class="v-list__tile v-list__tile--link theme--light"><div class="v-list__tile__content"><div class="v-list__tile__title">Forms</div></div><!----></a></div><div><a href="https://vuetifyjs.com/en/components/inputs" class="v-list__tile v-list__tile--link theme--light"><div class="v-list__tile__content"><div class="v-list__tile__title">Inputs</div></div><!----></a></div><div><a href="https://vuetifyjs.com/en/components/overflow-btns" class="v-list__tile v-list__tile--link theme--light"><div class="v-list__tile__content"><div class="v-list__tile__title">Overflow Buttons</div></div><!----></a></div><div><a href="https://vuetifyjs.com/en/components/selects" class="v-list__tile v-list__tile--link theme--light"><div class="v-list__tile__content"><div class="v-list__tile__title">Selects</div></div><span tabindex="-1" class="v-chip white--text pa-0 v-chip--x-small v-chip--disabled theme--light tertiary"><span class="v-chip__content">updated</span></span></a></div><div><a href="https://vuetifyjs.com/en/components/selection-controls" class="v-list__tile v-list__tile--link theme--light"><div class="v-list__tile__content"><div class="v-list__tile__title">Selection controls</div></div><!----></a></div><div><a href="https://vuetifyjs.com/en/components/sliders" class="v-list__tile v-list__tile--link theme--light"><div class="v-list__tile__content"><div class="v-list__tile__title">Sliders</div></div><!----></a></div><div><a href="https://vuetifyjs.com/en/components/textarea" class="v-list__tile v-list__tile--link theme--light"><div class="v-list__tile__content"><div class="v-list__tile__title">Textareas</div></div><!----></a></div><div><a href="https://vuetifyjs.com/en/components/text-fields" class="v-list__tile v-list__tile--link theme--light"><div class="v-list__tile__content"><div class="v-list__tile__title">Text fields</div></div><!----></a></div></div></div><div><a href="https://vuetifyjs.com/en/components/hover" class="v-list__tile v-list__tile--link theme--light"><div class="v-list__tile__content"><div class="v-list__tile__title"><span>Hover</span></div></div><span tabindex="-1" class="v-chip white--text pa-0 v-chip--x-small v-chip--disabled theme--light primary"><span class="v-chip__content">new</span></span><!----></a></div><div><a href="https://vuetifyjs.com/en/components/icons" class="v-list__tile v-list__tile--link theme--light"><div class="v-list__tile__content"><div class="v-list__tile__title"><span>Icons</span></div></div><span tabindex="-1" class="v-chip white--text pa-0 v-chip--x-small v-chip--disabled theme--light tertiary"><span class="v-chip__content">updated</span></span><!----></a></div><div><a href="https://vuetifyjs.com/en/components/images" class="v-list__tile v-list__tile--link theme--light"><div class="v-list__tile__content"><div class="v-list__tile__title"><span>Images</span></div></div><span tabindex="-1" class="v-chip white--text pa-0 v-chip--x-small v-chip--disabled theme--light primary"><span class="v-chip__content">new</span></span><!----></a></div><div><a href="https://vuetifyjs.com/en/components/jumbotrons" class="v-list__tile v-list__tile--link theme--light"><div class="v-list__tile__content"><div class="v-list__tile__title"><span>Jumbotrons</span></div></div><span tabindex="-1" class="v-chip white--text pa-0 v-chip--x-small v-chip--disabled theme--light black"><span class="v-chip__content">deprecated</span></span><!----></a></div><div><a href="https://vuetifyjs.com/en/components/lists" class="v-list__tile v-list__tile--link theme--light"><div class="v-list__tile__content"><div class="v-list__tile__title"><span>Lists</span></div></div><!----><!----></a></div><div><a href="https://vuetifyjs.com/en/components/menus" class="v-list__tile v-list__tile--link theme--light"><div class="v-list__tile__content"><div class="v-list__tile__title"><span>Menus</span></div></div><!----><!----></a></div><div><a href="https://vuetifyjs.com/en/components/navigation-drawers" class="v-list__tile v-list__tile--link theme--light"><div class="v-list__tile__content"><div class="v-list__tile__title"><span>Navigation drawers</span></div></div><!----><!----></a></div><div><a href="https://vuetifyjs.com/en/components/paginations" class="v-list__tile v-list__tile--link theme--light"><div class="v-list__tile__content"><div class="v-list__tile__title"><span>Paginations</span></div></div><!----><!----></a></div><div><a href="https://vuetifyjs.com/en/components/parallax" class="primary--text v-list__tile--active v-list__tile v-list__tile--link theme--light"><div class="v-list__tile__content"><div class="v-list__tile__title"><span>Parallax</span></div></div><!----><!----></a></div><div class="v-list__group"><div class="v-list__group__header v-list__group__header--sub-group"><div class="v-list__group__header__prepend-icon"><i aria-hidden="true" class="v-icon material-icons theme--light">arrow_drop_down</i></div><div><div class="v-list__tile theme--light"><div class="v-list__tile__content"><div class="v-list__tile__title">Pickers</div></div></div></div></div><div class="v-list__group__items" style="display:none;"><div><a href="https://vuetifyjs.com/en/components/date-pickers" class="v-list__tile v-list__tile--link theme--light"><div class="v-list__tile__content"><div class="v-list__tile__title">Date pickers</div></div><span tabindex="-1" class="v-chip white--text pa-0 v-chip--x-small v-chip--disabled theme--light tertiary"><span class="v-chip__content">updated</span></span></a></div><div><a href="https://vuetifyjs.com/en/components/time-pickers" class="v-list__tile v-list__tile--link theme--light"><div class="v-list__tile__content"><div class="v-list__tile__title">Time pickers</div></div><!----></a></div></div></div><div><a href="https://vuetifyjs.com/en/components/progress" class="v-list__tile v-list__tile--link theme--light"><div class="v-list__tile__content"><div class="v-list__tile__title"><span>Progress</span></div></div><!----><!----></a></div><div><a href="https://vuetifyjs.com/en/components/ratings" class="v-list__tile v-list__tile--link theme--light"><div class="v-list__tile__content"><div class="v-list__tile__title"><span>Ratings</span></div></div><span tabindex="-1" class="v-chip white--text pa-0 v-chip--x-small v-chip--disabled theme--light primary"><span class="v-chip__content">new</span></span><!----></a></div><div><a href="https://vuetifyjs.com/en/components/snackbars" class="v-list__tile v-list__tile--link theme--light"><div class="v-list__tile__content"><div class="v-list__tile__title"><span>Snackbars</span></div></div><!----><!----></a></div><div><a href="https://vuetifyjs.com/en/components/steppers" class="v-list__tile v-list__tile--link theme--light"><div class="v-list__tile__content"><div class="v-list__tile__title"><span>Steppers</span></div></div><!----><!----></a></div><div><a href="https://vuetifyjs.com/en/components/subheaders" class="v-list__tile v-list__tile--link theme--light"><div class="v-list__tile__content"><div class="v-list__tile__title"><span>Subheaders</span></div></div><!----><!----></a></div><div><a href="https://vuetifyjs.com/en/components/tabs" class="v-list__tile v-list__tile--link theme--light"><div class="v-list__tile__content"><div class="v-list__tile__title"><span>Tabs</span></div></div><!----><!----></a></div><div><a href="https://vuetifyjs.com/en/components/toolbars" class="v-list__tile v-list__tile--link theme--light"><div class="v-list__tile__content"><div class="v-list__tile__title"><span>Toolbars</span></div></div><!----><!----></a></div><div><a href="https://vuetifyjs.com/en/components/tooltips" class="v-list__tile v-list__tile--link theme--light"><div class="v-list__tile__content"><div class="v-list__tile__title"><span>Tooltips</span></div></div><!----><!----></a></div></div></div><div class="v-list__group"><div class="v-list__group__header"><div class="v-list__group__header__prepend-icon"><i aria-hidden="true" class="v-icon mdi mdi-function theme--light"></i></div><div><div class="v-list__tile theme--light"><div class="v-list__tile__content"><div class="v-list__tile__title">Directives</div></div></div></div><div class="v-list__group__header__append-icon"><i aria-hidden="true" class="v-icon material-icons theme--light">keyboard_arrow_down</i></div></div><div class="v-list__group__items v-list__group__items--no-action" style="display:none;"><div><a href="https://vuetifyjs.com/en/directives/resizing" class="v-list__tile v-list__tile--link theme--light"><div class="v-list__tile__content"><div class="v-list__tile__title"><span>Resizing</span></div></div><!----><!----></a></div><div><a href="https://vuetifyjs.com/en/directives/ripples" class="v-list__tile v-list__tile--link theme--light"><div class="v-list__tile__content"><div class="v-list__tile__title"><span>Ripples</span></div></div><!----><!----></a></div><div><a href="https://vuetifyjs.com/en/directives/scrolling" class="v-list__tile v-list__tile--link theme--light"><div class="v-list__tile__content"><div class="v-list__tile__title"><span>Scrolling</span></div></div><!----><!----></a></div><div><a href="https://vuetifyjs.com/en/directives/touch-support" class="v-list__tile v-list__tile--link theme--light"><div class="v-list__tile__content"><div class="v-list__tile__title"><span>Touch support</span></div></div><!----><!----></a></div></div></div><hr class="v-divider theme--light"><div class="v-subheader grey--text theme--light">Additional resources</div><div class="v-list__group"><div class="v-list__group__header"><div class="v-list__group__header__prepend-icon"><i aria-hidden="true" class="v-icon mdi mdi-television-guide theme--light"></i></div><div><div class="v-list__tile theme--light"><div class="v-list__tile__content"><div class="v-list__tile__title">Advanced tutorials</div></div></div></div><div class="v-list__group__header__append-icon"><i aria-hidden="true" class="v-icon material-icons theme--light">keyboard_arrow_down</i></div></div><div class="v-list__group__items v-list__group__items--no-action" style="display:none;"><div><a href="https://vuetifyjs.com/en/guides/server-side-rendering" class="v-list__tile v-list__tile--link theme--light"><div class="v-list__tile__content"><div class="v-list__tile__title"><span>Server side rendering</span></div></div><!----><!----></a></div><div><a href="https://vuetifyjs.com/en/guides/a-la-carte" class="v-list__tile v-list__tile--link theme--light"><div class="v-list__tile__content"><div class="v-list__tile__title"><span>A la carte</span></div></div><!----><!----></a></div></div></div><div><a href="https://vuetifyjs.com/en/theme-generator" rel="noopener" class="v-list__tile v-list__tile--link theme--light"><div class="v-list__tile__action"><i aria-hidden="true" class="v-icon mdi mdi-format-paint theme--light"></i></div><div class="v-list__tile__content"><div class="v-list__tile__title">Theme generator</div></div><!----><!----></a></div></div><div class="v-navigation-drawer__border"></div></aside><main class="v-content" style="padding: 58px 192px 0px 300px;" data-booted="true"><div class="v-content__wrap"><div id="parallax" lang="en" class="container page"><div class="layout"><div class="flex xs12"><section class="page-head"><h1 id="introduction" class="display-1 primary--text"><div><div><p>Parallax</p>
+</div></div></h1><div><div><p>The <code>v-parallax</code> component creates a 3d effect that makes an image appear to scroll slower than the window.</p>
+</div></div><div></div></section><section id="usage"><h2 class="section-head headline primary--text mb-3"><div><div class="layout align-center"><div><p>Usage</p>
+</div><a href="https://vuetifyjs.com/en/components/parallax#usage" class="ml-2 mb-1" style="text-decoration:none;"><i aria-hidden="true" class="v-icon v-icon--link 
+          mdi 
+          mdi-pound
+         theme--light grey--text text--lighten-1"></i></a></div></div></h2><!----><section id="usage--1" class="component-example"><!----><div><div><p>A parallax causes a shift in a background image when the user scrolls the page.</p>
+</div></div><div class="mt-4 v-card theme--light" style="height:undefined;"><nav class="pr-1 v-toolbar elevation-0 v-toolbar--card v-toolbar--dense theme--light" style="margin-top:0px;padding-right:0px;padding-left:0px;transform:translateY(0px);" data-booted="true"><div class="v-toolbar__content" style="height:48px;"><a href="https://vuetifyjs.com/en/components/parallax#usage--1" class="v-btn v-btn--icon theme--light"><div class="v-btn__content"><i aria-hidden="true" class="v-icon mdi mdi-pound-box theme--light grey--text text--darken-1"></i></div></a><div class="spacer"></div><span class="v-tooltip v-tooltip--top"><div class="v-tooltip__content" style="left:0px;max-width:auto;opacity:0;top:12px;z-index:0;display:none;"></div><span><button type="button" class="v-btn v-btn--icon theme--light"><div class="v-btn__content"><i aria-hidden="true" class="v-icon material-icons theme--light grey--text text--darken-1">invert_colors</i></div></button></span></span><span class="v-tooltip v-tooltip--top"><div class="v-tooltip__content" style="left:0px;max-width:auto;opacity:0;top:12px;z-index:0;display:none;"></div><span><a href="https://github.com/vuetifyjs/vuetifyjs.com/tree/master/src/examples/parallax/default.vue" target="_blank" class="v-btn v-btn--icon theme--light"><div class="v-btn__content"><i aria-hidden="true" class="v-icon fab fa-github theme--light grey--text text--darken-1"></i></div></a></span></span><span class="v-tooltip v-tooltip--top"><div class="v-tooltip__content" style="left:0px;max-width:auto;opacity:0;top:12px;z-index:0;display:none;"></div><span><button type="button" class="v-btn v-btn--icon theme--light"><div class="v-btn__content"><i aria-hidden="true" class="v-icon fab fa-codepen theme--light grey--text text--darken-1"></i></div></button></span></span><span class="v-tooltip v-tooltip--top"><span><button type="button" class="v-btn v-btn--icon theme--light" style="position: relative;"><div class="v-btn__content"><i aria-hidden="true" class="v-icon material-icons theme--light grey--text text--darken-1">code</i></div></button></span></span></div></nav><ul class="v-expansion-panel elevation-0 theme--light"><li tabindex="0" class="v-expansion-panel__container v-expansion-panel__container--active"><div class="v-expansion-panel__body" style="display: block;"><hr class="v-divider theme--light"><div class="v-tabs" data-booted="true"><div class="v-tabs__bar theme--light"><!----><div class="v-tabs__wrapper"><div class="v-tabs__container"><div class="v-tabs__slider-wrapper" style="left: 0px; width: 94px;"><div class="v-tabs__slider accent"></div></div><div class="v-tabs__div body-2" style=""><a class="v-tabs__item ">template</a></div><div class="v-tabs__div body-2" style="display:none;"><a class="v-tabs__item">script</a></div><div class="v-tabs__div body-2" style="display:none;"><a class="v-tabs__item">style</a></div></div></div><!----></div><div class="v-tabs__items" style="background:#2d2d2d;"><div class="v-tabs__content" style="transition: none 0s ease 0s;" id="null"><div class="v-markup ma-0"><pre class="language-markup"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>v-parallax</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>https://cdn.vuetifyjs.com/images/parallax/material.jpg<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>v-parallax</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span></code></pre><div class="v-markup__copy"><i aria-hidden="true" class="v-icon v-icon--link material-icons theme--light">content_copy</i><!----></div></div></div><div class="v-tabs__content" style="display: none; transition: none 0s ease 0s;" id="null"></div><div class="v-tabs__content" style="display: none; transition: none 0s ease 0s;" id="null"></div></div></div></div></li></ul><hr class="v-divider theme--light"><div data-app="" class="application application--example pa-3 theme--light grey lighten-3"><div class="v-parallax" style="height: 500px;"><div class="v-parallax__image-container"><img src="./Parallax Component — Vuetify.js_files/material.webp" class="v-parallax__image" style="display: block; opacity: 1; transform: translate(-50%, 1130px);"></div><div class="v-parallax__content"></div></div></div></div><form method="POST" action="https://codepen.io/pen/define/" target="_blank"><input type="hidden" name="data" value="{&quot;title&quot;:&quot;Vuetify Example Pen&quot;,&quot;html&quot;:&quot;&lt;div id=\&quot;app\&quot;&gt;\n  &lt;v-app id=\&quot;inspire\&quot;&gt;\n    &lt;v-parallax src=\&quot;https://cdn.vuetifyjs.com/images/parallax/material.jpg\&quot;&gt;&lt;/v-parallax&gt;\n  &lt;/v-app&gt;\n&lt;/div&gt;&quot;,&quot;css&quot;:&quot;&quot;,&quot;css_pre_processor&quot;:&quot;none&quot;,&quot;css_external&quot;:&quot;https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900|Material+Icons;https://cdn.jsdelivr.net/npm/vuetify@1.2.5/dist/vuetify.min.css&quot;,&quot;js&quot;:&quot;new Vue({\n  el: &#39;#app&#39;,\n  \n})&quot;,&quot;js_pre_processor&quot;:&quot;babel&quot;,&quot;js_external&quot;:&quot;https://cdn.jsdelivr.net/npm/babel-polyfill/dist/polyfill.min.js;https://cdn.jsdelivr.net/npm/vue/dist/vue.js;https://cdn.jsdelivr.net/npm/vuetify@1.2.5/dist/vuetify.min.js&quot;,&quot;editors&quot;:&quot;101&quot;}"></form></section></section><section id="api"><h2 class="section-head headline primary--text mb-3"><div><div class="layout align-center"><div><p>API</p>
+</div><a href="https://vuetifyjs.com/en/components/parallax#api" class="ml-2 mb-1" style="text-decoration:none;"><i aria-hidden="true" class="v-icon v-icon--link 
+          mdi 
+          mdi-pound
+         theme--light grey--text text--lighten-1"></i></a></div></div></h2><div class="v-card theme--light" style="height:undefined;"><div class="v-tabs" data-booted="true"><div class="v-tabs__bar theme--light grey lighten-3"><!----><div class="v-tabs__wrapper"><div class="v-tabs__container"><div class="v-tabs__slider-wrapper" style="left: 0px; width: 69px;"><div class="v-tabs__slider primary"></div></div><div class="v-tabs__div"><a href="https://vuetifyjs.com/en/components/parallax#props" class="v-tabs__item v-tabs__item--active">props</a></div><div class="v-tabs__div"><a href="https://vuetifyjs.com/en/components/parallax#slots" class="v-tabs__item">slots</a></div></div></div><!----></div></div><div class="v-card__title"><div role="combobox" class="v-input v-text-field v-text-field--single-line v-select v-input--hide-details v-input--is-label-active v-input--is-dirty v-input--is-disabled theme--light"><div class="v-input__control"><div class="v-input__slot" style="height:undefined;"><div class="v-select__slot"><div class="v-select__selections"><div class="v-select__selection v-select__selection--comma v-select__selection--disabled">v-parallax</div><input aria-label="Component" disabled="disabled" readonly="readonly" type="text" autocomplete="on" aria-readonly="false"></div><div class="v-input__append-inner"><div class="v-input__icon v-input__icon--append"><i aria-hidden="true" class="v-icon v-icon--disabled material-icons theme--light">arrow_drop_down</i></div></div></div><div class="v-menu"></div></div></div></div><div class="spacer"></div><div class="spacer hidden-sm-and-down"></div><div class="v-input v-text-field v-text-field--single-line v-input--hide-details theme--light"><div class="v-input__control"><div class="v-input__slot" style="height:undefined;"><div class="v-text-field__slot"><label aria-hidden="true" class="v-label theme--light" style="left:0px;right:auto;position:absolute;">Search...</label><input aria-label="Search..." type="text"></div><div class="v-input__append-inner"><div class="v-input__icon v-input__icon--append"><i aria-hidden="true" class="v-icon material-icons theme--light">search</i></div></div></div></div></div></div><div class="v-tabs__items white"><div id="props" class="v-tabs__content" style="transition: none 0s ease 0s;"><div class="v-card v-card--flat theme--light" style="height:undefined;"><div class="component-parameters v-data-iterator theme--light"><div><div class="ma-2"><!----><div class="pa-2 grey lighten-4 d-flex align-top"><div class="flex xs3 text-xs-left"><div class="header grey--text text--darken-1">Name</div><div class="mono name">alt</div></div><div class="flex xs6 text-xs-left"><div class="header grey--text text--darken-1">Default</div><div class="mono default">undefined</div></div><div class="flex xs3 text-xs-right"><div class="header grey--text text--darken-1">Type</div><div class="mono type">string</div></div></div><div class="pa-2 grey lighten-3 grey--text text--darken-2 d-flex"><div class="flex"><div class="justify"><p>Attaches an alt property to the parallax image</p>
+</div><!----></div></div></div><div class="ma-2"><!----><div class="pa-2 grey lighten-4 d-flex align-top"><div class="flex xs3 text-xs-left"><div class="header grey--text text--darken-1">Name</div><div class="mono name">height</div></div><div class="flex xs6 text-xs-left"><div class="header grey--text text--darken-1">Default</div><div class="mono default">500</div></div><div class="flex xs3 text-xs-right"><div class="header grey--text text--darken-1">Type</div><div class="mono type">string | number</div></div></div><div class="pa-2 grey lighten-3 grey--text text--darken-2 d-flex"><div class="flex"><div class="justify"><p>Sets the component height</p>
+</div><!----></div></div></div><div class="ma-2"><!----><div class="pa-2 grey lighten-4 d-flex align-top"><div class="flex xs3 text-xs-left"><div class="header grey--text text--darken-1">Name</div><div class="mono name">src</div></div><div class="flex xs6 text-xs-left"><div class="header grey--text text--darken-1">Default</div><div class="mono default">undefined</div></div><div class="flex xs3 text-xs-right"><div class="header grey--text text--darken-1">Type</div><div class="mono type">string</div></div></div><div class="pa-2 grey lighten-3 grey--text text--darken-2 d-flex"><div class="flex"><div class="justify"><p>The image to parallax</p>
+</div><!----></div></div></div></div></div></div></div><div id="slots" class="v-tabs__content" style="display: none; transition: none 0s ease 0s;"><div class="v-card v-card--flat theme--light" style="height:undefined;"><div class="component-parameters v-data-iterator theme--light"><div><div class="ma-2"><!----><div class="pa-2 grey lighten-4 d-flex align-top"><div class="flex shrink text-xs-left"><div class="header grey--text text--darken-1">Name</div><div class="mono name">default</div></div></div><div class="pa-2 grey lighten-3 grey--text text--darken-2 d-flex"><div class="flex"><div class="justify"><p>Default Vue slot</p>
+</div><!----></div></div></div></div></div></div></div></div></div></section><!----><section id="examples"><h2 class="section-head headline primary--text mb-3"><div><div class="layout align-center"><div><p>Examples</p>
+</div><a href="https://vuetifyjs.com/en/components/parallax#examples" class="ml-2 mb-1" style="text-decoration:none;"><i aria-hidden="true" class="v-icon v-icon--link 
+          mdi 
+          mdi-pound
+         theme--light grey--text text--lighten-1"></i></a></div></div></h2><section id="example-content" class="component-example"><h3 class="title layout align-center mb-3"><div class="d-inline-flex align-center"><span>With content</span><!----></div></h3><div><div><p>You can also place any content inside of the parallax. This allows you to use the parallax as a hero image.</p>
+</div></div><div class="mt-4 v-card theme--light" style="height:undefined;"><nav class="pr-1 v-toolbar elevation-0 v-toolbar--card v-toolbar--dense theme--light" style="margin-top:0px;padding-right:0px;padding-left:0px;transform:translateY(0px);" data-booted="true"><div class="v-toolbar__content" style="height:48px;"><a href="https://vuetifyjs.com/en/components/parallax#example-content" class="v-btn v-btn--icon theme--light"><div class="v-btn__content"><i aria-hidden="true" class="v-icon mdi mdi-pound-box theme--light grey--text text--darken-1"></i></div></a><div class="spacer"></div><span class="v-tooltip v-tooltip--top"><div class="v-tooltip__content" style="left:0px;max-width:auto;opacity:0;top:12px;z-index:0;display:none;"></div><span><button type="button" class="v-btn v-btn--icon theme--light"><div class="v-btn__content"><i aria-hidden="true" class="v-icon material-icons theme--light grey--text text--darken-1">invert_colors</i></div></button></span></span><span class="v-tooltip v-tooltip--top"><div class="v-tooltip__content" style="left:0px;max-width:auto;opacity:0;top:12px;z-index:0;display:none;"></div><span><a href="https://github.com/vuetifyjs/vuetifyjs.com/tree/master/src/examples/parallax/content.vue" target="_blank" class="v-btn v-btn--icon theme--light"><div class="v-btn__content"><i aria-hidden="true" class="v-icon fab fa-github theme--light grey--text text--darken-1"></i></div></a></span></span><span class="v-tooltip v-tooltip--top"><div class="v-tooltip__content" style="left:0px;max-width:auto;opacity:0;top:12px;z-index:0;display:none;"></div><span><button type="button" class="v-btn v-btn--icon theme--light"><div class="v-btn__content"><i aria-hidden="true" class="v-icon fab fa-codepen theme--light grey--text text--darken-1"></i></div></button></span></span><span class="v-tooltip v-tooltip--top"><div class="v-tooltip__content" style="left:0px;max-width:auto;opacity:0;top:12px;z-index:0;display:none;"></div><span><button type="button" class="v-btn v-btn--icon theme--light"><div class="v-btn__content"><i aria-hidden="true" class="v-icon material-icons theme--light grey--text text--darken-1">code</i></div></button></span></span></div></nav><ul class="v-expansion-panel elevation-0 theme--light"><li tabindex="0" class="v-expansion-panel__container"><div class="v-expansion-panel__body" style="display:none;"><hr class="v-divider theme--light"><div class="v-tabs" data-booted="true"><div class="v-tabs__bar theme--light"><!----><div class="v-tabs__wrapper"><div class="v-tabs__container"><div class="v-tabs__slider-wrapper" style="left: 0px; width: 0px;"><div class="v-tabs__slider accent"></div></div><div class="v-tabs__div body-2" style=""><a class="v-tabs__item ">template</a></div><div class="v-tabs__div body-2" style="display:none;"><a class="v-tabs__item">script</a></div><div class="v-tabs__div body-2" style="display:none;"><a class="v-tabs__item">style</a></div></div></div><!----></div><div class="v-tabs__items" style="background:#2d2d2d;"><div class="v-tabs__content" style="transition: none 0s ease 0s;" id="null"><div class="v-markup ma-0"><pre class="language-markup"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>v-parallax</span>
+    <span class="token attr-name">dark</span>
+    <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>https://cdn.vuetifyjs.com/images/backgrounds/vbanner.jpg<span class="token punctuation">"</span></span>
+  <span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>v-layout</span>
+      <span class="token attr-name">align-center</span>
+      <span class="token attr-name">column</span>
+      <span class="token attr-name">justify-center</span>
+    <span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>display-2 font-weight-thin mb-3<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Vuetify.js<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h4</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>subheading<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Build your application today!<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h4</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>v-layout</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>v-parallax</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span></code></pre><div class="v-markup__copy"><i aria-hidden="true" class="v-icon v-icon--link material-icons theme--light">content_copy</i><!----></div></div></div><div class="v-tabs__content" style="display: none; transition: none 0s ease 0s;" id="null"></div><div class="v-tabs__content" style="display: none; transition: none 0s ease 0s;" id="null"></div></div></div></div></li></ul><hr class="v-divider theme--light"><div data-app="" class="application application--example pa-3 theme--light grey lighten-3"><div class="v-parallax" dark="" style="height: 500px;"><div class="v-parallax__image-container"><img src="./Parallax Component — Vuetify.js_files/vbanner.webp" class="v-parallax__image" style="display: block; opacity: 1; transform: translate(-50%, 601px);"></div><div class="v-parallax__content"><div class="layout align-center column justify-center"><h1 class="display-2 font-weight-thin mb-3">Vuetify.js</h1><h4 class="subheading">Build your application today!</h4></div></div></div></div></div><form method="POST" action="https://codepen.io/pen/define/" target="_blank"><input type="hidden" name="data" value="{&quot;title&quot;:&quot;Vuetify Example Pen&quot;,&quot;html&quot;:&quot;&lt;div id=\&quot;app\&quot;&gt;\n  &lt;v-app id=\&quot;inspire\&quot;&gt;\n    &lt;v-parallax\n      dark\n      src=\&quot;https://cdn.vuetifyjs.com/images/backgrounds/vbanner.jpg\&quot;\n    &gt;\n      &lt;v-layout\n        align-center\n        column\n        justify-center\n      &gt;\n        &lt;h1 class=\&quot;display-2 font-weight-thin mb-3\&quot;&gt;Vuetify.js&lt;/h1&gt;\n        &lt;h4 class=\&quot;subheading\&quot;&gt;Build your application today!&lt;/h4&gt;\n      &lt;/v-layout&gt;\n    &lt;/v-parallax&gt;\n  &lt;/v-app&gt;\n&lt;/div&gt;&quot;,&quot;css&quot;:&quot;&quot;,&quot;css_pre_processor&quot;:&quot;none&quot;,&quot;css_external&quot;:&quot;https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900|Material+Icons;https://cdn.jsdelivr.net/npm/vuetify@1.2.5/dist/vuetify.min.css&quot;,&quot;js&quot;:&quot;new Vue({\n  el: &#39;#app&#39;,\n  \n})&quot;,&quot;js_pre_processor&quot;:&quot;babel&quot;,&quot;js_external&quot;:&quot;https://cdn.jsdelivr.net/npm/babel-polyfill/dist/polyfill.min.js;https://cdn.jsdelivr.net/npm/vue/dist/vue.js;https://cdn.jsdelivr.net/npm/vuetify@1.2.5/dist/vuetify.min.js&quot;,&quot;editors&quot;:&quot;101&quot;}"></form></section><section id="example-custom-height" class="component-example"><h3 class="title layout align-center mb-3"><div class="d-inline-flex align-center"><span>Custom height</span><!----></div></h3><div><div><p>You can specify a custom height on a parallax. Keep in mind this can break the parallax if your image is not sized properly</p>
+</div></div><div class="mt-4 v-card theme--light" style="height:undefined;"><nav class="pr-1 v-toolbar elevation-0 v-toolbar--card v-toolbar--dense theme--light" style="margin-top:0px;padding-right:0px;padding-left:0px;transform:translateY(0px);" data-booted="true"><div class="v-toolbar__content" style="height:48px;"><a href="https://vuetifyjs.com/en/components/parallax#example-custom-height" class="v-btn v-btn--icon theme--light"><div class="v-btn__content"><i aria-hidden="true" class="v-icon mdi mdi-pound-box theme--light grey--text text--darken-1"></i></div></a><div class="spacer"></div><span class="v-tooltip v-tooltip--top"><div class="v-tooltip__content" style="left:0px;max-width:auto;opacity:0;top:12px;z-index:0;display:none;"></div><span><button type="button" class="v-btn v-btn--icon theme--light"><div class="v-btn__content"><i aria-hidden="true" class="v-icon material-icons theme--light grey--text text--darken-1">invert_colors</i></div></button></span></span><span class="v-tooltip v-tooltip--top"><div class="v-tooltip__content" style="left:0px;max-width:auto;opacity:0;top:12px;z-index:0;display:none;"></div><span><a href="https://github.com/vuetifyjs/vuetifyjs.com/tree/master/src/examples/parallax/customHeight.vue" target="_blank" class="v-btn v-btn--icon theme--light"><div class="v-btn__content"><i aria-hidden="true" class="v-icon fab fa-github theme--light grey--text text--darken-1"></i></div></a></span></span><span class="v-tooltip v-tooltip--top"><div class="v-tooltip__content" style="left:0px;max-width:auto;opacity:0;top:12px;z-index:0;display:none;"></div><span><button type="button" class="v-btn v-btn--icon theme--light"><div class="v-btn__content"><i aria-hidden="true" class="v-icon fab fa-codepen theme--light grey--text text--darken-1"></i></div></button></span></span><span class="v-tooltip v-tooltip--top"><span><button type="button" class="v-btn v-btn--icon theme--light" style="position: relative;"><div class="v-btn__content"><i aria-hidden="true" class="v-icon material-icons theme--light grey--text text--darken-1">code</i></div></button></span></span></div></nav><ul class="v-expansion-panel elevation-0 theme--light"><li tabindex="0" class="v-expansion-panel__container v-expansion-panel__container--active"><div class="v-expansion-panel__body" style="display: block;"><hr class="v-divider theme--light"><div class="v-tabs" data-booted="true"><div class="v-tabs__bar theme--light"><!----><div class="v-tabs__wrapper"><div class="v-tabs__container"><div class="v-tabs__slider-wrapper" style="left: 0px; width: 94px;"><div class="v-tabs__slider accent"></div></div><div class="v-tabs__div body-2" style=""><a class="v-tabs__item ">template</a></div><div class="v-tabs__div body-2" style="display:none;"><a class="v-tabs__item">script</a></div><div class="v-tabs__div body-2" style="display:none;"><a class="v-tabs__item">style</a></div></div></div><!----></div><div class="v-tabs__items" style="background:#2d2d2d;"><div class="v-tabs__content" style="transition: none 0s ease 0s;" id="null"><div class="v-markup ma-0"><pre class="language-markup"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>v-parallax</span>
+    <span class="token attr-name">height</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>300<span class="token punctuation">"</span></span>
+    <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>https://cdn.vuetifyjs.com/images/parallax/material2.jpg<span class="token punctuation">"</span></span>
+  <span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>v-parallax</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span></code></pre><div class="v-markup__copy"><i aria-hidden="true" class="v-icon v-icon--link material-icons theme--light">content_copy</i><!----></div></div></div><div class="v-tabs__content" style="display: none; transition: none 0s ease 0s;" id="null"></div><div class="v-tabs__content" style="display: none; transition: none 0s ease 0s;" id="null"></div></div></div></div></li></ul><hr class="v-divider theme--light"><div data-app="" class="application application--example pa-3 theme--light grey lighten-3"><div class="v-parallax" style="height: 300px;"><div class="v-parallax__image-container"><img src="./Parallax Component — Vuetify.js_files/material2.jpg" class="v-parallax__image" style="display: block; opacity: 1; transform: translate(-50%, 192px);"></div><div class="v-parallax__content"></div></div></div></div><form method="POST" action="https://codepen.io/pen/define/" target="_blank"><input type="hidden" name="data" value="{&quot;title&quot;:&quot;Vuetify Example Pen&quot;,&quot;html&quot;:&quot;&lt;div id=\&quot;app\&quot;&gt;\n  &lt;v-app id=\&quot;inspire\&quot;&gt;\n    &lt;v-parallax\n      height=\&quot;300\&quot;\n      src=\&quot;https://cdn.vuetifyjs.com/images/parallax/material2.jpg\&quot;\n    &gt;&lt;/v-parallax&gt;\n  &lt;/v-app&gt;\n&lt;/div&gt;&quot;,&quot;css&quot;:&quot;&quot;,&quot;css_pre_processor&quot;:&quot;none&quot;,&quot;css_external&quot;:&quot;https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900|Material+Icons;https://cdn.jsdelivr.net/npm/vuetify@1.2.5/dist/vuetify.min.css&quot;,&quot;js&quot;:&quot;new Vue({\n  el: &#39;#app&#39;,\n  \n})&quot;,&quot;js_pre_processor&quot;:&quot;babel&quot;,&quot;js_external&quot;:&quot;https://cdn.jsdelivr.net/npm/babel-polyfill/dist/polyfill.min.js;https://cdn.jsdelivr.net/npm/vue/dist/vue.js;https://cdn.jsdelivr.net/npm/vuetify@1.2.5/dist/vuetify.min.js&quot;,&quot;editors&quot;:&quot;101&quot;}"></form></section></section><footer class="v-footer app-footer justify-center theme--light transparent" style="height:90px;"><div class="layout"><div class="flex xs4 sm5 md6"><a href="https://vuetifyjs.com/en/components/paginations" class="d-inline-flex align-center"><button type="button" class="v-btn v-btn--icon theme--dark primary"><div class="v-btn__content"><i aria-hidden="true" class="v-icon material-icons theme--dark">chevron_left</i></div></button><span class="subheading no-wrap hidden-xs-only">Paginations</span></a></div><div class="flex text-xs-right xs4 sm5 md6"><a href="https://vuetifyjs.com/en/components/date-pickers" class="d-inline-flex align-center"><span class="subheading no-wrap hidden-xs-only">Date pickers</span><button type="button" class="v-btn v-btn--icon theme--dark primary"><div class="v-btn__content"><i aria-hidden="true" class="v-icon material-icons theme--dark">chevron_right</i></div></button></a></div></div></footer></div></div></div><!----></div></main><button type="button" class="v-btn v-btn--bottom v-btn--floating v-btn--fixed v-btn--right theme--dark red" style=""><div class="v-btn__content"><i aria-hidden="true" class="v-icon material-icons theme--dark">keyboard_arrow_up</i></div></button><div class="v-snack v-snack--active v-snack--bottom v-snack--right"><div class="v-snack__wrapper default"><div class="v-snack__content"><div class="layout align-center"><!----><div class="snack-markdown"><p><strong>$1M</strong> to pay OSS maintainers</p>
+</div><div class="spacer"></div><a href="https://blog.tidelift.com/1m-to-pay-open-source-maintainers-on-tidelift?utm_source=vuetify&amp;utm_medium=referral&amp;utm_campaign=news" target="_blank" class="v-btn v-btn--flat theme--dark primary--text text--lighten-3" rel="noopener"><div class="v-btn__content">
+      Get details
+    </div></a><button type="button" class="ml-3 v-btn v-btn--icon theme--light"><div class="v-btn__content"><i aria-hidden="true" class="v-icon material-icons theme--light">clear</i></div></button></div></div></div></div></div><span class="algolia-autocomplete" style="position: absolute; z-index: 100; display: none; direction: ltr;"><span class="ds-dropdown-menu" role="listbox" id="algolia-autocomplete-listbox-0" style="display: block; left: 0px; right: auto;"><div class="ds-dataset-1"></div></span></span></div><script src="./Parallax Component — Vuetify.js_files/runtime.4bdb5eb4b3b64d52d6c8.js.download" defer=""></script><script src="./Parallax Component — Vuetify.js_files/vendors_app.335f557f05c9b51db30e.js.download" defer=""></script><script src="./Parallax Component — Vuetify.js_files/app.a0b6dd7d86249a75105d.js.download" defer=""></script>
+  
+
+</body></html>
