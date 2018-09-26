@@ -27,7 +27,7 @@
                                 management and firebase as database.</p>
                         </div>
                         <div class="card-action">
-                            <a href="https://vue-blog-ed03b.firebaseapp.com/" target="_blank">See More</a>
+                            <a class="increase" href="https://vue-blog-ed03b.firebaseapp.com/" target="_blank">See More</a>
                         </div>
                     </div>
                 </div>
@@ -46,7 +46,7 @@
                                 ES6.</p>
                         </div>
                         <div class="card-action">
-                            <a href='http://extra-small-stick.surge.sh' target="_blank">See More</a>
+                            <a class="tilt" href='http://extra-small-stick.surge.sh' target="_blank">See More</a>
                         </div>
                     </div>
                 </div>
@@ -64,7 +64,8 @@
                                 Bootstrap 4.</p>
                         </div>
                         <div class="card-action">
-                            <a href='https://human-resources-cb42b.firebaseapp.com/' target="_blank">See More</a>
+                            <a href='https://human-resources-cb42b.firebaseapp.com/' target="_blank"><span class="spin">See
+                                    More</span></a>
                             <!--<a href="">View Ingredients</a>-->
                         </div>
                     </div>
@@ -84,7 +85,8 @@
                                 Authentication, MaterializeCSS, Vuetify.</p>
                         </div>
                         <div class="card-action">
-                            <a href='https://user-info-ee17c.firebaseapp.com/' target="_blank">See More</a>
+                            <a class="border" href='https://user-info-ee17c.firebaseapp.com/' target="_blank">See
+                                More</a>
                             <!--<a href="">View Ingredients</a>-->
                         </div>
                     </div>
@@ -116,7 +118,7 @@
                                 Javascript, CSS3, HTML.</p>
                         </div>
                         <div class="card-action">
-                            <a href='https://dansimonson.github.io/simongame/' target="_blank">See More</a>
+                            <a class="tilt" href='https://dansimonson.github.io/simongame/' target="_blank">See More</a>
 
                         </div>
                     </div>
@@ -136,7 +138,7 @@
                                 Javascript, CSS3, HTML.</p>
                         </div>
                         <div class="card-action">
-                            <a href='https://dansimonson.github.io/wikiviewer/' target="_blank">See More</a>
+                            <a class="border" href='https://dansimonson.github.io/wikiviewer/' target="_blank">See More</a>
 
                         </div>
                     </div>
@@ -156,7 +158,7 @@
                                 Javascript, CSS3, HTML.</p>
                         </div>
                         <div class="card-action">
-                            <a href='https://dansimonson.github.io/twitchtv/' target="_blank">See More</a>
+                            <a class="increase" href='https://dansimonson.github.io/twitchtv/' target="_blank">See More</a>
                             <!--<a href="">View Ingredients</a>-->
                         </div>
                     </div>
@@ -174,7 +176,10 @@
                             <p>A fully functioning calculator made withJavaScript, Jquery, Bootstrap.</p>
                         </div>
                         <div class="card-action">
-                            <a href='https://dansimonson.github.io/calculator/' target="_blank">See More</a>
+                            <a href='https://dansimonson.github.io/calculator/' target="
+                                _blank"><span
+                                    class="spin">See
+                                    More</span></a>
                             <!--<a href="">View Ingredients</a>-->
                         </div>
                     </div>
@@ -223,18 +228,7 @@
     export default {
         name: 'Parahome',
         components: {
-            /* Carousel,
-             CarouselItem,
-             CarouselCaption,
-             Container,
-             Row,
-             Column,
-             Card,
-             CardImg,
-             CardBody,
-             CardTitle,
-             CardText,
-             Btn*/
+
         },
         data() {
             return {
@@ -254,6 +248,91 @@
         border: 0;
         margin: 0;
         padding: 0;
+    }
+
+    .card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating) {
+        color: #0D47A1;
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    .tilt {
+        display: inline-block;
+        transition: .3s;
+        text-decoration: none;
+    }
+
+    .tilt:hover {
+        transform: rotate(15deg);
+        color: green;
+    }
+
+    .border {
+        color: #0083B0;
+        font-weight: 500;
+        -webkit-transition: -webkit-transform 0.2s;
+        transition: transform 0.2s;
+        display: inline-block;
+        text-decoration: none;
+        position: relative;
+    }
+
+    .border:hover {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+
+    .border::before {
+        position: absolute;
+        top: -2px;
+        left: -7px;
+        box-sizing: content-box;
+        padding: 0 5px;
+        width: 100%;
+        height: 100%;
+        border: 2px solid #0083B0;
+        content: '';
+        opacity: 0;
+        -webkit-transition: opacity 0.2s, -webkit-transform 0.2s;
+        transition: opacity 0.2s, transform 0.2s;
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+
+    .border:hover::before {
+        opacity: 1;
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+
+    .increase {
+        display: inline-block;
+
+        transition: .3s;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    .increase:hover {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+
+    .spin {
+        display: inline-block;
+        color: #0D47A1;
+        font-size: 16px;
+
+
+    }
+
+    .spin {
+        transition: all 1s ease-in-out;
+    }
+
+    .spin:hover {
+        -webkit-transform: rotateX(360deg);
+        transform: rotateX(360deg);
     }
 
     #last-row {
@@ -314,11 +393,15 @@
 
     #three {
         padding: 20px;
-        background: #2193b0;
-        background: -webkit-linear-gradient(to right, #0083B0, #2193b0);
+        background: #000046;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #1CB5E0, #000046);
         /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to right, #0083B0, #2193b0);
+        background: linear-gradient(to right, #1CB5E0, #000046);
         /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+
     }
 
     promoBox {
@@ -362,87 +445,26 @@
         font-size: 16px;
     }
 
-    /*
-    #one {
-        /*background-image: url(../assets/mariposaweb1.jpg);
-        background-size: cover;
-    display: flex;
-    /*align-items: center;
-        justify-content: center;
+
+    #section-c div {
+        padding: 20px;
+    }
+
+    #section-c .box-1,
+    #section-c .box-3 {
+        font-family: 'Abril Fatface', cursive;
         font-weight: bold;
-        font-family: big john;
-        width: 100%;
-        height: 100vh;
-    }*/
-    /*
-#three {
-background-image: url(../assets/butterfly2.jpg);
-background-size: cover;
-height: 400px;
-background-attachment: fixed;
-}*/
+        font-size: 14px;
+        height: 200px;
+        background: #2193b0;
+    }
 
-    /*
-#four {
-display: flex;
-align-items: center;
-justify-content: center;
-font-family: 'Abril Fatface', cursive;
-font-weight: bold;
-font-size: 20px;
-/*font-family: big john;*/
-    /*width: 100%;
-/*height: 100vh;*/
-    /*height: 400px;
-background: #2193b0;
-/* fallback for old browsers */
-    /*background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);
-/* Chrome 10-25, Safari 5.1-6 */
-    /*background: linear-gradient(to right, #6dd5ed, #2193b0);
-/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+
-
-}*/
-
-    /*
-#section-c {
-display: flex;
-
-}
-
-#section-c div {
-padding: 20px;
-}
-
-#section-c .box-1,
-#section-c .box-3 {
-font-family: 'Abril Fatface', cursive;
-font-weight: bold;
-font-size: 14px;
-height: 200px;
-background: #2193b0;
-/* fallback for old browsers
-background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);
-/* Chrome 10-25, Safari 5.1-6
-background: linear-gradient(to right, #6dd5ed, #2193b0);
-/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+
-align-items: center;justify-content: center;
-margin-bottom: 2px;
-}
-
-#section-c .box-2 {
-background: #f9f9f9;
-font-family: 'Abril Fatface', cursive;
-font-weight: bold;
-font-size: 14px;
-color: #fff;
-background: #00B4DB;
-/* fallback for old browsers
-background: -webkit-linear-gradient(to right, #0083B0, #00B4DB);*/
-    /* Chrome 10-25, Safari 5.1-6
-background: linear-gradient(to right, #0083B0, #00B4DB);
-/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+
-align-items: center;
-justify-content: center;
-margin-bottom: 2px;
-}*/
+    #section-c .box-2 {
+        background: #f9f9f9;
+        font-family: 'Abril Fatface', cursive;
+        font-weight: bold;
+        font-size: 14px;
+        color: #fff;
+        background: #00B4DB;
+    }
 </style>

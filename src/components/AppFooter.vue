@@ -40,7 +40,7 @@
 
 <template>
     <v-footer height="auto" id='show'>
-        <v-card flat tile class="flex blue-grey darken-3 myBtn ">
+        <v-card flat tile class="flex light-blue darken-4 myBtn ">
             <v-card-text class="text-xs-center">
                 <strong class="subheading">This site is powered with <a style="color:#BDBDBD;text-decoration: none;font-weight: bold"
                         href="https://buttercms.com/" target="_blank">Buttercms</a>
