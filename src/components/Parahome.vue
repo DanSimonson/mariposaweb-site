@@ -173,7 +173,7 @@
                         </div>
                         <div class="card-content">
                             <span class="card-title">Calculator</span>
-                            <p>A fully functioning calculator made withJavaScript, Jquery, Bootstrap.</p>
+                            <p>A fully functioning calculator made with JavaScript, Jquery, Bootstrap.</p>
                         </div>
                         <div class="card-action">
                             <a href='https://dansimonson.github.io/calculator/' target="
