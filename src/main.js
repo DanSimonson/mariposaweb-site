@@ -6,7 +6,7 @@ import router from "./router";
 import VueDisqus from "vue-disqus";
 import Vuetify from "vuetify";
 import "vuetify/dist/vuetify.min.css";
-import Navbar from "./components/navbar.vue";
+import Navbar from "./components/Navbar.vue";
 import AppFooter from "./components/AppFooter.vue";
 import AppHeader from "./components/AppHeader.vue";
 import Parahome from "./components/Parahome.vue";
