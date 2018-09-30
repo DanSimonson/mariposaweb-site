@@ -2,8 +2,8 @@
     <div class="navbar">
         <nav class="transparent z-depth-0">
             <div class="nav-wrapper">
-                <a href="#!" class="brand-logo"></a>
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <a href="#!" class="brand-logo"></a>
                 <ul class="right hide-on-med-and-down">
                     <router-link to='/' tag='span'>
                         <li class="nav-links">Home</li>

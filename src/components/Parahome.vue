@@ -73,18 +73,18 @@
                 <div class="col s12 l4">
                     <div class="card">
                         <div class="card-image">
-                            <img src='https://res.cloudinary.com/dmglopmul/image/upload/v1537116190/projectPhotos/recipeBox.jpg'
-                                alt="">
-                            <a href='https://recipes-ddb43.firebaseapp.com/#/' target="_blank" class="halfway-fab btn-floating pink pulse">
+                            <img src='https://res.cloudinary.com/dmglopmul/image/upload/v1538294400/spaCover.jpg' alt="">
+                            <a href='https://user-info-ee17c.firebaseapp.com/' target="_blank" class="halfway-fab btn-floating pink pulse">
                                 <i class="material-icons">favorite</i>
                             </a>
                         </div>
                         <div class="card-content">
-                            <span class="card-title">A Recipe Box</span>
-                            <p>User can create, edit, delete and save recipes, powered with Vue, Firestore</p>
+                            <span class="card-title">Spa Website</span>
+                            <p>Spa website using Vue, Firestore Authentication, Route Guards, featuring CSS Grid
+                                & Flexbox</p>
                         </div>
                         <div class="card-action">
-                            <a class="border" href='https://recipes-ddb43.firebaseapp.com/#/' target="_blank">See
+                            <a class="border" href='https://user-info-ee17c.firebaseapp.com/' target="_blank">See
                                 More</a>
                             <!--<a href="">View Ingredients</a>-->
                         </div>
