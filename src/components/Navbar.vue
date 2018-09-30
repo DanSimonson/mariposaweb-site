@@ -2,7 +2,7 @@
     <div class="navbar">
         <nav class="transparent z-depth-0">
             <div class="nav-wrapper">
-                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons strngBtn">menu</i></a>
                 <a href="#!" class="brand-logo"></a>
                 <ul class="right hide-on-med-and-down">
                     <router-link to='/' tag='span'>
@@ -53,6 +53,11 @@
     }
 </script>
 <style scoped>
+    .strngBtn {
+        color: white;
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    }
+
     .nav-links {
         margin-left: 10px;
         margin-right: 10px;
