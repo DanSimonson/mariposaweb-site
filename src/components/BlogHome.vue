@@ -81,7 +81,7 @@
                                             <v-card-text>
                                                 <h2>{{ post.title }}</h2>
                                                 <p>{{ post.summary }}</p>
-                                                <v-btn flat dark>Read More</v-btn>
+                                                <v-btn flat>Read More</v-btn>
                                             </v-card-text>
                                         </article>
                                     </router-link>
@@ -181,7 +181,7 @@
         color: black
     }
 
-    .v-btn[data-v-648d5f51] {
+    /*.v-btn[data-v-648d5f51] {
         color: black;
-    }
+    }*/
 </style>
