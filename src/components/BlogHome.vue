@@ -180,4 +180,8 @@
     .v-btn {
         color: black
     }
+
+    .v-btn[data-v-648d5f51] {
+        color: black;
+    }
 </style>
