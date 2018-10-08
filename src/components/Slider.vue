@@ -4,44 +4,27 @@
             <div id="slider" :style="{backgroundImage: 'url(' + images[index].url + ')'}">
                 <header id="showcase">
                     <div>
-                        <transition appear appear-name="custom-classes-transition" appear-active-class="animated rubberBand">
-                            <h1 v-if="showh1">Welcome To The Mariposaweb</h1>
+                        <!--<transition appear appear-name="custom-classes-transition" appear-active-class="animated rubberBand">-->
+                        <!--rubberBand-->
+                        <h1 v-if="showh1">Welcome To The Mariposaweb</h1>
 
-                        </transition>
-                        <transition appear appear-name="custom-classes-transition" appear-active-class="animated jello">
-                            <p v-if="showp"> modern web development using the latest JavaScript techniques and Vue.</p>
-                        </transition>
+                        <!--</transition>
+                        <transition appear appear-name="custom-classes-transition" appear-active-class="animated jello">-->
+                        <!--jello-->
+                        <p v-if="showp"> modern web development using the latest JavaScript techniques and Vue.</p>
+                        <!--</transition>-->
                     </div>
 
 
                 </header>
-                <!--<div id="content">
-                    <div class="one"><i class="material-icons">
-                            spa
-                        </i>relax</div>
-                    <div class="two"><i class="material-icons">
-                            sentiment_very_satisfied
-                        </i>play</div>
-                    <div class="three"><i class="material-icons">
-                            local_dining
-                        </i>eat</div>
-                    <div class="four"><i class="material-icons">
-                            contact_mail
-                        </i> book</div>
-                    <div class="five">5</div>
-                                                        <div class="six">6</div>
-            </div>-->
             </div>
         </transition>
     </div>
 </template>
 <script>
-    //import Slides from './Slides.vue'
     export default {
         name: 'Slider',
-        /*components: {
-            Slides
-        },*/
+
         data() {
             return {
                 images: [
@@ -55,15 +38,15 @@
                     },
                     {
                         id: 2,
-                        url: 'https://res.cloudinary.com/dmglopmul/image/upload/v1539010588/projectPhotos/mariposaweb/syntax.jpg'
+                        url: 'https://res.cloudinary.com/dmglopmul/image/upload/v1539023410/projectPhotos/mariposaweb/syntax.jpg'
                     },
                     {
                         id: 3,
-                        url: 'https://res.cloudinary.com/dmglopmul/image/upload/v1539010561/projectPhotos/mariposaweb/internet.jpg'
+                        url: 'https://res.cloudinary.com/dmglopmul/image/upload/v1539022882/projectPhotos/mariposaweb/internet.jpg'
                     },
                     {
                         id: 4,
-                        url: 'https://res.cloudinary.com/dmglopmul/image/upload/v1539010548/projectPhotos/mariposaweb/code.jpg'
+                        url: 'https://res.cloudinary.com/dmglopmul/image/upload/v1539024962/projectPhotos/mariposaweb/code.jpg'
                     }
                 ],
                 index: 0,
@@ -107,7 +90,20 @@
         position: relative;
     }
 
-    .fade-enter-active {
+    .fade-enter-active,
+    .fade-leave-active {
+        transition: opacity .5s;
+    }
+
+    .fade-enter,
+    .fade-leave-to
+
+    /* .fade-leave-active below version 2.1.8 */
+        {
+        opacity: 0;
+    }
+
+    /*.fade-enter-active {
         animation-name: fadeEnter;
         animation-duration: 2s;
         animation-iteration-count: 1;
@@ -143,6 +139,7 @@
             opacity: 0;
         }
     }
+    */
 
     #content {
         display: grid;
@@ -213,9 +210,10 @@
     }
 
     #showcase p {
-        animation-delay: 1s;
+        animation-duration: 4s;
+        /*animation-delay: 1s;
         animation-duration: 5s;
-        animation-iteration-count: infinite;
+        animation-iteration-count: infinite;*/
         font-size: 21px;
         font-weight: 900;
         text-shadow: 0 1px #808d93,
@@ -239,9 +237,10 @@
 
     #showcase h1 {
         font-size: 3em;
-        animation-delay: 1s;
         animation-duration: 4s;
-        animation-iteration-count: infinite;
+        /*animation-delay: 1s;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;*/
         font-weight: 500;
         /*text-shadow: 2px 2px 4px #000000;*/
         text-shadow: 1px 0px 1px #ccc, 0px 1px 1px #eee,
