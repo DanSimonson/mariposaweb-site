@@ -4,11 +4,13 @@
   //var butter = Butter('34d3d54d8f742ba36133328ca6b67a50a85ddfe1');
   import butter from '@/buttercms';
   import Parallax from "vue-parallaxy";
+  import Slider from './Slider'
 
   export default {
     name: 'customer-page',
     components: {
-      Parallax
+      Parallax,
+      Slider
     },
     data() {
       return {
@@ -43,12 +45,13 @@
 
   <div id="customer-page">
     <nav-bar></nav-bar>
+    <Slider></Slider>
     <!--<app-header></app-header>-->
-    <header id="showcase">
-      <!--<button @click="show = !show">
+    <!--<header id="showcase">-->
+    <!--<button @click="show = !show">
         Toggle render
       </button>-->
-      <div>
+    <!--<div>
         <transition appear appear-name="custom-classes-transition" appear-active-class="animated rubberBand">
           <h1 v-if="showh1">Welcome To The Mariposaweb</h1>
 
@@ -60,9 +63,9 @@
 
       <!--
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi officiis ipsum officia numquam expedita ullam.</p>
-      <a href="#" class="button">Read More</a>
-      -->
-    </header>
+      <a href="#" class="button">Read More</a>-->
+
+    <!--</header>-->
     <div class="divider"></div>
     <para-home />
 
@@ -132,7 +135,7 @@
   }
 
   #showcase {
-    background-image: url('https://res.cloudinary.com/dmglopmul/image/upload/v1537088446/background2.jpg');
+    /*background-image: url('https://res.cloudinary.com/dmglopmul/image/upload/v1537088446/background2.jpg');
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -141,7 +144,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 0 20px;
+    padding: 0 20px;*/
     /*color: black;
     #8D6E63;*/
   }
