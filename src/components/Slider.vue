@@ -5,16 +5,29 @@
             <!--enter-active-class="animated fadeIn" leave-active-class="animated fadeOut">-->
             <div id="slider" :style="{backgroundImage: 'url(' + images[index].url + ')'}">
                 <header id="showcase">
-                    <div>
+                    <div class='gradientMe'>
+                        <!--<h1>Mariposaweb</h1>
+                        <div style="height:5px;"></div>-->
+                        <P>{{ msgs[currentMsg].msg }}</P>
+
+
+                        <!--<ul class='seeMeList'>
+                            <li id='msgList' :style=""></li>
+                            <transition-group appear name="msgMe">
+                                <!--</transition-group>enter-active-class="animated flipInX"
+                                leave-active-class="animated flipOutX">-->
+                        <!--<li v-for="(dataMsg,index) in data" :key='index'>{{ dataMsg.msg }}</li>-->
+                        <!--</transition-group>
+                        </ul>-->
                         <!--removed transition until later-->
                         <!--<transition appear appear-name="custom-classes-transition" appear-active-class="animated rubberBand">-->
 
-                        <h1 v-if="showh1">Welcome To The Mariposaweb</h1>
+                        <!--<h1 v-if="showh1">Welcome To The Mariposaweb</h1>-->
 
                         <!--</transition>
                         <transition appear appear-name="custom-classes-transition" appear-active-class="animated jello">-->
 
-                        <p v-if="showp"> modern web development using the latest JavaScript techniques and Vue.</p>
+                        <!--<p v-if="showp"> modern web development using the latest JavaScript techniques and Vue.</p>-->
                         <!--</transition>-->
                     </div>
                 </header>
@@ -28,6 +41,13 @@
 
         data() {
             return {
+                msgs: [
+                    { msg: 'We Focus on solving complex problems with clear and effective solutions.' },
+                    { msg: 'We create custom web solutions – be it during discovery, definition, design, development or deployment.' },
+                    { msg: 'When it comes to E-Commerce, We build a digital bridge between the products and potential customers. ' },
+                    { msg: 'We leverage the capabilities of Vue.js and javascript to fit your specifiv business needs.' },
+                    { msg: 'Transforming ideas. Digitally. We always look for new ways to provide better solutions.' },
+                ],
                 images: [
                     {
                         id: 0,
@@ -52,7 +72,8 @@
                 ],
                 index: 0,
                 showh1: true,
-                showp: true
+                showp: true,
+                currentMsg: 0
 
             }
         },
@@ -62,6 +83,27 @@
             setInterval(() => {
                 self.move();
             }, 6000)
+            setInterval(() => {
+                self.next();
+            }, 6000)
+            self.next()
+
+            /*function recursiveArray() {
+                //console.log("five");
+                if (this.dataSoon.length) {
+                    this.data.push(this.dataSoon.shift());
+                } else {
+                    clearInterval(this.interval);
+                }
+            }
+
+            self.interval = setInterval(() => {
+                if (this.data.length) {
+                    this.data.push(this.dataSoon.shift());
+                } else {
+                    clearInterval(this.interval);
+                }
+            }, 2000)*/
 
         },
         computed: {
@@ -75,6 +117,13 @@
                     indexFlag = 0
                 }
                 this.index = indexFlag;
+            },
+            next: function () {
+                if (this.currentMsg + 1 < this.msgs.length) {
+                    this.currentMsg++;
+                } else {
+                    this.currentMsg = 0
+                }
             }
         }
     }
@@ -89,6 +138,28 @@
         background-repeat: no-repeat;
         background-size: cover;
         position: relative;
+    }
+
+    .seeMeList {
+        font-size: 21px;
+        font-weight: 500;
+        /*text-shadow: 2px 2px 4px #000000;*/
+        text-shadow: 1px 0px 1px #ccc, 0px 1px 1px #eee,
+            2px 1px 1px #ccc, 1px 2px 1px #eee,
+            3px 2px 1px #ccc, 2px 3px 1px #eee,
+            4px 3px 1px #ccc, 3px 4px 1px #eee,
+            5px 4px 1px #ccc, 4px 5px 1px #eee,
+            6px 5px 1px #ccc, 5px 6px 1px #eee,
+            7px 6px 1px #ccc;
+    }
+
+    .msgMe-enter-active {
+        animation: flipInX 3s;
+        animation-delay: .5s;
+    }
+
+    .msgMe-leave-active {
+        animation: flipOutX 3s;
     }
 
     .slide-anim-enter-active- {
@@ -161,6 +232,7 @@
         background: red;
     }
 
+
     #showcase {
         /*background-image: url('https://res.cloudinary.com/dmglopmul/image/upload/v1537088446/background2.jpg');
     background-size: cover;
@@ -176,22 +248,30 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        /*color: black;
-    #8D6E63;*/
     }
 
-    #showcase:before {
-        /*background: #E8EAF6;*/
+
+    .gradientMe {
+        background: linear-gradient(rgba(20, 20, 20, .03),
+            rgba(20, 20, 20, .03));
+        border-radius: 16px;
     }
+
+
 
     #showcase p {
         animation-duration: 4s;
         /*animation-delay: 1s;
         animation-duration: 5s;
         animation-iteration-count: infinite;*/
-        font-size: 21px;
-        font-weight: 900;
-        text-shadow: 0 1px #808d93,
+        font-size: 2em;
+        letter-spacing: 0.1em;
+        color: #FAFAFA;
+        text-decoration: underline;
+        text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4),
+            0px 8px 13px rgba(0, 0, 0, 0.7),
+            0px 18px 23px rgba(0, 0, 0, 0.7);
+        /*text-shadow: 0 1px #808d93,
             -1px 0 #cdd2d5,
             -1px 2px #808d93,
             -2px 1px #cdd2d5,
@@ -206,24 +286,29 @@
             -6px 7px #808d93,
             -7px 6px #cdd2d5,
             -7px 8px #808d93,
-            -8px 7px #cdd2d5;
+            -8px 7px #cdd2d5;*/
+
     }
 
-
     #showcase h1 {
-        font-size: 3em;
+        font-size: 2.5em;
         animation-duration: 4s;
+        color: #FAFAFA;
+        text-decoration: underline;
+        text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4),
+            0px 8px 13px rgba(0, 0, 0, 0.7),
+            0px 18px 23px rgba(0, 0, 0, 0.7);
         /*animation-delay: 1s;
         animation-duration: 4s;
-        animation-iteration-count: infinite;*/
+        animation-iteration-count: infinite;
         font-weight: 500;
-        /*text-shadow: 2px 2px 4px #000000;*/
+        /*text-shadow: 2px 2px 4px #000000;
         text-shadow: 1px 0px 1px #ccc, 0px 1px 1px #eee,
             2px 1px 1px #ccc, 1px 2px 1px #eee,
             3px 2px 1px #ccc, 2px 3px 1px #eee,
             4px 3px 1px #ccc, 3px 4px 1px #eee,
             5px 4px 1px #ccc, 4px 5px 1px #eee,
             6px 5px 1px #ccc, 5px 6px 1px #eee,
-            7px 6px 1px #ccc;
+            7px 6px 1px #ccc;*/
     }
 </style>
