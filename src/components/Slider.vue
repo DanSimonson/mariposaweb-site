@@ -78,7 +78,7 @@
             }
         },
         created() {
-            //set proxy so vue can see "this" object when using move() method
+            //set proxy so vue can see "this" object when using move method
             let self = this;
             setInterval(() => {
                 self.move();
