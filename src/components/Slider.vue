@@ -4,6 +4,7 @@
             <div id="slider" :style="{backgroundImage: 'url(' + images[index].url + ')'}">
                 <header id="showcase">
                     <div>
+                        <!--removed transition until later-->
                         <!--<transition appear appear-name="custom-classes-transition" appear-active-class="animated rubberBand">-->
 
                         <h1 v-if="showh1">Welcome To The Mariposaweb</h1>
