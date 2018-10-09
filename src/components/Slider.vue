@@ -1,6 +1,8 @@
 <template>
     <div>
-        <transition name="fadeIn" mode="out-in" tag="div">
+        <!--<transition name="fade" mode="in-out" tag="div">-->
+        <transition name="slide-anim">
+            <!--enter-active-class="animated fadeIn" leave-active-class="animated fadeOut">-->
             <div id="slider" :style="{backgroundImage: 'url(' + images[index].url + ')'}">
                 <header id="showcase">
                     <div>
@@ -89,56 +91,29 @@
         position: relative;
     }
 
-    /*.fade-enter-active,
-    .fade-leave-active {
-        transition: opacity .5s;
-    }
-
-    .fade-enter,
-    .fade-leave-to
-
-    /* .fade-leave-active below version 2.1.8 
-        {
+    .slide-anim-enter-active- {
+        animation: coming 1s;
+        animation-delay: .5s;
         opacity: 0;
     }
-    */
 
-    .fade-enter-active {
-        animation-name: fadeEnter;
-        animation-duration: 2s;
-        animation-iteration-count: 1;
+    .slide-anim-leave-active {
+        animation: going 1s;
     }
 
-    .fade-move {
-        transition: all 1s;
-    }
-
-    .fade-leave-active {
-        animation-name: fadeLeave;
-        animation-duration: 2s;
-        animation-iteration-count: 1;
-        position: absolute;
-    }
-
-    @keyframes fadeEnter {
+    @keyframes coming {
         from {
+            transform: translateX(-50px);
             opacity: 0;
         }
 
         to {
+            transform: translateX(0px);
             opacity: 1;
         }
     }
 
-    @keyframes fadeLeave {
-        from {
-            opacity: 1;
-        }
 
-        to {
-            opacity: 0;
-        }
-    }
 
 
     #content {

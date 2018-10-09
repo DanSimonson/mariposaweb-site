@@ -1,7 +1,10 @@
 <template>
   <div id="app">
-    <transition name="router-anim" enter-active-class="animated fadeIn" leave-acitve-class="animated fadeOut">
-      <router-view/>
+
+    <transition name="router-anim">
+      <!--enter-active-class="animated fadeIn">-->
+      <!--leave-active-class="animated fadeOut">-->
+      <router-view />
     </transition>
   </div>
 </template>
@@ -14,23 +17,40 @@
 </script>
 
 <style>
-  .enter-active-class {
+  /*.enter-active-class {
     animation-duration: 1s;
+    animation-delay: 1s;
+    opacity: 0;
+  }
+
+  .leave-active-class {
+    animation-duration: .5s;
+
+  }*/
+
+
+  .router-anim-enter-active- {
+    animation: coming 1s;
     animation-delay: .5s;
-    /*
-    animation-iteration-count: 6;    
-    animation-delay: 1s;    
-    */
+    opacity: 0;
   }
 
-  .enter-active-class {
-    animation-duration: 1s;
-
-    /*
-    animation-iteration-count: 6;    
-    animation-delay: 1s;    
-    */
+  .router-anim-leave-active {
+    animation: going 1s;
   }
+
+  @keyframes coming {
+    from {
+      transform: translateX(-50px);
+      opacity: 0;
+    }
+
+    to {
+      transform: translateX(0px);
+      opacity: 1;
+    }
+  }
+
 
   #app {
     font-family: 'Avenir', Helvetica, Arial, sans-serif;
