@@ -44,7 +44,7 @@
                 msgs: [
                     { msg: 'We Focus on solving complex problems with clear and effective solutions.' },
                     { msg: 'We create custom web solutions – be it during discovery, definition, design, development or deployment.' },
-                    { msg: 'When it comes to E-Commerce, We build a digital bridge between the products and potential customers. ' },
+                    { msg: 'E-Commerce ready, We build a digital bridge between products and potential customers. ' },
                     { msg: 'We leverage the capabilities of Vue.js and javascript to fit your specifiv business needs.' },
                     { msg: 'Transforming ideas. Digitally. We always look for new ways to provide better solutions.' },
                 ],
@@ -310,5 +310,19 @@
             5px 4px 1px #ccc, 4px 5px 1px #eee,
             6px 5px 1px #ccc, 5px 6px 1px #eee,
             7px 6px 1px #ccc;*/
+    }
+
+    /*media queries*/
+    @media screen and (max-width: 320px) {}
+
+    @media screen and (max-width: 375px) {
+        font-size: 1.5em;
+    }
+
+    @media screen and (max-width: 425px) {
+        #showcase p {
+            font-size: 1.8em;
+        }
+
     }
 </style>
