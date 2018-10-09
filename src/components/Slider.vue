@@ -44,8 +44,8 @@
                 msgs: [
                     { msg: 'We Focus on solving complex problems with clear and effective solutions.' },
                     { msg: 'We create custom web solutions – be it during discovery, definition, design, development or deployment.' },
-                    { msg: 'E-Commerce ready, We build a digital bridge between products and potential customers. ' },
-                    { msg: 'We leverage the capabilities of Vue.js and javascript to fit your specifiv business needs.' },
+                    { msg: 'E-Commerce ready, we build a digital bridge between products and potential customers. ' },
+                    { msg: 'We leverage the capabilities of Vue.js and JavaScript to fit your specific business needs.' },
                     { msg: 'Transforming ideas. Digitally. We always look for new ways to provide better solutions.' },
                 ],
                 images: [
