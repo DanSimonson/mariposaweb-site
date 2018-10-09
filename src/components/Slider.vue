@@ -1,21 +1,19 @@
 <template>
     <div>
-        <transition name="fade" mode="out-in" tag="div">
+        <transition name="fadeIn" mode="out-in" tag="div">
             <div id="slider" :style="{backgroundImage: 'url(' + images[index].url + ')'}">
                 <header id="showcase">
                     <div>
                         <!--<transition appear appear-name="custom-classes-transition" appear-active-class="animated rubberBand">-->
-                        <!--rubberBand-->
+
                         <h1 v-if="showh1">Welcome To The Mariposaweb</h1>
 
                         <!--</transition>
                         <transition appear appear-name="custom-classes-transition" appear-active-class="animated jello">-->
-                        <!--jello-->
+
                         <p v-if="showp"> modern web development using the latest JavaScript techniques and Vue.</p>
                         <!--</transition>-->
                     </div>
-
-
                 </header>
             </div>
         </transition>
@@ -90,7 +88,7 @@
         position: relative;
     }
 
-    .fade-enter-active,
+    /*.fade-enter-active,
     .fade-leave-active {
         transition: opacity .5s;
     }
@@ -98,12 +96,13 @@
     .fade-enter,
     .fade-leave-to
 
-    /* .fade-leave-active below version 2.1.8 */
+    /* .fade-leave-active below version 2.1.8 
         {
         opacity: 0;
     }
+    */
 
-    /*.fade-enter-active {
+    .fade-enter-active {
         animation-name: fadeEnter;
         animation-duration: 2s;
         animation-iteration-count: 1;
@@ -139,7 +138,7 @@
             opacity: 0;
         }
     }
-    */
+
 
     #content {
         display: grid;
