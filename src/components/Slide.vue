@@ -34,7 +34,7 @@
                     {
                         imgLink: require('../assets/vueProjects/hand.jpg'),
                         title: 'Spa Business Website',
-                        description: 'Spa website using Vue, Firestore Authentication, Route Guards, featuring CSS Grid & Flexbox',
+                        description: 'Spa website using Vue, Firestore Authentication, Route Guards, CSS Grid, Flexbox',
                         id: 1,
                         url: 'https://user-info-ee17c.firebaseapp.com/'
                     },
@@ -65,7 +65,7 @@
                     {
                         imgLink: require('../assets/vueProjects/hand.jpg'),
                         title: 'Spa Business Website',
-                        description: 'Spa website using Vue, Firestore Authentication, Route Guards, featuring CSS Grid & Flexbox',
+                        description: 'Spa website using Vue, Firestore Authentication, Route Guards, CSS Grid, Flexbox',
                         id: 1,
                         url: 'https://user-info-ee17c.firebaseapp.com/'
                     },
@@ -136,8 +136,6 @@
                 this.stopMe = setInterval(() => {
                     selfie.previous()
                 }, 4000)
-
-
             },
             arrowRight() {
                 clearInterval(this.stopMe);
@@ -146,7 +144,6 @@
                 this.stopMe = setInterval(() => {
                     selfie.next()
                 }, 4000)
-
             }
         }
     }
@@ -163,7 +160,7 @@
     .carousel-view {
         position: relative;
         /*width: 100%;*/
-        height: 700px;
+        height: 600px;
         /*border: 5px solid green;*/
     }
 
@@ -187,9 +184,7 @@
         border-right-color: black;
         transform: rotate(-3deg);
         z-index: 1;
-
     }
-
 
     .carousel-view .button-next {
         border-left-color: black;
@@ -197,11 +192,21 @@
         left: 97%;
     }
 
+    .carousel {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        width: 100%;
+        min-height: 65%;
+        /*border: 5px solid red*/
+    }
+
     .carousel-controls {
         /*border: 5px solid mediumslateblue;*/
         position: relative;
         height: 200px;
-        width: 100%;
+        /*width: 100%;*/
     }
 
     .carousel-controls .squares {
@@ -241,7 +246,6 @@
         top: 80%;
         left: 5%;
         transform: translate(-50%, -50%);*/
-
         font-family: 'Quattrocento Sans', sans-serif;
         font-size: 1em;
         color: #fff;
@@ -265,15 +269,7 @@
 
     }*/
 
-    .carousel {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        overflow: hidden;
-        width: 100%;
-        min-height: 70%;
-        /*border: 5px solid red*/
-    }
+
 
     .slide {
         flex: 0 0 20em;
@@ -315,8 +311,8 @@
 
     @media screen and (max-width: 320px) {
         .slide {
-            height: 19em;
-            flex: 0 0 19em;
+            height: 20em;
+            flex: 0 0 20em;
         }
 
         .carousel-view .button-next {
@@ -356,12 +352,17 @@
             padding: 4px;
         }
 
+        .carousel-controls {}
+
         .carousel-view .button-prev {}
 
-        .carousel-controls .squares {}
+        .carousel-controls .squares {
+            width: 250px;
+        }
 
         .carousel-controls .squares .pslide-one p {
             font-size: 1em;
+
         }
 
         .carousel-controls .squares .pslide-two p {

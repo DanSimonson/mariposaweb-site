@@ -242,7 +242,6 @@
     }
 
     .h1Style {
-        margin-bottom: 5px;
         font-family: 'Gravitas One', cursive;
         font-weight: 700;
         color: #E3F2FD;
@@ -266,8 +265,9 @@
         background: linear-gradient(to right, #0083B0, #00B4DB);
         /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
         /*border: 5px solid black;*/
-        height: 800px;
+        height: 630px;
         margin: 0 auto;
+        padding: 5px;
 
     }
 
