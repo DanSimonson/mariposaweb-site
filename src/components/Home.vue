@@ -46,6 +46,7 @@
   <div id="customer-page">
     <nav-bar></nav-bar>
     <Slider></Slider>
+
     <!--<app-header></app-header>-->
     <!--<header id="showcase">-->
     <!--<button @click="show = !show">
@@ -183,7 +184,6 @@
     animation-delay: 1s;
     animation-duration: 4s;
     animation-iteration-count: infinite;
-    text-decoration: salmon;
     font-weight: 500;
     /*text-shadow: 2px 2px 4px #000000;*/
     text-shadow: 1px 0px 1px #ccc, 0px 1px 1px #eee,

@@ -10,91 +10,87 @@
             </v-layout>
         </v-parallax>
         <div class="dividertwo"></div>
-        <div class="container-fluid" id="two">
-            <h1 class='title-text'>Vue.js Projects</h1>
-            <div class="row">
-                <div class="col s12 l4">
-                    <div class="card">
-                        <div class="card-image">
-                            <img src="../assets/onlineStore1.jpg" alt="">
-                            <a href="https://vue-blog-ed03b.firebaseapp.com/" target="_blank" class="halfway-fab btn-floating pink pulse">
-                                <i class="material-icons">favorite</i>
-                            </a>
-                        </div>
-                        <div class="card-content">
-                            <span class="card-title">Online Store</span>
-                            <p>A Vue.js online store using vuex for state
-                                management and firebase as database.</p>
-                        </div>
-                        <div class="card-action">
-                            <a class="increase" href="https://vue-blog-ed03b.firebaseapp.com/" target="_blank">See More</a>
-                        </div>
+        <div class="container vueProjects">
+            <h1 class='h1Style'>Vue.js Projects</h1>
+            <Slide></Slide>
+            <!--<div class="card">
+                    <div class="card-image">
+                        <img src="../assets/onlineStore1.jpg" alt="">
+                        <a href="https://vue-blog-ed03b.firebaseapp.com/" target="_blank" class="halfway-fab btn-floating pink pulse">
+                            <i class="material-icons">favorite</i>
+                        </a>
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title">Online Store</span>
+                        <p>A Vue.js online store using vuex for state
+                            management and firebase as database.</p>
+                    </div>
+                    <div class="card-action">
+                        <a class="increase" href="https://vue-blog-ed03b.firebaseapp.com/" target="_blank">See More</a>
                     </div>
                 </div>
-                <div class="col s12 l4">
-                    <div class="card">
-                        <div class="card-image">
-                            <img src="https://res.cloudinary.com/dmglopmul/image/upload/v1537108170/projectPhotos/hackerNews.png"
-                                alt="">
-                            <a href='http://extra-small-stick.surge.sh' target="_blank" class="halfway-fab btn-floating pink pulse">
-                                <i class="material-icons">favorite</i>
-                            </a>
-                        </div>
-                        <div class="card-content">
-                            <span class="card-title">Hacker-News Clone</span>
-                            <p>A Hacker-News Clone, utilizing Vue, Axios, Firestore, JavaScript,
-                                ES6.</p>
-                        </div>
-                        <div class="card-action">
-                            <a class="tilt" href='http://extra-small-stick.surge.sh' target="_blank">See More</a>
-                        </div>
+        </div>-->
+            <!--<div class="col s12 l4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://res.cloudinary.com/dmglopmul/image/upload/v1537108170/projectPhotos/hackerNews.png"
+                            alt="">
+                        <a href='http://extra-small-stick.surge.sh' target="_blank" class="halfway-fab btn-floating pink pulse">
+                            <i class="material-icons">favorite</i>
+                        </a>
                     </div>
-                </div>
-                <div class="col s12 l4">
-                    <div class="card">
-                        <div class="card-image">
-                            <img src="../assets/customerInformation.jpg" alt="">
-                            <a href='https://human-resources-cb42b.firebaseapp.com/' target="_blank" class="halfway-fab btn-floating pink pulse">
-                                <i class="material-icons">favorite</i>
-                            </a>
-                        </div>
-                        <div class="card-content">
-                            <span class="card-title">Customer Information</span>
-                            <p>A create, read, update, delete applictions with Vue, Firestore,
-                                Bootstrap 4.</p>
-                        </div>
-                        <div class="card-action">
-                            <a href='https://human-resources-cb42b.firebaseapp.com/' target="_blank"><span class="spin">See
-                                    More</span></a>
-                            <!--<a href="">View Ingredients</a>-->
-                        </div>
+                    <div class="card-content">
+                        <span class="card-title">Hacker-News Clone</span>
+                        <p>A Hacker-News Clone, utilizing Vue, Axios, Firestore, JavaScript,
+                            ES6.</p>
                     </div>
-                </div>
-                <div class="col s12 l4">
-                    <div class="card">
-                        <div class="card-image">
-                            <img src='https://res.cloudinary.com/dmglopmul/image/upload/v1538294400/spaCover.jpg' alt="">
-                            <a href='https://user-info-ee17c.firebaseapp.com/' target="_blank" class="halfway-fab btn-floating pink pulse">
-                                <i class="material-icons">favorite</i>
-                            </a>
-                        </div>
-                        <div class="card-content">
-                            <span class="card-title">Spa Website</span>
-                            <p>Spa website using Vue, Firestore Authentication, Route Guards, featuring CSS Grid
-                                & Flexbox</p>
-                        </div>
-                        <div class="card-action">
-                            <a class="border" href='https://user-info-ee17c.firebaseapp.com/' target="_blank">See
-                                More</a>
-                            <!--<a href="">View Ingredients</a>-->
-                        </div>
+                    <div class="card-action">
+                        <a class="tilt" href='http://extra-small-stick.surge.sh' target="_blank">See More</a>
                     </div>
                 </div>
             </div>
+            <div class="col s12 l4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="../assets/customerInformation.jpg" alt="">
+                        <a href='https://human-resources-cb42b.firebaseapp.com/' target="_blank" class="halfway-fab btn-floating pink pulse">
+                            <i class="material-icons">favorite</i>
+                        </a>
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title">Customer Information</span>
+                        <p>A create, read, update, delete applictions with Vue, Firestore,
+                            Bootstrap 4.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href='https://human-resources-cb42b.firebaseapp.com/' target="_blank"><span class="spin">See
+                                More</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 l4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src='https://res.cloudinary.com/dmglopmul/image/upload/v1538294400/spaCover.jpg' alt="">
+                        <a href='https://user-info-ee17c.firebaseapp.com/' target="_blank" class="halfway-fab btn-floating pink pulse">
+                            <i class="material-icons">favorite</i>
+                        </a>
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title">Spa Website</span>
+                        <p>Spa website using Vue, Firestore Authentication, Route Guards, featuring CSS Grid
+                            & Flexbox</p>
+                    </div>
+                    <div class="card-action">
+                        <a class="border" href='https://user-info-ee17c.firebaseapp.com/' target="_blank">See
+                            More</a>
+
+                    </div>
+                </div>
+            </div>-->
         </div>
 
         <div class="dividertwo"></div>
-
         <v-parallax dark :src="imagetwo" height="380"></v-parallax>
 
         <div class="dividertwo"></div>
@@ -186,11 +182,7 @@
             </div>
         </div>
 
-
-
-
         <v-parallax dark :src="imagethree" height="300"></v-parallax>
-
 
         <div class="row" id="last-row">
             <div style="background: #2193b0;font-family: 'Abril Fatface', cursive;font-weight: bold;font-size: 18px;align-items: center;justify-content: center;"
@@ -221,21 +213,21 @@
     import image1 from "../assets/butterfly.jpg"
     import imagetwo from "../assets/butterfly2.jpg"
     import imagethree from "../assets/butterfly3.jpg"
-    //import { Carousel, CarouselItem, CarouselCaption, Container, Row, Column, Card, CardImg, CardBody, CardTitle, CardText, Btn } from 'mdbvue';
+    import Slide from './Slide.vue'
 
 
     export default {
         name: 'Parahome',
         components: {
-
+            Slide
         },
         data() {
             return {
                 image1: image1,
                 imagetwo: imagetwo,
-                imagethree: imagethree
+                imagethree: imagethree,
             }
-        },
+        }
     }
 </script>
 
@@ -248,6 +240,45 @@
         margin: 0;
         padding: 0;
     }
+
+    .h1Style {
+        color: #fff;
+        margin-bottom: 5px;
+        font-family: 'Gravitas One', cursive;
+    }
+
+    #parahome {
+        background: #00B4DB;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #0083B0, #00B4DB);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #0083B0, #00B4DB);
+    }
+
+    .vueProjects {
+        padding: 20px;
+        background: #00B4DB;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #0083B0, #00B4DB);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #0083B0, #00B4DB);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        /*border: 2px solid red;*/
+        height: 600px;
+        margin: 0 auto;
+
+    }
+
+    /*#two {
+        padding: 20px;
+        background: #00B4DB;
+        
+        background: -webkit-linear-gradient(to right, #0083B0, #00B4DB);
+        
+        background: linear-gradient(to right, #0083B0, #00B4DB);
+        
+
+    }*/
 
     .card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating) {
         color: #0D47A1;
@@ -350,13 +381,6 @@
         box-shadow: 20px 20px 40px 0px rgba(0, 0, 0, 0.5);
     }
 
-
-    /*@media screen and (min-width: 500px) {
-        *[data-v-6c4fdd22] {
-            font-size: 14px;
-        }
-    }*/
-
     .dividertwo {
         height: 2px;
         background: #00d2ff;
@@ -380,15 +404,7 @@
         margin: 5px 5px;
     }
 
-    #two {
-        padding: 20px;
-        background: #00B4DB;
-        /* fallback for old browsers */
-        background: -webkit-linear-gradient(to right, #0083B0, #00B4DB);
-        /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to right, #0083B0, #00B4DB);
-        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    }
+
 
     #three {
         padding: 20px;
@@ -398,9 +414,6 @@
         /* Chrome 10-25, Safari 5.1-6 */
         background: linear-gradient(to right, #1CB5E0, #000046);
         /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-
-
     }
 
     promoBox {
@@ -435,7 +448,6 @@
         /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
         align-items: center;
         justify-content: center;
-
     }
 
     .btn {
@@ -466,4 +478,6 @@
         color: #fff;
         background: #00B4DB;
     }
+
+    /*******slide css********************/
 </style>

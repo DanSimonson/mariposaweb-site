@@ -79,10 +79,11 @@
         },
         created() {
             //set proxy so vue can see "this" object when using move method
-            let self = this;
+            var self = this;
             setInterval(() => {
                 self.move();
             }, 6000)
+            //recursive continuous call for msg on front page
             setInterval(() => {
                 self.next();
             }, 6000)
@@ -118,13 +119,16 @@
                 }
                 this.index = indexFlag;
             },
+
             next: function () {
                 if (this.currentMsg + 1 < this.msgs.length) {
                     this.currentMsg++;
                 } else {
                     this.currentMsg = 0
                 }
+
             }
+
         }
     }
 </script>

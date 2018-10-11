@@ -14,10 +14,6 @@
                     <router-link to='/contact/' tag='span'>
                         <li class="nav-links">Contact</li>
                     </router-link>
-                    <!--<li><a href="sass.html">Sass</a></li>
-                    <li><a href="badges.html">Components</a></li>
-                    <li><a href="collapsible.html">Javascript</a></li>
-                    <li><a href="mobile.html">Mobile</a></li>-->
                 </ul>
             </div>
         </nav>
@@ -32,10 +28,6 @@
             <router-link to='/contact/' tag='span'>
                 <li class="nav-links">Contact</li>
             </router-link>
-
-            <!--<li><a href="badges.html">Components</a></li>
-            <li><a href="collapsible.html">Javascript</a></li>
-            <li><a href="mobile.html">Mobile</a></li>-->
         </ul>
     </div>
 </template>
@@ -48,7 +40,7 @@
             }
         },
         mounted() {
-            M.AutoInit();
+            // M.AutoInit();
         }
     }
 </script>
