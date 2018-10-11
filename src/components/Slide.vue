@@ -15,8 +15,8 @@
                     <!--<h4 style="color:black">{{slide.title}}</h4>
                     <a :href="`${slide.url}`">See More...</a>-->
                 </div>
-                <p style="display:inline-block;">{{ slides[currentMsg].title }}</p>
-                <p style="display:inline-block;">{{ slides[currentMsg].description }}</p>
+                <p class="pSlide-one" style="display:inline-block;">{{ slides[currentMsg].title }}</p>
+                <p class="pslide-two" style="display:inline-block;">{{ slides[currentMsg].description }}</p>
                 <a style="display:inline-block;" :href="`${slides[currentMsg].url}`" target="__blank">See More...</a>
             </div>
 
@@ -86,7 +86,7 @@
                     {
                         imgLink: require('../assets/vueProjects/crud.jpg'),
                         title: 'Customer Information Application',
-                        description: 'A create, read, update, delete appliction to keep track of customer information using Vue, Firestore, Bootstrap 4',
+                        description: 'Customer Information create, read, update, delete app using Vue, Firestore, Bootstrap 4.',
                         id: 4,
                         url: 'https://human-resources-cb42b.firebaseapp.com/'
                     },
@@ -160,20 +160,11 @@
         color: #fff;
     }
 
-    /*.flex1 {
-        flex: 1 1 20em;
-    }
-
-    .flex2 {
-        flex: 2 2 20em;
-    }*/
-
     .carousel-view {
         position: relative;
-        width: 100%;
-        height: 100%;
-        /*border: 5px solid black;*/
-
+        /*width: 100%;*/
+        height: 700px;
+        /*border: 5px solid green;*/
     }
 
     .carousel-view .button-prev,
@@ -203,31 +194,65 @@
     .carousel-view .button-next {
         border-left-color: black;
         transform: rotate(3deg);
-        left: 98%;
+        left: 97%;
+    }
+
+    .carousel-controls {
+        /*border: 5px solid mediumslateblue;*/
+        position: relative;
+        height: 200px;
+        width: 100%;
     }
 
     .carousel-controls .squares {
-        font-family: 'Quattrocento Sans', sans-serif;
         position: absolute;
         color: white;
-        top: 79%;
-        left: 50%;
-        width: 60%;
-        padding: 10px;
-        transform: translate(-50%, -50%);
+        /*transform: translate(-50%, -50%);*/
         font-size: 1.5em;
+        font-weight: 700;
+        font-family: 'Quattrocento Sans', sans-serif;
         /*border: 5px solid yellow;*/
+        height: 200px;
+        width: 400px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 2px;
     }
 
+    .carousel-controls .squares .pslide-one p {
+        /*position: absolute;
+        top: 40%;
+        left: 1%;
+        /*transform: translate(-50%, -50%);*/
+
+    }
+
+    .carousel-controls .squares .pslide-two p {
+        /*position: absolute;
+        left: 1%;
+        /*transform: translate(-50%, -50%);*/
+
+    }
+
+
     .carousel-controls .squares a {
+        /*position: absolute;
+        top: 80%;
+        left: 5%;
+        transform: translate(-50%, -50%);*/
+
         font-family: 'Quattrocento Sans', sans-serif;
         font-size: 1em;
         color: #fff;
-
     }
 
-    .carousel-controls .squares div {
-        /*position: absolute;
+    .carousel-controls .squares a:hover {
+        color: wheat;
+    }
+
+    /* .carousel-controls .squares div {
+            /*position: absolute;
         height: 40px;
         width: 40px;
         margin-right: 10px;
@@ -236,9 +261,9 @@
         display: flex;
         top: 70%;
         left: 70%;
-        transform: translate(-50%, -50%);*/
+        transform: translate(-50%, -50%);
 
-    }
+    }*/
 
     .carousel {
         display: flex;
@@ -247,8 +272,7 @@
         overflow: hidden;
         width: 100%;
         min-height: 70%;
-        /*border: 1px solid transparent;*/
-
+        /*border: 5px solid red*/
     }
 
     .slide {
@@ -288,11 +312,11 @@
     }
 
     /*media queries*/
-    /*
+
     @media screen and (max-width: 320px) {
         .slide {
-            height: 21em;
-            flex: 0 0 21em;
+            height: 19em;
+            flex: 0 0 19em;
         }
 
         .carousel-view .button-next {
@@ -303,8 +327,19 @@
         .carousel-view .button-prev {}
 
         .carousel-controls .squares {
+            padding: 2px;
+        }
 
-            left: 30%;
+        .carousel-controls .squares .pslide-one p {
+            font-size: 1em;
+        }
+
+        .carousel-controls .squares .pslide-two p {
+            font-size: 1em;
+        }
+
+        .carousel-controls .squares a {
+            font-size: 1em;
         }
 
 
@@ -318,14 +353,23 @@
 
         .carousel-view .button-next {
             right: 3%;
-            padding: 2px;
+            padding: 4px;
         }
 
         .carousel-view .button-prev {}
 
-        .carousel-controls .squares {
+        .carousel-controls .squares {}
 
-            left: 30%;
+        .carousel-controls .squares .pslide-one p {
+            font-size: 1em;
+        }
+
+        .carousel-controls .squares .pslide-two p {
+            font-size: 1em;
+        }
+
+        .carousel-controls .squares a {
+            font-size: 1em;
         }
     }
 
@@ -343,11 +387,11 @@
         .carousel-view .button-prev {}
 
         .carousel-controls .squares {
-
-            left: 30%;
+            padding: 2px;
+            font-size: 1.2em;
         }
     }
-    
+
     @media screen and (max-width: 768px) {
         .slide {
             height: 20em;
@@ -361,10 +405,7 @@
 
         .carousel-view .button-prev {}
 
-        .carousel-controls .squares {
-
-            left: 30%;
-        }
+        .carousel-controls .squares {}
     }
 
     @media screen and (max-width: 1024px) {
@@ -380,9 +421,7 @@
 
         .carousel-view .button-prev {}
 
-        .carousel-controls .squares {
-            left: 30%;
-        }
+        .carousel-controls .squares {}
     }
 
     @media screen and (max-width: 1440px) {
@@ -398,9 +437,7 @@
 
         .carousel-view .button-prev {}
 
-        .carousel-controls .squares {
-            left: 30%;
-        }
+        .carousel-controls .squares {}
     }
 
     @media screen and (max-width: 2560px) {
@@ -416,8 +453,6 @@
 
         .carousel-view .button-prev {}
 
-        .carousel-controls .squares {
-            left: 30%;
-        }
-    }*/
+        .carousel-controls .squares {}
+    }
 </style>

@@ -242,9 +242,11 @@
     }
 
     .h1Style {
-        color: #fff;
         margin-bottom: 5px;
         font-family: 'Gravitas One', cursive;
+        font-weight: 700;
+        color: #E3F2FD;
+        font-size: 24px;
     }
 
     #parahome {
@@ -263,18 +265,16 @@
         /* Chrome 10-25, Safari 5.1-6 */
         background: linear-gradient(to right, #0083B0, #00B4DB);
         /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-        /*border: 2px solid red;*/
-        height: 600px;
+        /*border: 5px solid black;*/
+        height: 800px;
         margin: 0 auto;
 
     }
 
     /*#two {
         padding: 20px;
-        background: #00B4DB;
-        
-        background: -webkit-linear-gradient(to right, #0083B0, #00B4DB);
-        
+        background: #00B4DB;        
+        background: -webkit-linear-gradient(to right, #0083B0, #00B4DB);        
         background: linear-gradient(to right, #0083B0, #00B4DB);
         
 
@@ -337,7 +337,6 @@
 
     .increase {
         display: inline-block;
-
         transition: .3s;
         font-weight: bold;
         text-decoration: none;
