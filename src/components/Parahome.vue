@@ -1,6 +1,5 @@
 <template>
     <div id="parahome">
-        <!--<app-header></app-header>-->
         <v-parallax dark :src="image1">
             <v-layout align-center column justify-center>
                 <h1 class="display-2 font-weight-thin mb-3 white--text">Build Your Application Today</h1>
