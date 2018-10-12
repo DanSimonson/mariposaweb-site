@@ -30,42 +30,11 @@
         name: 'Slide',
         data() {
             return {
-                vueExamples: [
-                    {
-                        imgLink: require('../assets/vueProjects/hand.jpg'),
-                        title: 'Spa Business Website',
-                        description: 'Spa website using Vue, Firestore Authentication, Route Guards, CSS Grid, Flexbox',
-                        id: 1,
-                        url: 'https://user-info-ee17c.firebaseapp.com/'
-                    },
-                    {
-                        imgLink: require('../assets/vueProjects/onlineStore.jpg'),
-                        title: 'Online Store',
-                        description: 'A Vue.js online store using vuex for state management and firebase as database.',
-                        id: 2,
-                        url: 'https://vue-blog-ed03b.firebaseapp.com/'
-                    },
-                    {
-                        imgLink: require('../assets/vueProjects/hackerNews.png'),
-                        title: 'Hacker-News Clone',
-                        description: 'A Hacker-News Clone, utilizing Vue, Axios, Firestore, JavaScript, ES6.',
-                        id: 3,
-                        url: 'http://extra-small-stick.surge.sh'
-                    },
-                    {
-                        imgLink: require('../assets/vueProjects/crud.jpg'),
-                        title: 'Customer Information Application',
-                        description: 'A create, read, update, delete appliction to keep track of customer information using Vue, Firestore, Bootstrap 4',
-                        id: 4,
-                        url: 'https://human-resources-cb42b.firebaseapp.com/'
-                    }
-                ],
-
                 slides: [
                     {
                         imgLink: require('../assets/vueProjects/hand.jpg'),
                         title: 'Spa Business Website',
-                        description: 'Spa website using Vue, Firestore Authentication, Route Guards, CSS Grid, Flexbox',
+                        description: 'Spa website using Vue, Firestore Authentication, Route Guards, CSS Grid, Flexbox.',
                         id: 1,
                         url: 'https://user-info-ee17c.firebaseapp.com/'
                     },
@@ -93,7 +62,7 @@
                     {
                         imgLink: require('../assets/vueProjects/recipeBox.jpg'),
                         title: 'Recipe Box',
-                        description: 'Application that can create, edit, delete and save recipes, taking advantage of Vue, Firestore, MaterializeCSS, JavaScript',
+                        description: 'Application that can create, edit, delete and save recipes, taking advantage of Vue, Firestore, MaterializeCSS, JavaScript.',
                         id: 5,
                         url: 'https://recipes-ddb43.firebaseapp.com/#/'
                     }
@@ -188,7 +157,7 @@
 
     .carousel-view .button-next {
         border-left-color: black;
-        transform: rotate(3deg);
+        /*transform: rotate(0deg);*/
         left: 97%;
     }
 
@@ -349,7 +318,7 @@
 
         .carousel-view .button-next {
             right: 3%;
-            padding: 4px;
+            margin-left: -12px;
         }
 
         .carousel-controls {}
@@ -382,7 +351,7 @@
 
         .carousel-view .button-next {
             right: 3%;
-            padding: 2px;
+            margin-left: -12px;
         }
 
         .carousel-view .button-prev {}
@@ -417,7 +386,7 @@
 
         .carousel-view .button-next {
             right: 3%;
-            padding: 2px;
+            margin-left: -8px;
         }
 
         .carousel-view .button-prev {}
@@ -433,7 +402,7 @@
 
         .carousel-view .button-next {
             right: 3%;
-            padding: 2px;
+            margin-left: 3px;
         }
 
         .carousel-view .button-prev {}
