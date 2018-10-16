@@ -71,7 +71,7 @@
                         title: 'Cucina Ni Nanay',
                         description: 'Filipino cuisine restaurant, taking advantage Vue, CSS Grid and Flexbox',
                         id: 6,
-                        url: 'http://quickest-sneeze.surge.sh/#/about'
+                        url: 'http://quickest-sneeze.surge.sh/#/'
 
                     }
                 ],

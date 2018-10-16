@@ -20,3 +20,17 @@
         }
     }
 </script>
+<style scoped>
+    .bm-menu {
+    z-index: 1000;
+    /* Black*/
+  }
+
+  .bm-burger {}
+
+  .bm-item-list {
+    color: green;
+    margin-left: 10%;
+    font-size: 20px;
+  }
+</style>
