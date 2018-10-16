@@ -59,12 +59,20 @@
                         id: 4,
                         url: 'https://human-resources-cb42b.firebaseapp.com/'
                     },
-                    {
+                    /*{
                         imgLink: require('../assets/vueProjects/recipeBox.jpg'),
                         title: 'Recipe Box',
                         description: 'Application that can create, edit, delete and save recipes, taking advantage of Vue, Firestore, MaterializeCSS, JavaScript.',
                         id: 5,
                         url: 'https://recipes-ddb43.firebaseapp.com/#/'
+                    },*/
+                    {
+                        imgLink: require('../assets/vueProjects/childrenKusina2.jpg'),
+                        title: 'Cucina Ni Nanay',
+                        description: 'Filipino cuisine restaurant, taking advantage Vue, CSS Grid and Flexbox',
+                        id: 6,
+                        url: 'http://quickest-sneeze.surge.sh/#/about'
+
                     }
                 ],
                 stopMe: null,
@@ -120,7 +128,9 @@
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+    @import url('https://fonts.googleapis.com/css?family=Nixie+One');
     @import url('https://fonts.googleapis.com/css?family=Quattrocento+Sans');
+    @import url('https://fonts.googleapis.com/css?family=Libre+Baskerville|Nixie+One');
 
     h4 {
         color: #fff;
@@ -194,19 +204,13 @@
         padding: 2px;
     }
 
-    .carousel-controls .squares .pslide-one p {
-        /*position: absolute;
-        top: 40%;
-        left: 1%;
-        /*transform: translate(-50%, -50%);*/
+    p .pslide-one {
+        font-family: 'Nixie One', cursive;
 
     }
 
-    .carousel-controls .squares .pslide-two p {
-        /*position: absolute;
-        left: 1%;
-        /*transform: translate(-50%, -50%);*/
-
+    p .pslide-two {
+        font-family: 'Libre Baskerville', serif;
     }
 
 

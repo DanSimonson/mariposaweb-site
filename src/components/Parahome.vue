@@ -256,7 +256,7 @@
     }
 
     .vueProjects {
-        padding: 20px;
+        /*padding: 20px;*/
         background: #00B4DB;
         /* fallback for old browsers */
         background: -webkit-linear-gradient(to right, #0083B0, #00B4DB);
@@ -266,8 +266,7 @@
         /*border: 5px solid black;*/
         height: 630px;
         margin: 0 auto;
-        padding: 5px;
-
+        padding: 5px
     }
 
     /*#two {

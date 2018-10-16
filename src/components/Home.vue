@@ -10,7 +10,7 @@
     name: 'customer-page',
     components: {
       Parallax,
-      Slider
+      Slider,
     },
     data() {
       return {
@@ -44,6 +44,7 @@
 <template>
 
   <div id="customer-page">
+
     <nav-bar></nav-bar>
     <Slider></Slider>
 

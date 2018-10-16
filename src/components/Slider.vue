@@ -43,10 +43,10 @@
             return {
                 msgs: [
                     { msg: 'We Focus on solving complex problems with clear and effective solutions.' },
-                    { msg: 'We create custom web solutions – be it during discovery, definition, design, development or deployment.' },
-                    { msg: 'E-Commerce ready, we build a digital bridge between products and potential customers. ' },
-                    { msg: 'We leverage the capabilities of Vue.js and JavaScript to fit your specific business needs.' },
-                    { msg: 'Transforming ideas. Digitally. We always look for new ways to provide better solutions.' },
+                    { msg: 'We create custom solutions – be it during design, development or deployment.' },
+                    { msg: 'We build a digital E-Commerce bridge between products and customers. ' },
+                    { msg: 'We leverage the capabilities of Vue.js and JavaScript to fit needs.' },
+                    { msg: 'Transforming ideas. Digitally. We look for ways to provide better solutions.' },
                 ],
                 images: [
                     {
@@ -142,6 +142,7 @@
         background-repeat: no-repeat;
         background-size: cover;
         position: relative;
+
     }
 
     .seeMeList {
@@ -319,13 +320,19 @@
     /*media queries*/
     @media screen and (max-width: 320px) {}
 
-    @media screen and (max-width: 375px) {
-        font-size: 1.5em;
-    }
+    @media screen and (max-width: 375px) {}
 
     @media screen and (max-width: 425px) {
-        #showcase p {
+        /*#showcase p {
             font-size: 1.8em;
+            margin-top: 40px;
+        }*/
+
+        .gradientMe p {
+            margin-top: 10px;
+            font-size: 1em;
+            line-height: 1 !important;
+
         }
 
     }
