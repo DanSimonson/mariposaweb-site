@@ -72,7 +72,6 @@
                         description: 'Filipino cuisine restaurant, taking advantage Vue, CSS Grid and Flexbox',
                         id: 6,
                         url: 'http://quickest-sneeze.surge.sh/#/'
-
                     }
                 ],
                 stopMe: null,
@@ -126,7 +125,6 @@
     }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
     @import url('https://fonts.googleapis.com/css?family=Nixie+One');
     @import url('https://fonts.googleapis.com/css?family=Quattrocento+Sans');
@@ -138,20 +136,16 @@
 
     .carousel-view {
         position: relative;
-        /*width: 100%;*/
         height: 600px;
         /*border: 5px solid green;*/
     }
 
     .carousel-view .button-prev,
     .carousel-view .button-next {
-        /*height: 20px;
-          width: 20px;
-          background-color: yellow;*/
+        /*background-color: yellow;*/
         position: absolute;
         top: 50%;
         border: 12px solid transparent;
-
         /*border-left-color: transparent;
           border-right-color: purple;
           border-bottom-color: violet;
@@ -185,13 +179,11 @@
         /*border: 5px solid mediumslateblue;*/
         position: relative;
         height: 200px;
-        /*width: 100%;*/
     }
 
     .carousel-controls .squares {
         position: absolute;
         color: white;
-        /*transform: translate(-50%, -50%);*/
         font-size: 1.5em;
         font-weight: 700;
         font-family: 'Quattrocento Sans', sans-serif;
@@ -206,19 +198,13 @@
 
     p .pslide-one {
         font-family: 'Nixie One', cursive;
-
     }
 
     p .pslide-two {
         font-family: 'Libre Baskerville', serif;
     }
 
-
     .carousel-controls .squares a {
-        /*position: absolute;
-        top: 80%;
-        left: 5%;
-        transform: translate(-50%, -50%);*/
         font-family: 'Quattrocento Sans', sans-serif;
         font-size: 1em;
         color: #fff;
@@ -227,22 +213,6 @@
     .carousel-controls .squares a:hover {
         color: wheat;
     }
-
-    /* .carousel-controls .squares div {
-            /*position: absolute;
-        height: 40px;
-        width: 40px;
-        margin-right: 10px;
-        background-color: white;
-        border-radius: 50%;
-        display: flex;
-        top: 70%;
-        left: 70%;
-        transform: translate(-50%, -50%);
-
-    }*/
-
-
 
     .slide {
         flex: 0 0 20em;
@@ -254,7 +224,6 @@
         border: 0.1em solid #000;
         border-radius: 50%;
         transition: transform 0.3s ease-in-out;
-
     }
 
     .slide:first-of-type {
@@ -281,7 +250,6 @@
     }
 
     /*media queries*/
-
     @media screen and (max-width: 320px) {
         .slide {
             height: 20em;
@@ -310,8 +278,6 @@
         .carousel-controls .squares a {
             font-size: 1em;
         }
-
-
     }
 
     @media screen and (max-width: 375px) {
@@ -335,7 +301,6 @@
 
         .carousel-controls .squares .pslide-one p {
             font-size: 1em;
-
         }
 
         .carousel-controls .squares .pslide-two p {

@@ -1,34 +1,11 @@
 <template>
     <div>
-        <!--<transition name="fade" mode="in-out" tag="div">-->
+
         <transition name="slide-anim">
-            <!--enter-active-class="animated fadeIn" leave-active-class="animated fadeOut">-->
             <div id="slider" :style="{backgroundImage: 'url(' + images[index].url + ')'}">
                 <header id="showcase">
                     <div class='gradientMe'>
-                        <!--<h1>Mariposaweb</h1>
-                        <div style="height:5px;"></div>-->
                         <P>{{ msgs[currentMsg].msg }}</P>
-
-
-                        <!--<ul class='seeMeList'>
-                            <li id='msgList' :style=""></li>
-                            <transition-group appear name="msgMe">
-                                <!--</transition-group>enter-active-class="animated flipInX"
-                                leave-active-class="animated flipOutX">-->
-                        <!--<li v-for="(dataMsg,index) in data" :key='index'>{{ dataMsg.msg }}</li>-->
-                        <!--</transition-group>
-                        </ul>-->
-                        <!--removed transition until later-->
-                        <!--<transition appear appear-name="custom-classes-transition" appear-active-class="animated rubberBand">-->
-
-                        <!--<h1 v-if="showh1">Welcome To The Mariposaweb</h1>-->
-
-                        <!--</transition>
-                        <transition appear appear-name="custom-classes-transition" appear-active-class="animated jello">-->
-
-                        <!--<p v-if="showp"> modern web development using the latest JavaScript techniques and Vue.</p>-->
-                        <!--</transition>-->
                     </div>
                 </header>
             </div>
@@ -142,7 +119,6 @@
         background-repeat: no-repeat;
         background-size: cover;
         position: relative;
-
     }
 
     .seeMeList {
@@ -188,9 +164,6 @@
             opacity: 1;
         }
     }
-
-
-
 
     #content {
         display: grid;
@@ -240,9 +213,9 @@
 
     #showcase {
         /*background-image: url('https://res.cloudinary.com/dmglopmul/image/upload/v1537088446/background2.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 100vh;*/
+        background-size: cover;
+        background-position: center;
+        height: 100vh;*/
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -323,17 +296,11 @@
     @media screen and (max-width: 375px) {}
 
     @media screen and (max-width: 425px) {
-        /*#showcase p {
-            font-size: 1.8em;
-            margin-top: 40px;
-        }*/
-
         .gradientMe p {
             margin-top: 10px;
             font-size: 1em;
             line-height: 1 !important;
 
         }
-
     }
 </style>
