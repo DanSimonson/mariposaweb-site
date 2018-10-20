@@ -18,7 +18,7 @@
         <v-parallax dark :src="imagetwo" height="380"></v-parallax>
 
         <div class="dividertwo"></div>
-        <p class="myBtn titlePara">Javascript Projects</p>
+        <p class="myBtn">Javascript Projects</p>
         <div class="grid myBtn">
             <div class="flex-card">
                 <!-- image container -->
@@ -229,6 +229,10 @@
         font-weight: 900;
     }
 
+    p.myBtn {
+        font-size: 2.5em;
+    }
+
     #parahome {
         background: #00B4DB;
         /* fallback for old browsers */
@@ -246,21 +250,10 @@
         background: linear-gradient(to right, #0083B0, #00B4DB);
         /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
         /*border: 5px solid black;*/
-        height: 630px;
+        height: 600px;
         margin: 0 auto;
         padding: 5px
     }
-
-    .titlePara {
-        font-size: 2em;
-    }
-
-    /*.myBtn {
-        color: w#BDBDBD;
-        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-        font-weight: 900;
-    }*/
-
 
     /*javascript cards*/
     .grid {
@@ -327,7 +320,9 @@
         border: 5px solid #fff;*/
     }
 
+    /*******************/
 
+    /*media queries*/
     @media only screen and (max-width: 768px) {
         .grid {
             grid-template-columns: 1fr 1fr;
@@ -340,17 +335,7 @@
         }
     }
 
-
-    /*******************/
-
-
-
-
-
-
-
-
-
+    /*animated button*/
     .card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating) {
         color: #0D47A1;
         font-size: 16px;
@@ -540,45 +525,5 @@
         font-size: 14px;
         color: #fff;
         background: #00B4DB;
-    }
-
-    /*******slide css********************/
-    /* Code to adjust the layout to 2 cards per row */
-    @media all and (min-width:40em) {
-
-        /* Float layout */
-        .flex-card-list li {
-            width: 50%;
-        }
-
-        .no-flexbox .flex-card-list li {
-            float: left;
-
-        }
-
-    }
-
-    /* Code to adjust the layout to 3 cards per row */
-    @media all and (min-width:40em) and (max-width:60em) {
-
-        /* Clears the row for 2 item per row layout */
-        .no-flexbox .flex-card-list li:nth-child(2n+1) {
-            clear: both;
-        }
-    }
-
-    @media all and (min-width:60em) {
-
-        /* common to flex and non-flex */
-        .flex-card-list li {
-            width: 33.33%;
-        }
-
-        /* Float specific: Clear after every third item */
-        .no-flexbox .flex-card-list li:nth-child(3n+1) {
-            clear: both;
-        }
-
-
     }
 </style>

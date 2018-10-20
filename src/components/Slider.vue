@@ -1,15 +1,24 @@
 <template>
     <div>
-
-        <transition name="slide-anim">
+        <transition name="fade">
             <div id="slider" :style="{backgroundImage: 'url(' + images[index].url + ')'}">
                 <header id="showcase">
                     <div class='gradientMe'>
-                        <P>{{ msgs[currentMsg].msg }}</P>
+                        <p>{{ msgs[currentMsg].msg }}</p>
                     </div>
                 </header>
             </div>
         </transition>
+
+        <!--<transition name="slide-anim">
+        <div id="slider" :style="{backgroundImage: 'url(' + images[index].url + ')'}">
+            <header id="showcase">
+                <div class='gradientMe'>
+                    <P>{{ msgs[currentMsg].msg }}</P>
+                </div>
+            </header>
+        </div>
+        </transition>-->
     </div>
 </template>
 <script>
@@ -110,6 +119,8 @@
     }
 </script>
 <style scoped>
+    @import url('https://fonts.googleapis.com/css?family=Gravitas+One');
+
     #slider {
         display: flex;
         flex-direction: column-reverse;
@@ -134,13 +145,30 @@
             7px 6px 1px #ccc;
     }
 
-    .msgMe-enter-active {
-        animation: flipInX 3s;
+    .fade-enter,
+    .fade-leave-to {
+        opacity: 0;
+
+    }
+
+    .fade-enter-to,
+    .fade-leave {
+        opacity: 1;
+    }
+
+    .fade-enter-active .fade-leave-active {
+        transition: opacity transform 200ms ease-out;
+    }
+
+
+
+    /*.msgMe-enter-active {
+        animation: fade 3s;
         animation-delay: .5s;
     }
 
     .msgMe-leave-active {
-        animation: flipOutX 3s;
+        animation: fade 3s;
     }
 
     .slide-anim-enter-active- {
@@ -156,14 +184,49 @@
     @keyframes coming {
         from {
             transform: translateX(-50px);
-            opacity: 0;
+            /*opacity: 0;
         }
 
         to {
             transform: translateX(0px);
+            /*opacity: 1;
+        }
+    }
+
+    @keyframes coming {
+        0% {
+            transform: scale(0);
+            opacity: 0;
+
+        }
+
+        50% {
+            transform: scale(1.5);
+            opacity: .5;
+        }
+
+        100% {
+            transform: scale(1);
             opacity: 1;
         }
     }
+
+    @keyframes going {
+        0% {
+            transform: scale(1);
+            opacity: 1;
+        }
+
+        50% {
+            transform: scale(1.5);
+            opacity: .5;
+        }
+
+        100% {
+            transform: scale(0);
+            opacity: 0;
+        }
+    }*/
 
     #content {
         display: grid;
@@ -233,16 +296,27 @@
         background: linear-gradient(rgba(20, 20, 20, .03),
             rgba(20, 20, 20, .03));
         border-radius: 16px;
+
+    }
+
+    #showcase p {
+        font-family: 'Gravitas One', cursive;
+        color: white;
+        /*#BDBDBD;*/
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+        font-size: 1.5em;
+        text-decoration: none;
+
     }
 
 
 
     #showcase p {
-        animation-duration: 4s;
+        /*animation-duration: 4s;
         /*animation-delay: 1s;
         animation-duration: 5s;
         animation-iteration-count: infinite;*/
-        font-size: 2em;
+        /*font-size: 2em;
         letter-spacing: 0.1em;
         color: #FAFAFA;
         text-decoration: underline;
@@ -269,7 +343,7 @@
     }
 
     #showcase h1 {
-        font-size: 2.5em;
+        /*font-size: 2.5em;
         animation-duration: 4s;
         color: #FAFAFA;
         text-decoration: underline;
@@ -296,11 +370,10 @@
     @media screen and (max-width: 375px) {}
 
     @media screen and (max-width: 425px) {
-        .gradientMe p {
-            margin-top: 10px;
-            font-size: 1em;
-            line-height: 1 !important;
-
+        #showcase p {
+            margin-top: 2px;
+            font-size: 1.5em;
+            line-height: 1.2 !important;
         }
     }
 </style>

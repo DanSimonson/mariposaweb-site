@@ -9,7 +9,7 @@
         </transition-group>
 
         <div class='carousel-controls'>
-            <div class='squares myBtn'>
+            <div class='squares'>
                 <div v-for="(slide, index) in slides" :key="slide.id">
                     <!--</div> :style="{backgroundImage: 'url(' + slides[index].imgLink + ')'}">-->
                     <!--<h4 style="color:black">{{slide.title}}</h4>
@@ -17,7 +17,7 @@
                 </div>
                 <p class="pSlide-one" style="display:inline-block;">{{ slides[currentMsg].title }}</p>
                 <p class="pslide-two" style="display:inline-block;">{{ slides[currentMsg].description }}</p>
-                <a class="myBtn" style="display:inline-block;" :href="`${slides[currentMsg].url}`" target="__blank">See
+                <a style="display:inline-block;" :href="`${slides[currentMsg].url}`" target="__blank">See
                     More...</a>
             </div>
 
@@ -179,22 +179,27 @@
         align-items: center;
         overflow: hidden;
         width: 100%;
-        min-height: 65%;
+        min-height: 63%;
         /*border: 5px solid red*/
     }
 
     .carousel-controls {
         /*border: 5px solid mediumslateblue;*/
         position: relative;
-        height: 200px;
+        height: 180px;
+        /*200px;*/
+        ;
     }
 
     .carousel-controls .squares {
         position: absolute;
-        /*color: white;*/
-        font-size: 1.5em;
-        font-weight: 700;
-        font-family: 'Quattrocento Sans', sans-serif;
+        /*color: white;
+        font-size: 1.5em;*/
+        font-family: 'Libre Baskerville', serif;
+        line-height: 1.2;
+        color: white;
+        /*font-weight: 700;
+        font-family: 'Quattrocento Sans', sans-serif;*/
         /*border: 5px solid yellow;*/
         height: 200px;
         width: 400px;
@@ -204,18 +209,27 @@
         padding: 2px;
     }
 
-    p .pslide-one {
-        font-family: 'Nixie One', cursive;
+    p.pSlide-one {
+        /*font-family: 'Libre Baskerville', serif;
+        line-height: 1 !important;
+        padding-bottom: 0;*/
+        font-size: 1.5em;
     }
 
-    p .pslide-two {
-        font-family: 'Libre Baskerville', serif;
+    p.pslide-two {
+        /*font-family: 'Libre Baskerville', serif;
+        padding-top: 0;
+        line-height: 1 !important;*/
+        font-size: 1.3em;
     }
 
     .carousel-controls .squares a {
-        font-family: 'Quattrocento Sans', sans-serif;
-        font-size: 1em;
-        /*color: #fff;*/
+        /*font-family: 'Quattrocento Sans', sans-serif;
+        font-size: 1em;*/
+        margin-bottom: 20px;
+        font-size: 1.3em;
+        color: white;
+
     }
 
     .carousel-controls .squares a:hover {
@@ -337,6 +351,7 @@
         .carousel-controls .squares {
             padding: 2px;
             font-size: 1.2em;
+            line-height: 1;
         }
     }
 
