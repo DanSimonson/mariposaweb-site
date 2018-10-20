@@ -10,93 +10,84 @@
         </v-parallax>
         <div class="dividertwo"></div>
         <div class="container vueProjects">
-            <h1 class='h1Style'>Vue.js Projects</h1>
+            <h1 class='myBtn'>Vue.js Projects</h1>
             <Slide></Slide>
-            <!--<div class="card">
-                    <div class="card-image">
-                        <img src="../assets/onlineStore1.jpg" alt="">
-                        <a href="https://vue-blog-ed03b.firebaseapp.com/" target="_blank" class="halfway-fab btn-floating pink pulse">
-                            <i class="material-icons">favorite</i>
-                        </a>
-                    </div>
-                    <div class="card-content">
-                        <span class="card-title">Online Store</span>
-                        <p>A Vue.js online store using vuex for state
-                            management and firebase as database.</p>
-                    </div>
-                    <div class="card-action">
-                        <a class="increase" href="https://vue-blog-ed03b.firebaseapp.com/" target="_blank">See More</a>
-                    </div>
-                </div>
-        </div>-->
-            <!--<div class="col s12 l4">
-                <div class="card">
-                    <div class="card-image">
-                        <img src="https://res.cloudinary.com/dmglopmul/image/upload/v1537108170/projectPhotos/hackerNews.png"
-                            alt="">
-                        <a href='http://extra-small-stick.surge.sh' target="_blank" class="halfway-fab btn-floating pink pulse">
-                            <i class="material-icons">favorite</i>
-                        </a>
-                    </div>
-                    <div class="card-content">
-                        <span class="card-title">Hacker-News Clone</span>
-                        <p>A Hacker-News Clone, utilizing Vue, Axios, Firestore, JavaScript,
-                            ES6.</p>
-                    </div>
-                    <div class="card-action">
-                        <a class="tilt" href='http://extra-small-stick.surge.sh' target="_blank">See More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col s12 l4">
-                <div class="card">
-                    <div class="card-image">
-                        <img src="../assets/customerInformation.jpg" alt="">
-                        <a href='https://human-resources-cb42b.firebaseapp.com/' target="_blank" class="halfway-fab btn-floating pink pulse">
-                            <i class="material-icons">favorite</i>
-                        </a>
-                    </div>
-                    <div class="card-content">
-                        <span class="card-title">Customer Information</span>
-                        <p>A create, read, update, delete applictions with Vue, Firestore,
-                            Bootstrap 4.</p>
-                    </div>
-                    <div class="card-action">
-                        <a href='https://human-resources-cb42b.firebaseapp.com/' target="_blank"><span class="spin">See
-                                More</span></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col s12 l4">
-                <div class="card">
-                    <div class="card-image">
-                        <img src='https://res.cloudinary.com/dmglopmul/image/upload/v1538294400/spaCover.jpg' alt="">
-                        <a href='https://user-info-ee17c.firebaseapp.com/' target="_blank" class="halfway-fab btn-floating pink pulse">
-                            <i class="material-icons">favorite</i>
-                        </a>
-                    </div>
-                    <div class="card-content">
-                        <span class="card-title">Spa Website</span>
-                        <p>Spa website using Vue, Firestore Authentication, Route Guards, featuring CSS Grid
-                            & Flexbox</p>
-                    </div>
-                    <div class="card-action">
-                        <a class="border" href='https://user-info-ee17c.firebaseapp.com/' target="_blank">See
-                            More</a>
-
-                    </div>
-                </div>
-            </div>-->
         </div>
 
         <div class="dividertwo"></div>
         <v-parallax dark :src="imagetwo" height="380"></v-parallax>
 
         <div class="dividertwo"></div>
+        <p class="myBtn titlePara">Javascript Projects</p>
+        <div class="grid myBtn">
+            <div class="flex-card">
+                <!-- image container -->
+                <div class="flex-card-image">
+                    <img src="https://res.cloudinary.com/dmglopmul/image/upload/v1537117177/projectPhotos/simon.jpg" />
+                </div>
+                <!-- content container -->
+                <div class="flex-card-content">
+                    <h3 class="flex-card-heading">Simon Game</h3>
+                    <p>An application simulating the 70's simon game, created with vanilla
+                        Javascript, CSS3, HTML.</p>
+                    <a href='https://dansimonson.github.io/simongame/' target="_blank" class="flex-card-button"><span
+                            class="spin">See
+                            More</span></a>
+                </div>
+            </div>
+            <div class="flex-card">
+                <!-- image container -->
+                <div class="flex-card-image">
+                    <img src="https://res.cloudinary.com/dmglopmul/image/upload/v1537118049/projectPhotos/wikipedia.jpg" />
+                </div>
+                <!-- content container -->
+                <div class="flex-card-content">
+                    <h3 class="flex-card-heading">Wikipedia Search</h3>
+                    <p>A Wikipedia search engine that uses the Wikipedia API, vanilla
+                        Javascript, CSS3, HTML.</p>
+                    <a href='https://dansimonson.github.io/wikiviewer/' target="_blank" class="flex-card-button tilt myBtn">See
+                        More</a>
+                </div>
+            </div>
+            <div class="flex-card">
+                <!-- image container -->
+                <div class="flex-card-image">
+                    <img src="https://res.cloudinary.com/dmglopmul/image/upload/v1537118827/projectPhotos/twitch.png" />
+                </div>
+                <!-- content container -->
+                <div class="flex-card-content">
+                    <h3 class="flex-card-heading">Twitch</h3>
+                    <p>An application using the twitch API for live streaming, applying
+                        Javascript, CSS3, HTML.</p>
+                    <a href='https://dansimonson.github.io/twitchtv/' target="_blank" class="flex-card-button increase myBtn">See
+                        More</a>
+                </div>
+            </div>
+            <div class="flex-card">
+                <!-- image container -->
+                <div class="flex-card-image">
+                    <img src="https://res.cloudinary.com/dmglopmul/image/upload/v1529504760/calculator.jpg" />
+                </div>
+                <!-- content container -->
+                <div class="flex-card-content">
+                    <h3 class="flex-card-heading">Calculator</h3>
+                    <p>A fully functioning calculator made with JavaScript, Jquery, Bootstrap.</p>
+                    <a href='https://dansimonson.github.io/calculator/' target="
+                    _blank" class="flex-card-button"><span
+                            class="spin myBtn">See
+                            More</span></a>
+                </div>
+            </div>
+        </div>
 
-        <div class="container-fluid" id="three">
+
+
+        <!--<div class="container-fluid" id="three">
             <h1 class='title-text'>Javascript Projects</h1>
-            <div class="row">
+          
+             
+
+            <!--<div class="row">
                 <div class="col s12 l4">
                     <div class="card">
                         <div class="card-image">
@@ -153,7 +144,6 @@
                         </div>
                         <div class="card-action">
                             <a class="increase" href='https://dansimonson.github.io/twitchtv/' target="_blank">See More</a>
-                            <!--<a href="">View Ingredients</a>-->
                         </div>
                     </div>
                 </div>
@@ -174,12 +164,11 @@
                                 _blank"><span
                                     class="spin">See
                                     More</span></a>
-                            <!--<a href="">View Ingredients</a>-->
                         </div>
                     </div>
-                </div>
-            </div>
         </div>
+    </div>
+    </div>-->
 
         <v-parallax dark :src="imagethree" height="300"></v-parallax>
 
@@ -199,13 +188,8 @@
             </div>
         </div>
         <div class="dividertwo"></div>
-
-
-        <!--<app-footer></app-footer>-->
     </div>
-
-
-
+    </div>
 </template>
 
 <script>
@@ -213,8 +197,6 @@
     import imagetwo from "../assets/butterfly2.jpg"
     import imagethree from "../assets/butterfly3.jpg"
     import Slide from './Slide.vue'
-
-
     export default {
         name: 'Parahome',
         components: {
@@ -240,11 +222,11 @@
         padding: 0;
     }
 
-    .h1Style {
-        font-family: 'Gravitas One', cursive;
-        font-weight: 700;
-        color: #E3F2FD;
-        font-size: 24px;
+    .myBtn {
+        color: white;
+        /*#BDBDBD;*/
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+        font-weight: 900;
     }
 
     #parahome {
@@ -269,14 +251,105 @@
         padding: 5px
     }
 
-    /*#two {
-        padding: 20px;
-        background: #00B4DB;        
-        background: -webkit-linear-gradient(to right, #0083B0, #00B4DB);        
-        background: linear-gradient(to right, #0083B0, #00B4DB);
-        
+    .titlePara {
+        font-size: 2em;
+    }
 
+    /*.myBtn {
+        color: w#BDBDBD;
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+        font-weight: 900;
     }*/
+
+
+    /*javascript cards*/
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr;
+        grid-gap: 5px;
+        margin-top: 20px;
+    }
+
+    img {
+        height: 50%;
+        width: 50%;
+        border-radius: 16%;
+    }
+
+    .flexbox .flex-card {
+        display: flex;
+        flex-direction: column;
+    }
+
+    flex-card-content p {
+        margin: 5px;
+    }
+
+    span.spin {
+        color: white;
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+        font-weight: 900;
+        font-size: 1em;
+    }
+
+    span.spin:hover {
+        color: wheat;
+    }
+
+    .flex-card-button {
+        width: 115px;
+        height: 25px;
+        /*background: #4E9CAF;*/
+        padding-top: 2px;
+        padding-right: 10px;
+        padding-left: 10px;
+        padding-bottom: 15px;
+        margin-bottom: 10px;
+        text-align: center;
+        /*border-radius: 5px;
+        color: white;
+        font-weight: bold;*/
+        font-size: 1.2em;
+    }
+
+    .flex-card-button:hover {
+        color: wheat;
+    }
+
+    a.flex-card-button.tilt.myBtn:hover {
+        color: wheat
+    }
+
+
+    .flex-card-button.border {
+        /*color: #fff;
+        border: 5px solid #fff;*/
+    }
+
+
+    @media only screen and (max-width: 768px) {
+        .grid {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    @media only screen and (max-width: 500px) {
+        .grid {
+            grid-template-columns: 1fr;
+        }
+    }
+
+
+    /*******************/
+
+
+
+
+
+
+
+
 
     .card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating) {
         color: #0D47A1;
@@ -292,7 +365,7 @@
 
     .tilt:hover {
         transform: rotate(15deg);
-        color: green;
+        color: #78909C;
     }
 
     .border {
@@ -349,8 +422,6 @@
         display: inline-block;
         color: #0D47A1;
         font-size: 16px;
-
-
     }
 
     .spin {
@@ -388,7 +459,6 @@
         /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     }
 
-
     .title-text {
         font-family: 'Gravitas One', cursive;
         font-weight: 700;
@@ -400,8 +470,6 @@
     .card {
         margin: 5px 5px;
     }
-
-
 
     #three {
         padding: 20px;
@@ -428,7 +496,6 @@
         /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
         align-items: center;
         justify-content: center;
-
     }
 
     promoBoxMiddle {
@@ -439,9 +506,9 @@
         color: #fff;
         background: #00B4DB;
         /* fallback for old browsers 
-        background: -webkit-linear-gradient(to right, #0083B0, #00B4DB);*/
-        /* Chrome 10-25, Safari 5.1-6 
-        background: linear-gradient(to right, #0083B0, #00B4DB);*/
+        background: -webkit-linear-gradient(to right, #0083B0, #00B4DB);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #0083B0, #00B4DB);
         /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
         align-items: center;
         justify-content: center;
@@ -452,7 +519,6 @@
         padding: 5px 5px;
         font-size: 16px;
     }
-
 
     #section-c div {
         padding: 20px;
@@ -477,4 +543,42 @@
     }
 
     /*******slide css********************/
+    /* Code to adjust the layout to 2 cards per row */
+    @media all and (min-width:40em) {
+
+        /* Float layout */
+        .flex-card-list li {
+            width: 50%;
+        }
+
+        .no-flexbox .flex-card-list li {
+            float: left;
+
+        }
+
+    }
+
+    /* Code to adjust the layout to 3 cards per row */
+    @media all and (min-width:40em) and (max-width:60em) {
+
+        /* Clears the row for 2 item per row layout */
+        .no-flexbox .flex-card-list li:nth-child(2n+1) {
+            clear: both;
+        }
+    }
+
+    @media all and (min-width:60em) {
+
+        /* common to flex and non-flex */
+        .flex-card-list li {
+            width: 33.33%;
+        }
+
+        /* Float specific: Clear after every third item */
+        .no-flexbox .flex-card-list li:nth-child(3n+1) {
+            clear: both;
+        }
+
+
+    }
 </style>

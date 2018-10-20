@@ -1,7 +1,4 @@
 <script>
-  //const butter = Butter('34d3d54d8f742ba36133328ca6b67a50a85ddfe1');
-  //import { butter } from '@/buttercms'
-  //var butter = Butter('34d3d54d8f742ba36133328ca6b67a50a85ddfe1');
   import butter from '@/buttercms';
   import Parallax from "vue-parallaxy";
   import Slider from './Slider'
@@ -44,39 +41,11 @@
 <template>
 
   <div id="customer-page">
-
-    <nav-bar></nav-bar>
+    <!--<nav-bar></nav-bar>-->
+    <Navigation></Navigation>
     <Slider></Slider>
-
-    <!--<app-header></app-header>-->
-    <!--<header id="showcase">-->
-    <!--<button @click="show = !show">
-        Toggle render
-      </button>-->
-    <!--<div>
-        <transition appear appear-name="custom-classes-transition" appear-active-class="animated rubberBand">
-          <h1 v-if="showh1">Welcome To The Mariposaweb</h1>
-
-        </transition>
-        <transition appear appear-name="custom-classes-transition" appear-active-class="animated jello">
-          <p v-if="showp"> modern web development using the latest JavaScript techniques and Vue.</p>
-        </transition>
-      </div>
-
-      <!--
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi officiis ipsum officia numquam expedita ullam.</p>
-      <a href="#" class="button">Read More</a>-->
-
-    <!--</header>-->
     <div class="divider"></div>
     <para-home />
-
-    <!--<parallax :speed-factor="0.3" breakpoint="(min-width: 80px)">
-        <img :src="image" />
-      </parallax>
-      <parallax :fixed='true'>
-        <img :src="image" />
-      </parallax>-->
     <app-footer></app-footer>
   </div>
 </template>
@@ -104,8 +73,6 @@
     margin: 0;
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     font-size: 17px;
-    /*color: white;
-    #926239*/
     line-height: 1.6;
   }
 

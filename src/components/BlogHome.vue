@@ -52,7 +52,8 @@
 
 <template>
     <div>
-        <nav-bar></nav-bar>
+        <Navigation></Navigation>
+        <!--<nav-bar></nav-bar>-->
         <div id="blog-home">
 
             <!--<div id='container' class="hidden-md-and-down">

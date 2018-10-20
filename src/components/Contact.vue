@@ -1,6 +1,7 @@
 <template>
     <div id='outer'>
-        <nav-bar></nav-bar>
+        <Navigation></Navigation>
+        <!--<nav-bar></nav-bar>-->
         <div id='spacer'></div>
         <v-container class='bordered'>
 
@@ -22,12 +23,6 @@
                     </v-form>
                 </v-flex>
             </v-layout>
-
-            <!--<v-layout>
-            <v-flex xs12 sm6 offset-sm3>
-                <v-btn type="submit" value="Send">Submit</v-btn>
-            </v-flex>
-        </v-layout>-->
         </v-container>
         <div class="mapouter">
             <div class="gmap_canvas">
@@ -63,8 +58,6 @@
     #outer {
         background-color: #CFD8DC;
         ;
-        /*#CFD8DC;*/
-        /*#E8EAF6;*/
     }
 
     #footSpace {
@@ -88,14 +81,9 @@
     }
 
     .bordered {
-        /*width: 800px;
-        //height: 800px;
-        padding: 20px;*/
         border: 10px outset burlywood;
-        /*burlywood;*/
         border-radius: 8px;
         background: #E8EAF6;
-        /*#F5F5F5;*/
         margin-bottom: 10px;
     }
 </style>
