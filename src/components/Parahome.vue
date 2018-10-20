@@ -10,7 +10,7 @@
         </v-parallax>
         <div class="dividertwo"></div>
         <div class="container vueProjects">
-            <h1 class='h1Style'>Vue.js Projects</h1>
+            <h1 class='myBtn'>Vue.js Projects</h1>
             <Slide></Slide>
         </div>
 
@@ -18,10 +18,76 @@
         <v-parallax dark :src="imagetwo" height="380"></v-parallax>
 
         <div class="dividertwo"></div>
+        <p class="myBtn titlePara">Javascript Projects</p>
+        <div class="grid myBtn">
+            <div class="flex-card">
+                <!-- image container -->
+                <div class="flex-card-image">
+                    <img src="https://res.cloudinary.com/dmglopmul/image/upload/v1537117177/projectPhotos/simon.jpg" />
+                </div>
+                <!-- content container -->
+                <div class="flex-card-content">
+                    <h3 class="flex-card-heading">Simon Game</h3>
+                    <p>An application simulating the 70's simon game, created with vanilla
+                        Javascript, CSS3, HTML.</p>
+                    <a href='https://dansimonson.github.io/simongame/' target="_blank" class="flex-card-button"><span
+                            class="spin">See
+                            More</span></a>
+                </div>
+            </div>
+            <div class="flex-card">
+                <!-- image container -->
+                <div class="flex-card-image">
+                    <img src="https://res.cloudinary.com/dmglopmul/image/upload/v1537118049/projectPhotos/wikipedia.jpg" />
+                </div>
+                <!-- content container -->
+                <div class="flex-card-content">
+                    <h3 class="flex-card-heading">Wikipedia Search</h3>
+                    <p>A Wikipedia search engine that uses the Wikipedia API, vanilla
+                        Javascript, CSS3, HTML.</p>
+                    <a href='https://dansimonson.github.io/wikiviewer/' target="_blank" class="flex-card-button tilt myBtn">See
+                        More</a>
+                </div>
+            </div>
+            <div class="flex-card">
+                <!-- image container -->
+                <div class="flex-card-image">
+                    <img src="https://res.cloudinary.com/dmglopmul/image/upload/v1537118827/projectPhotos/twitch.png" />
+                </div>
+                <!-- content container -->
+                <div class="flex-card-content">
+                    <h3 class="flex-card-heading">Twitch</h3>
+                    <p>An application using the twitch API for live streaming, applying
+                        Javascript, CSS3, HTML.</p>
+                    <a href='https://dansimonson.github.io/twitchtv/' target="_blank" class="flex-card-button increase myBtn">See
+                        More</a>
+                </div>
+            </div>
+            <div class="flex-card">
+                <!-- image container -->
+                <div class="flex-card-image">
+                    <img src="https://res.cloudinary.com/dmglopmul/image/upload/v1529504760/calculator.jpg" />
+                </div>
+                <!-- content container -->
+                <div class="flex-card-content">
+                    <h3 class="flex-card-heading">Calculator</h3>
+                    <p>A fully functioning calculator made with JavaScript, Jquery, Bootstrap.</p>
+                    <a href='https://dansimonson.github.io/calculator/' target="
+                    _blank" class="flex-card-button"><span
+                            class="spin myBtn">See
+                            More</span></a>
+                </div>
+            </div>
+        </div>
 
-        <div class="container-fluid" id="three">
+
+
+        <!--<div class="container-fluid" id="three">
             <h1 class='title-text'>Javascript Projects</h1>
-            <div class="row">
+          
+             
+
+            <!--<div class="row">
                 <div class="col s12 l4">
                     <div class="card">
                         <div class="card-image">
@@ -100,9 +166,9 @@
                                     More</span></a>
                         </div>
                     </div>
-                </div>
-            </div>
         </div>
+    </div>
+    </div>-->
 
         <v-parallax dark :src="imagethree" height="300"></v-parallax>
 
@@ -122,6 +188,7 @@
             </div>
         </div>
         <div class="dividertwo"></div>
+    </div>
     </div>
 </template>
 
@@ -155,11 +222,11 @@
         padding: 0;
     }
 
-    .h1Style {
-        font-family: 'Gravitas One', cursive;
-        font-weight: 700;
-        color: #E3F2FD;
-        font-size: 24px;
+    .myBtn {
+        color: white;
+        /*#BDBDBD;*/
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+        font-weight: 900;
     }
 
     #parahome {
@@ -184,6 +251,106 @@
         padding: 5px
     }
 
+    .titlePara {
+        font-size: 2em;
+    }
+
+    /*.myBtn {
+        color: w#BDBDBD;
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+        font-weight: 900;
+    }*/
+
+
+    /*javascript cards*/
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr;
+        grid-gap: 5px;
+        margin-top: 20px;
+    }
+
+    img {
+        height: 50%;
+        width: 50%;
+        border-radius: 16%;
+    }
+
+    .flexbox .flex-card {
+        display: flex;
+        flex-direction: column;
+    }
+
+    flex-card-content p {
+        margin: 5px;
+    }
+
+    span.spin {
+        color: white;
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+        font-weight: 900;
+        font-size: 1em;
+    }
+
+    span.spin:hover {
+        color: wheat;
+    }
+
+    .flex-card-button {
+        width: 115px;
+        height: 25px;
+        /*background: #4E9CAF;*/
+        padding-top: 2px;
+        padding-right: 10px;
+        padding-left: 10px;
+        padding-bottom: 15px;
+        margin-bottom: 10px;
+        text-align: center;
+        /*border-radius: 5px;
+        color: white;
+        font-weight: bold;*/
+        font-size: 1.2em;
+    }
+
+    .flex-card-button:hover {
+        color: wheat;
+    }
+
+    a.flex-card-button.tilt.myBtn:hover {
+        color: wheat
+    }
+
+
+    .flex-card-button.border {
+        /*color: #fff;
+        border: 5px solid #fff;*/
+    }
+
+
+    @media only screen and (max-width: 768px) {
+        .grid {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    @media only screen and (max-width: 500px) {
+        .grid {
+            grid-template-columns: 1fr;
+        }
+    }
+
+
+    /*******************/
+
+
+
+
+
+
+
+
+
     .card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating) {
         color: #0D47A1;
         font-size: 16px;
@@ -198,7 +365,7 @@
 
     .tilt:hover {
         transform: rotate(15deg);
-        color: green;
+        color: #78909C;
     }
 
     .border {
@@ -376,4 +543,42 @@
     }
 
     /*******slide css********************/
+    /* Code to adjust the layout to 2 cards per row */
+    @media all and (min-width:40em) {
+
+        /* Float layout */
+        .flex-card-list li {
+            width: 50%;
+        }
+
+        .no-flexbox .flex-card-list li {
+            float: left;
+
+        }
+
+    }
+
+    /* Code to adjust the layout to 3 cards per row */
+    @media all and (min-width:40em) and (max-width:60em) {
+
+        /* Clears the row for 2 item per row layout */
+        .no-flexbox .flex-card-list li:nth-child(2n+1) {
+            clear: both;
+        }
+    }
+
+    @media all and (min-width:60em) {
+
+        /* common to flex and non-flex */
+        .flex-card-list li {
+            width: 33.33%;
+        }
+
+        /* Float specific: Clear after every third item */
+        .no-flexbox .flex-card-list li:nth-child(3n+1) {
+            clear: both;
+        }
+
+
+    }
 </style>

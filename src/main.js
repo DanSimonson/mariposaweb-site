@@ -22,7 +22,7 @@ Vue.component("app-header", AppHeader);
 global.jQuery = jQuery;
 //global.jQuery = $;*/
 Vue.use(Vuetify, {
-  iconfont: "fa" // 'md' || 'mdi' || 'fa' || 'fa4'
+  iconfont: "fab" // 'md' || 'mdi' || 'fa' || 'fa4'
 });
 Vue.use(VueDisqus);
 /*
@@ -30,7 +30,7 @@ import BootstrapVue from "bootstrap-vue";
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap-vue/dist/bootstrap-vue.css";*/
 import "bootstrap/dist/css/bootstrap.min.css";
-import "mdbvue/build/css/mdb.css";
+/*import "mdbvue/build/css/mdb.css";*/
 //Vue.use(BootstrapVue);
 
 Vue.config.productionTip = false;

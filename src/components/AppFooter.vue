@@ -23,7 +23,7 @@
                 if (anIcon === 'fa fa-github') {
                     var win = window.open('https://github.com/DanSimonson/', '_blank');
                     win.focus();
-                } else if (anIcon === 'fa fa-facebook') {
+                } else if (anIcon === 'fa fa-facebook-square fa-fw') {
                     var win = window.open("https://www.facebook.com/simonsondan", '_blank');
                     win.focus();
                 } else if (anIcon === 'fa fa-linkedin') {
@@ -63,6 +63,7 @@
             </v-card>
         </v-footer>-->
         <section class="info myBtn">
+            <!--<p><i class="fab fa-facebook"></i>here</p>-->
             <strong class="subheading">This site is powered with <a style="color:#BDBDBD;text-decoration: none;font-weight: bold"
                     href="https://buttercms.com/" target="_blank">Buttercms</a>
                 and <a style="color:#BDBDBD;text-decoration: none;font-weight: bold" href="https://vuejs.org/" target="_blank">Vue</a>.
@@ -70,14 +71,16 @@
         </section>
         <section class="social">
             <ul class="social-set">
-                <li><a class="sociali" href="#" target="_blank" aria-label="Twitter">
-                        <i class="fa fa-twitter fa-fw" title="Twitter"></i></a></li>
-                <li><a class="sociali" href="#" target="_blank" aria-label="GitHub">
-                        <i class="fa fa-github-square fa-fw" title="GitHub"></i></a></li>
-                <li><a class="sociali" href="#" target="_blank" aria-label="Facebook">
-                        <i class="fa fa-facebook-square fa-fw" title="Facebook"></i></a></li>
-                <li><a class="sociali" href="#" target="_blank" aria-label="LinkedIn">
-                        <i class="fa fa-linkedin fa-fw" title="LinkedIn"></i></a></li>
+                <li><a class="sociali" href="https://twitter.com/simonsondan?lang=en" target="_blank" aria-label="
+                        Twitter">
+                        <i class="fab fa-twitter lg" title="Twitter"></i></a></li>
+                <li><a class="sociali" href="https://github.com/DanSimonson/" target="_blank" aria-label="GitHub">
+                        <i class="fab fa-github-square lg" title="GitHub"></i></a></li>
+                <li><a class="sociali" href="https://www.facebook.com/simonsondan" target="_blank" aria-label="Facebook">
+                        <i class="fab fa-facebook-square lg" title="Facebook"></i></i></a></li>
+                <li><a class="sociali" href="https://www.linkedin.com/in/dansimonsonmariposaweb/" target="_blank"
+                        aria-label="LinkedIn">
+                        <i class="fab fa-linkedin lg" title="LinkedIn"></i></a></li>
             </ul>
         </section>
         <section class="copyright myBtn">
@@ -109,6 +112,24 @@
         font-weight: 900;
     }
 
+    i.fab.fa-github-square {
+        color: #1565C0;
+    }
+
+    i.fab.fa-twitter {
+        color: #1565C0;
+
+    }
+
+    i.fab.fa-facebook-square {
+        color: #1565C0;
+        /*black;*/
+    }
+
+    i.fab.fa-linkedin {
+        color: #1565C0;
+    }
+
     .info {
         background: #01579B;
     }
@@ -127,9 +148,14 @@
         padding-top: 1em;
     }
 
+    /* social icons*/
+
+
+    /*********************/
+
     /* https://css-tricks.com/snippets/css/a-guide-to-flexbox/
-   prefixes courtesy of autoprefixer
-   */
+   prefixes courtesy of autoprefixer*/
+
     ul.social-set {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -162,22 +188,25 @@
         align-items: center;
     }
 
-    /* Font Awesome icons */
     a.sociali {
         font-size: 2em;
         line-height: 1.2em;
         padding: 10px;
-        background: #00ACC1;
-        /*#accfc0;*/
+        background: white;
+        /*background: #00ACC1;
+        #accfc0;*/
         color: #fff;
         margin-right: 10px;
         margin-bottom: 10px !important;
         padding-bottom: 10px !important;
+        margin-top: 10px;
+        /*border-radius: 50%;*/
     }
 
     a.sociali:hover,
     a.sociali:focus {
+
         background: #2193b0;
-        /*#6d8785;*/
+
     }
 </style>

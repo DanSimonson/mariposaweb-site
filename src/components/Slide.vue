@@ -9,7 +9,7 @@
         </transition-group>
 
         <div class='carousel-controls'>
-            <div class='squares'>
+            <div class='squares myBtn'>
                 <div v-for="(slide, index) in slides" :key="slide.id">
                     <!--</div> :style="{backgroundImage: 'url(' + slides[index].imgLink + ')'}">-->
                     <!--<h4 style="color:black">{{slide.title}}</h4>
@@ -17,7 +17,8 @@
                 </div>
                 <p class="pSlide-one" style="display:inline-block;">{{ slides[currentMsg].title }}</p>
                 <p class="pslide-two" style="display:inline-block;">{{ slides[currentMsg].description }}</p>
-                <a style="display:inline-block;" :href="`${slides[currentMsg].url}`" target="__blank">See More...</a>
+                <a class="myBtn" style="display:inline-block;" :href="`${slides[currentMsg].url}`" target="__blank">See
+                    More...</a>
             </div>
 
         </div>
@@ -134,6 +135,13 @@
         color: #fff;
     }
 
+    .myBtn {
+        color: white;
+        /*#BDBDBD;*/
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+        font-weight: 900;
+    }
+
     .carousel-view {
         position: relative;
         height: 600px;
@@ -154,13 +162,13 @@
     }
 
     .carousel-view .button-prev {
-        border-right-color: black;
+        border-right-color: white;
         transform: rotate(-3deg);
         z-index: 1;
     }
 
     .carousel-view .button-next {
-        border-left-color: black;
+        border-left-color: white;
         /*transform: rotate(0deg);*/
         left: 97%;
     }
@@ -183,7 +191,7 @@
 
     .carousel-controls .squares {
         position: absolute;
-        color: white;
+        /*color: white;*/
         font-size: 1.5em;
         font-weight: 700;
         font-family: 'Quattrocento Sans', sans-serif;
@@ -207,11 +215,12 @@
     .carousel-controls .squares a {
         font-family: 'Quattrocento Sans', sans-serif;
         font-size: 1em;
-        color: #fff;
+        /*color: #fff;*/
     }
 
     .carousel-controls .squares a:hover {
         color: wheat;
+        text-decoration: none;
     }
 
     .slide {
