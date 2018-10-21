@@ -280,8 +280,8 @@
         }
 
         .carousel-view .button-next {
-            right: 3%;
-            padding: 2px;
+            /*right: 3%;
+            padding: 2px;*/
         }
 
         .carousel-view .button-prev {}
@@ -303,6 +303,8 @@
         }
     }
 
+    /*media queries*/
+
     @media screen and (max-width: 375px) {
         .slide {
             height: 20em;
@@ -310,8 +312,8 @@
         }
 
         .carousel-view .button-next {
-            right: 3%;
-            margin-left: -12px;
+            /* right: 3%;
+            margin-left: -12px;*/
         }
 
         .carousel-controls {}
@@ -342,15 +344,15 @@
         }
 
         .carousel-view .button-next {
-            right: 3%;
-            margin-left: -12px;
+            /*right: 3%;
+            margin-left: -12px;*/
         }
 
         .carousel-view .button-prev {}
 
         .carousel-controls .squares {
             padding: 2px;
-            font-size: 1.2em;
+            font-size: 1em;
             line-height: 1;
         }
     }
@@ -362,8 +364,8 @@
         }
 
         .carousel-view .button-next {
-            right: 3%;
-            padding: 2px;
+            /*right: 3%;
+            padding: 2px;*/
         }
 
         .carousel-view .button-prev {}
@@ -378,8 +380,8 @@
         }
 
         .carousel-view .button-next {
-            right: 3%;
-            margin-left: -8px;
+            /*right: 3%;
+            margin-left: -8px;*/
         }
 
         .carousel-view .button-prev {}
@@ -394,8 +396,8 @@
         }
 
         .carousel-view .button-next {
-            right: 3%;
-            margin-left: 3px;
+            /*right: 3%;
+            margin-left: 3px;*/
         }
 
         .carousel-view .button-prev {}
@@ -410,8 +412,8 @@
         }
 
         .carousel-view .button-next {
-            right: 3%;
-            padding: 2px;
+            /*right: 3%;
+            padding: 2px;*/
         }
 
         .carousel-view .button-prev {}
