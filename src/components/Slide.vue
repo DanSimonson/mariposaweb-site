@@ -304,7 +304,6 @@
     }
 
     /*media queries*/
-
     @media screen and (max-width: 375px) {
         .slide {
             height: 20em;

@@ -1,6 +1,6 @@
 <template>
     <div>
-        <transition name="fade">
+        <transition name="fade" tag="div">
             <div id="slider" :style="{backgroundImage: 'url(' + images[index].url + ')'}">
                 <header id="showcase">
                     <div class='gradientMe'>
@@ -9,6 +9,7 @@
                 </header>
             </div>
         </transition>
+
 
         <!--<transition name="slide-anim">
         <div id="slider" :style="{backgroundImage: 'url(' + images[index].url + ')'}">
@@ -112,9 +113,7 @@
                 } else {
                     this.currentMsg = 0
                 }
-
             }
-
         }
     }
 </script>
