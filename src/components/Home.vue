@@ -13,6 +13,7 @@
       return {
         showh1: true,
         showp: true,
+        show: true,
         page: {
           fields: {}
         }
@@ -44,6 +45,7 @@
     <!--<nav-bar></nav-bar>-->
     <Navigation></Navigation>
     <Slider></Slider>
+    <div v-if="show = true" id="divfix">MariposaWeb</div>
     <div class="divider"></div>
     <para-home />
     <app-footer></app-footer>
@@ -51,9 +53,25 @@
 </template>
 
 <style scoped>
+  @import url('https://fonts.googleapis.com/css?family=Great+Vibes|Montserrat');
+
   * {
     margin: 0;
     padding: 0;
+  }
+
+  #divfix {
+    font-family: 'Great Vibes', cursive;
+    top: 6px;
+    left: 75px;
+    /*bottom: 0;
+    right: 0;*/
+    position: fixed;
+    z-index: 3000;
+    color: #FFE082;
+    padding: 5px;
+    font-size: 2em;
+
   }
 
   .divider {
