@@ -4,6 +4,7 @@
         name: 'blog-home',
         data() {
             return {
+                showLogo: true,
                 page_title: 'Blog',
                 posts: []
             }
@@ -17,10 +18,18 @@
                     // console.log(res.data)
                     this.posts = res.data.data
                 })
+            },
+            handleScroll() {
+                if (window.scrollY > 30) {
+                    this.showLogo = false;
+                } else {
+                    this.showLogo = true;
+                }
             }
         },
         created() {
-            this.getPosts()
+            this.getPosts();
+            window.addEventListener('scroll', this.handleScroll);
         }
     }
     /*
@@ -52,6 +61,7 @@
 
 <template>
     <div>
+        <div v-if="showLogo" id="divfix">MariposaWeb</div>
         <Navigation></Navigation>
         <!--<nav-bar></nav-bar>-->
         <div id="blog-home">
@@ -113,6 +123,20 @@
         </div>-->
 </template>
 <style scoped>
+    #divfix {
+        font-family: 'Great Vibes', cursive;
+        top: 6px;
+        left: 75px;
+        /*bottom: 0;
+        right: 0;*/
+        position: fixed;
+        z-index: 3000;
+        color: #FFE082;
+        padding: 5px;
+        font-size: 2em;
+
+    }
+
     #blog-home {
         font-size: 18px;
         /*background-image: url('https://cdn.buttercms.com/NEBq1OoETYqRORb8rQo3');

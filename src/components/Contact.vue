@@ -1,5 +1,6 @@
 <template>
     <div id='outer'>
+        <div v-if="showLogo" id="divfix">MariposaWeb</div>
         <Navigation></Navigation>
         <!--<nav-bar></nav-bar>-->
         <div id='spacer'></div>
@@ -49,12 +50,39 @@
             emailRules: [
                 v => !!v || 'E-mail is required',
                 v => /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test(v) || 'E-mail must be valid'
-            ]
-        })
+            ],
+            showLogo: true
+        }),
+        methods: {
+            handleScroll() {
+                if (window.scrollY > 30) {
+                    this.showLogo = false;
+                } else {
+                    this.showLogo = true;
+                }
+            }
+        },
+        created() {
+            window.addEventListener('scroll', this.handleScroll);
+        }
     }
 
 </script>
 <style scoped>
+    #divfix {
+        font-family: 'Great Vibes', cursive;
+        top: 6px;
+        left: 75px;
+        /*bottom: 0;
+        right: 0;*/
+        position: fixed;
+        z-index: 3000;
+        color: #FFE082;
+        padding: 5px;
+        font-size: 2em;
+
+    }
+
     #outer {
         background-color: #CFD8DC;
         ;

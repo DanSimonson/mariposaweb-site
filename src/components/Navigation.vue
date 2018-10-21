@@ -175,7 +175,7 @@
 
     nav div:hover {
         cursor: pointer;
-        animation: bounce 1s;
+        /*animation: bounce 1s;*/
         color: wheat;
     }
 

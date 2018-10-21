@@ -13,7 +13,7 @@
       return {
         showh1: true,
         showp: true,
-        show: true,
+        showLogo: true,
         page: {
           fields: {}
         }
@@ -31,12 +31,22 @@
       },
       goBlog() {
         this.$router.push({ name: 'blog-home' })
+      },
+      handleScroll() {
+        if (window.scrollY > 30) {
+          this.showLogo = false;
+        } else {
+          this.showLogo = true;
+        }
       }
     },
     created() {
-      this.getPage()
+      this.getPage();
+      window.addEventListener('scroll', this.handleScroll);
     }
   }
+
+
 </script>
 
 <template>
@@ -45,7 +55,7 @@
     <!--<nav-bar></nav-bar>-->
     <Navigation></Navigation>
     <Slider></Slider>
-    <div v-if="show = true" id="divfix">MariposaWeb</div>
+    <div v-if="showLogo" id="divfix">MariposaWeb</div>
     <div class="divider"></div>
     <para-home />
     <app-footer></app-footer>

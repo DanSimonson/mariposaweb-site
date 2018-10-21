@@ -29,7 +29,8 @@
             return {
                 post: {},
                 page_id: '',
-                url: ''
+                url: '',
+                showLogo: true
             }
         },
         methods: {
@@ -41,6 +42,13 @@
                     }).catch((res) => {
                         console.log(res)
                     })
+            },
+            handleScroll() {
+                if (window.scrollY > 30) {
+                    this.showLogo = false;
+                } else {
+                    this.showLogo = true;
+                }
             }
         },
         watch: {
@@ -49,8 +57,9 @@
             }
         },
         created() {
-            this.getPost()
-            this.page_id = this.$route.params.slug
+            this.getPost();
+            this.page_id = this.$route.params.slug;
+            window.addEventListener('scroll', this.handleScroll);
             /*var url = "https://mariposaweb.net"
             var slug = window.location.pathname;
             var urlSlug = url + slug;*/
@@ -60,8 +69,10 @@
 </script>
 <template>
     <div>
+        <div v-if="showLogo" id="divfix">MariposaWeb</div>
         <div id="blog-post">
             <!--<nav-bar></nav-bar>-->
+
             <navigation></navigation>
             <h1>{{ post.data.title }}</h1>
             <h4>{{ post.data.author.first_name }} {{ post.data.author.last_name }}</h4>
@@ -94,7 +105,21 @@
     </div>
 
 </template>
-<style>
+<style scoped>
+    #divfix {
+        font-family: 'Great Vibes', cursive;
+        top: 6px;
+        left: 75px;
+        /*bottom: 0;
+        right: 0;*/
+        position: fixed;
+        z-index: 3000;
+        color: #FFE082;
+        padding: 5px;
+        font-size: 2em;
+
+    }
+
     #hover {
         color: lightblue;
         font-size: 3em;
