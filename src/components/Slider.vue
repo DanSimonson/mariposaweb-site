@@ -1,25 +1,13 @@
 <template>
     <div>
-        <transition name="fade" tag="div">
-            <div id="slider" :style="{backgroundImage: 'url(' + images[index].url + ')'}">
-                <header id="showcase">
-                    <div class='gradientMe'>
-                        <p>{{ msgs[currentMsg].msg }}</p>
-                    </div>
-                </header>
+        <div id="slider" :style="{backgroundImage: 'url(' + images[index].url + ')'}"></div>
+        <header id="showcase">
+            <div class='gradientMe'>
+                <!--name="smoothSlide" enter-active-class="animated fadeInRight slower"-->
+                <!--leave-active-class="animated fadeOut slower">-->
+                <p>{{ msgs[currentMsg].msg }}</p>
             </div>
-        </transition>
-
-
-        <!--<transition name="slide-anim">
-        <div id="slider" :style="{backgroundImage: 'url(' + images[index].url + ')'}">
-            <header id="showcase">
-                <div class='gradientMe'>
-                    <P>{{ msgs[currentMsg].msg }}</P>
-                </div>
-            </header>
-        </div>
-        </transition>-->
+        </header>
     </div>
 </template>
 <script>
@@ -75,24 +63,6 @@
                 self.next();
             }, 6000)
             self.next()
-
-            /*function recursiveArray() {
-                //console.log("five");
-                if (this.dataSoon.length) {
-                    this.data.push(this.dataSoon.shift());
-                } else {
-                    clearInterval(this.interval);
-                }
-            }
-
-            self.interval = setInterval(() => {
-                if (this.data.length) {
-                    this.data.push(this.dataSoon.shift());
-                } else {
-                    clearInterval(this.interval);
-                }
-            }, 2000)*/
-
         },
         computed: {
 
@@ -144,87 +114,17 @@
             7px 6px 1px #ccc;
     }
 
-    .fade-enter,
-    .fade-leave-to {
-        opacity: 0;
-
+    /*.slide-leave-active,
+    .slide-enter-active {
+        transition: 1s;
     }
 
-    .fade-enter-to,
-    .fade-leave {
-        opacity: 1;
+    .slide-enter {
+        transform: translate(100%, 0);
     }
 
-    .fade-enter-active .fade-leave-active {
-        transition: opacity transform 200ms ease-out;
-    }
-
-
-
-    /*.msgMe-enter-active {
-        animation: fade 3s;
-        animation-delay: .5s;
-    }
-
-    .msgMe-leave-active {
-        animation: fade 3s;
-    }
-
-    .slide-anim-enter-active- {
-        animation: coming 1s;
-        animation-delay: .5s;
-        opacity: 0;
-    }
-
-    .slide-anim-leave-active {
-        animation: going 1s;
-    }
-
-    @keyframes coming {
-        from {
-            transform: translateX(-50px);
-            /*opacity: 0;
-        }
-
-        to {
-            transform: translateX(0px);
-            /*opacity: 1;
-        }
-    }
-
-    @keyframes coming {
-        0% {
-            transform: scale(0);
-            opacity: 0;
-
-        }
-
-        50% {
-            transform: scale(1.5);
-            opacity: .5;
-        }
-
-        100% {
-            transform: scale(1);
-            opacity: 1;
-        }
-    }
-
-    @keyframes going {
-        0% {
-            transform: scale(1);
-            opacity: 1;
-        }
-
-        50% {
-            transform: scale(1.5);
-            opacity: .5;
-        }
-
-        100% {
-            transform: scale(0);
-            opacity: 0;
-        }
+    .slide-leave-to {
+        transform: translate(-100%, 0);
     }*/
 
     #content {
