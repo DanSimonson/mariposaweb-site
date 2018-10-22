@@ -1,13 +1,24 @@
 <template>
     <div>
-        <div id="slider" :style="{backgroundImage: 'url(' + images[index].url + ')'}"></div>
-        <header id="showcase">
-            <div class='gradientMe'>
-                <!--name="smoothSlide" enter-active-class="animated fadeInRight slower"-->
-                <!--leave-active-class="animated fadeOut slower">-->
-                <p>{{ msgs[currentMsg].msg }}</p>
+        <transition name="fadeMe" enter-active-class="animated fadeIn" leave-active-class="animated fadeOut">
+            <!--<transition name="slide">-->
+            <div id="slider" :style="{backgroundImage: 'url(' + images[index].url + ')'}">
+
+                <header id="showcase">
+                    <div class='gradientMe'>
+                        <!--name="smoothSlide" enter-active-class="animated fadeInRight slower"-->
+                        <!--leave-active-class="animated fadeOut slower">-->
+
+                        <!-- enter-active-class="animated fadeIn" leave-active-class="animated fadeOut"></transition>-->
+                        <transition appear name="animateMe" enter-active-class="animated flipInX slower">
+                            <!--leave-active-class="animated flipOutY">-->
+                            <p class="rotating">{{ msgs[currentMsg].msg }}</p>
+                        </transition>
+                        <!--</transition>-->
+                    </div>
+                </header>
             </div>
-        </header>
+        </transition>
     </div>
 </template>
 <script>
@@ -114,6 +125,9 @@
             7px 6px 1px #ccc;
     }
 
+
+
+
     /*.slide-leave-active,
     .slide-enter-active {
         transition: 1s;
@@ -208,59 +222,42 @@
 
     }
 
-
-
-    #showcase p {
-        /*animation-duration: 4s;
-        /*animation-delay: 1s;
-        animation-duration: 5s;
-        animation-iteration-count: infinite;*/
-        /*font-size: 2em;
-        letter-spacing: 0.1em;
-        color: #FAFAFA;
-        text-decoration: underline;
-        text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4),
-            0px 8px 13px rgba(0, 0, 0, 0.7),
-            0px 18px 23px rgba(0, 0, 0, 0.7);
-        /*text-shadow: 0 1px #808d93,
-            -1px 0 #cdd2d5,
-            -1px 2px #808d93,
-            -2px 1px #cdd2d5,
-            -2px 3px #808d93,
-            -3px 2px #cdd2d5,
-            -3px 4px #808d93,
-            -4px 3px #cdd2d5,
-            -4px 5px #808d93,
-            -5px 4px #cdd2d5,
-            -5px 6px #808d93,
-            -6px 5px #cdd2d5,
-            -6px 7px #808d93,
-            -7px 6px #cdd2d5,
-            -7px 8px #808d93,
-            -8px 7px #cdd2d5;*/
-
+    #showcase p:hover {
+        animation-name: wow;
+        animation-duration: 3s;
+        animation-delay: 1s;
+        cursor: crosshair;
     }
 
-    #showcase h1 {
-        /*font-size: 2.5em;
-        animation-duration: 4s;
-        color: #FAFAFA;
-        text-decoration: underline;
-        text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4),
-            0px 8px 13px rgba(0, 0, 0, 0.7),
-            0px 18px 23px rgba(0, 0, 0, 0.7);
-        /*animation-delay: 1s;
-        animation-duration: 4s;
-        animation-iteration-count: infinite;
-        font-weight: 500;
-        /*text-shadow: 2px 2px 4px #000000;
-        text-shadow: 1px 0px 1px #ccc, 0px 1px 1px #eee,
-            2px 1px 1px #ccc, 1px 2px 1px #eee,
-            3px 2px 1px #ccc, 2px 3px 1px #eee,
-            4px 3px 1px #ccc, 3px 4px 1px #eee,
-            5px 4px 1px #ccc, 4px 5px 1px #eee,
-            6px 5px 1px #ccc, 5px 6px 1px #eee,
-            7px 6px 1px #ccc;*/
+    @keyframes wow {
+        0% {
+            transform: scale(0);
+            color: aqua
+        }
+
+        50% {
+            transform: scale(1.5);
+            color: red;
+        }
+
+        100% {
+            transform: scale(1);
+            color: yellow;
+        }
+    }
+
+    p.rotating {
+        /*border: 5px solid red;
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        margin: 20px;*/
+        transition: transform 1s ease-in-out;
+    }
+
+    p.rotating:hover {
+        /*background-color: green;*/
+        transform: rotateX(360deg);
     }
 
     /*media queries*/
