@@ -106,6 +106,7 @@
         cursor: pointer;
         padding-top: 0;
         padding-bottom: 0;
+
     }
 
     .hamburger__button:focus {

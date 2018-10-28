@@ -6,6 +6,7 @@ import BlogPost from "@/components/BlogPost";
 import Projects from "@/components/Projects";
 import Contact from "@/components/Contact";
 import Parahome from "@/components/Parahome";
+import Cards from "@/components/Cards";
 Vue.use(Router);
 
 export default new Router({
@@ -42,6 +43,11 @@ export default new Router({
       path: "/blog/",
       name: "blog-home",
       component: BlogHome
+    },
+    {
+      path: "/cards",
+      name: "Cards",
+      component: Cards
     },
     {
       path: "/blog/:slug",

@@ -81,7 +81,6 @@
     color: #FFE082;
     padding: 5px;
     font-size: 2em;
-
   }
 
   .divider {
