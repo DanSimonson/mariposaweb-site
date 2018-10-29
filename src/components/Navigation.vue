@@ -12,6 +12,7 @@
                 <div class="desktop__navigation">
                     <router-link to="/" tag="div">Home</router-link>
                     <router-link to="/blog/" tag="div">Blog</router-link>
+                    <router-link to="/cards/" tag="div">All Projects</router-link>
                     <router-link to="/contact/" tag="div">Contact</router-link>
                     <!--<a href="/">
                         <div>Home</div>
@@ -34,6 +35,9 @@
                     </router-link>
                     <router-link to='/blog/' tag='span'>
                         <li class="nav-links">Blog</li>
+                    </router-link>
+                    <router-link to='/cards/' tag='span'>
+                        <li class="nav-links">All Projects</li>
                     </router-link>
                     <router-link to='/contact/' tag='span'>
                         <li class="nav-links">Contact</li>

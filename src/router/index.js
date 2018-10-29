@@ -17,7 +17,7 @@ export default new Router({
       return { x: 0, y: 0 };
     }
   },*/
-  mode: "history",
+  mode: "hash",
   routes: [
     {
       path: "/",
@@ -45,8 +45,8 @@ export default new Router({
       component: BlogHome
     },
     {
-      path: "/cards",
-      name: "Cards",
+      path: "/cards/",
+      name: "cards",
       component: Cards
     },
     {

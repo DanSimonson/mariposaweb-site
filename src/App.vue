@@ -41,12 +41,12 @@
 
   @keyframes coming {
     from {
-      transform: translateX(-50px);
+      /*transform: translateX(-50px);*/
       opacity: 0;
     }
 
     to {
-      transform: translateX(0px);
+      /*transform: translateX(0px);*/
       opacity: 1;
     }
   }
