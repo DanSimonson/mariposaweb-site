@@ -1,17 +1,14 @@
 <template>
     <div class='cards'>
+        <div v-if="showLogo" id="divfix">MariposaWeb</div>
         <Navigation></Navigation>
-
         <div class='wrap'>
-
             <div id='slide'>
                 <transition appear name="bounce">
                     <h1>ALL PROJECTS</h1>
                 </transition>
             </div>
-
         </div>
-
         <!-- Boxes Section -->
         <section class="boxes">
             <div class="box" v-for="(card, index) in cards" :style="{backgroundImage: 'url(' + cards[index].src + ')'}">
@@ -59,6 +56,7 @@
         name: 'cards',
         data() {
             return {
+                showLogo: true,
                 cards: [
                     {
                         title: 'GitHub Search', link: 'http://ruddy-amount.surge.sh/?#/',
@@ -181,10 +179,36 @@
                 ]
 
             }
+        },
+        methods: {
+            handleScroll() {
+                if (window.scrollY > 30) {
+                    this.showLogo = false;
+                } else {
+                    this.showLogo = true;
+                }
+            }
+        },
+        created() {
+            window.addEventListener('scroll', this.handleScroll);
         }
     }
 </script>
 <style scoped>
+    #divfix {
+        font-family: 'Great Vibes', cursive;
+        top: 6px;
+        left: 75px;
+        /*bottom: 0;
+        right: 0;*/
+        position: fixed;
+        z-index: 3000;
+        color: #FFE082;
+        padding: 5px;
+        font-size: 2em;
+
+    }
+
     .wrap {
         position: relative;
         overflow: hidden;
