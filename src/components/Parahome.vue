@@ -10,7 +10,7 @@
         </v-parallax>
         <div class="dividertwo"></div>
         <div class="container vueProjects">
-            <h1 class='myBtn'>Vue.js Projects</h1>
+            <h1 class='myBtn'>Featured Vue.js Projects</h1>
             <Slide></Slide>
         </div>
 
