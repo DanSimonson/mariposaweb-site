@@ -209,4 +209,13 @@
         background: #2193b0;
 
     }
+
+    @media(max-width:768px) {
+
+        .info,
+        .social,
+        .copyright {
+            /*width: 768px;*/
+        }
+    }
 </style>
