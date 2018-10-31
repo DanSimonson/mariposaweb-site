@@ -4,20 +4,27 @@
         <Navigation></Navigation>
         <!--<nav-bar></nav-bar>-->
         <div id='spacer'></div>
-        <v-container class='bordered'>
+        <v-container class=''>
 
             <div id='spacer'></div>
             <v-layout row>
-                <v-flex xs12 sm6 offset-sm3>
+                <v-flex lg6>
+                    <!-- xs12 sm6 offset-sm3>-->
+                    <!---->
                     <h4>Contact</h4>
                 </v-flex>
             </v-layout>
             <v-layout>
-                <v-flex xs12 sm6 offset-sm3>
+                <v-flex lg6>
+                    <!--xs12 sm6 offset-sm3-->
                     <v-form action="https://formspree.io/dansimonson@mariposaweb.net" method="POST" v-model="valid">
-                        <v-text-field name="nm" v-model="name" :rules="nameRules" :counter="10" label="Name" required></v-text-field>
-                        <v-text-field name="_replyto" v-model="email" :rules="emailRules" label="E-mail" required></v-text-field>
-                        <v-text-field name="MSG" label="Message" multi-line v-model="message" required></v-text-field>
+                        <v-textarea name="nm" v-model="name" :rules="nameRules" :counter="10" label="Name" required>
+                        </v-textarea>
+                        <!--v-text-field-->
+                        <v-textarea name="_replyto" v-model="email" :rules="emailRules" label="E-mail" required>
+                        </v-textarea>
+                        <v-textarea name="MSG" label="Message" multi-line v-model="message" required>
+                        </v-textarea>
                         <v-flex s12 sm6 offset-sm3>
                             <v-btn type="submit" value="Send">Submit</v-btn>
                         </v-flex>
@@ -51,7 +58,9 @@
                 v => !!v || 'E-mail is required',
                 v => /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test(v) || 'E-mail must be valid'
             ],
-            showLogo: true
+            showLogo: true,
+            name: '',
+            message: ''
         }),
         methods: {
             handleScroll() {
@@ -69,6 +78,14 @@
 
 </script>
 <style scoped>
+    v.container.bordered {
+        max-width: 400px;
+    }
+
+    div.layout {
+        max-width: 400px;
+    }
+
     #divfix {
         font-family: 'Great Vibes', cursive;
         top: 6px;

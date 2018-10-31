@@ -45,8 +45,6 @@
       window.addEventListener('scroll', this.handleScroll);
     }
   }
-
-
 </script>
 
 <template>
