@@ -49,6 +49,7 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, expedita?</p>
             </div>-->
         </section>
+        <app-footer></app-footer>
     </div>
 </template>
 <script>
@@ -294,6 +295,7 @@
         background-size: cover;
         background-position: center;
         color: #fff;
+        margin-bottom: 10px;
         /*border: 5px solid brown;*/
     }
 

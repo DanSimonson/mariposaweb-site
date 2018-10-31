@@ -94,6 +94,7 @@
         justify-content: space-between;
         height: 50px;
         padding: 5px 20px;
+        width: 100vw;
     }
 
     /*hamburger icon*/
@@ -236,7 +237,7 @@
         }
     }
 
-    /*@media (min-width: 768px) {
+    @media (min-width: 768px) {
         .hamburger__button {
             display: none;
         }
@@ -244,5 +245,13 @@
         .desktop__navigation div {
             display: block;
         }
-    }*/
+
+
+    }
+
+    @media(max-width:769px) {
+        .header {
+            /*width: 768px;*/
+        }
+    }
 </style>
