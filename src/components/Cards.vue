@@ -11,7 +11,7 @@
         </div>
         <!-- Boxes Section -->
         <section class="boxes">
-            <div class="box" v-for="(card, index) in cards" :style="{backgroundImage: 'url(' + cards[index].src + ')'}">
+            <div class="box hover-animation" v-for="(card, index) in cards" :style="{backgroundImage: 'url(' + cards[index].src + ')'}">
                 <!--<i class="fas fa-chart-pie fa-4x"></i>-->
                 <h3>{{card.title}}</h3>
                 <p>{{card.text}}</p>
@@ -310,6 +310,50 @@
         align-items: start;
         justify-content: center;
 
+    }
+
+    .box:hover {}
+
+    /*hover animation*/
+    .hover-animation {
+        animation-name: hover-out;
+        -webkit-animation-duration: 0.9s;
+        animation-duration: 0.9s;
+    }
+
+    .hover-animation:hover {
+        animation-iteration-count: 2;
+        transform: scale(1);
+        -webkit-animation-name: hover-in;
+        animation-name: hover-in;
+        -webkit-animation-duration: 0.9s;
+        animation-duration: 0.9s;
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: 2;
+        -webkit-animation-direction: alternate;
+        animation-direction: alternate
+    }
+
+    @keyframes hover-in {
+        from {
+            -webkit-transform: scale(1);
+        }
+
+        to {
+            -webkit-transform: scale(1.1);
+        }
+    }
+
+    @keyframes hover-out {
+        from {
+            -webkit-transform: scale(1.1);
+        }
+
+        to {
+            -webkit-transform: scale(1);
+        }
     }
 
     .box h3 {
