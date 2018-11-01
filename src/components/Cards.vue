@@ -67,7 +67,7 @@
 
                     },
                     {
-                        title: 'Filipino Restaurant', link: 'http://quickest-sneeze.surge.sh/#/',
+                        title: 'Filipino Restaurant', link: 'http://aberrant-tendency.surge.sh/#/',
                         text: 'Goal: Build a Vue.js Restaurant Website. Technologies: Vue, CSS Grid, Flexbox, JavaScript',
                         src: require('../assets/muted/zigzag.jpg'), flex: 6
 

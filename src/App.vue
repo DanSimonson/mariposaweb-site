@@ -1,9 +1,9 @@
 <template>
   <div id="app">
 
-    <transition name="router-anim">
-      <!--enter-active-class="animated fadeIn">-->
-      <!--leave-active-class="animated fadeOut">-->
+    <transition name='transitionMe' enter-active-class='animated fadeIn' leave-active-class='animated fadeOut' mode='out-in'
+      :duration="500">
+      <!--</transition>"router-anim">-->
       <router-view />
     </transition>
   </div>
@@ -26,7 +26,7 @@
   .leave-active-class {
     animation-duration: .5s;
 
-  }*/
+  }
 
 
   .router-anim-enter-active- {
@@ -41,16 +41,15 @@
 
   @keyframes coming {
     from {
-      /*transform: translateX(-50px);*/
-      opacity: 0;
-    }
-
-    to {
-      /*transform: translateX(0px);*/
-      opacity: 1;
-    }
+      /*transform: translateX(-50px);
+  opacity: 0;
   }
 
+  to {
+    /*transform: translateX(0px);
+    opacity: 1;
+  }
+  }*/
 
   #app {
     font-family: 'Avenir', Helvetica, Arial, sans-serif;

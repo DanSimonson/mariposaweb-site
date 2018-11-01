@@ -10,10 +10,10 @@
                         <!--leave-active-class="animated fadeOut slower">-->
 
                         <!-- enter-active-class="animated fadeIn" leave-active-class="animated fadeOut"></transition>-->
-                        <transition appear name="animateMe" enter-active-class="animated flipInX slower">
-                            <!--leave-active-class="animated flipOutY">-->
-                            <p class="rotating">{{ msgs[currentMsg].msg }}</p>
-                        </transition>
+                        <!--<transition appear name="animateMe" enter-active-class="animated flipInX slower">-->
+                        <!--leave-active-class="animated flipOutY">-->
+                        <p class="rotating">{{ msgs[currentMsg].msg }}</p>
+                        <!--</transition>-->
                         <!--</transition>-->
                     </div>
                 </header>

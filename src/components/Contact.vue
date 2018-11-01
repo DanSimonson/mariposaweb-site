@@ -28,7 +28,7 @@
                 </div>
                 <div class="grid">
                     <div class='box'>
-                        <img src="../assets/me.jpg">
+                        <img src="../assets/me.jpg" alt="daniel simonson">
                         <span> I grew up in silicon valley with a dream to
                             become a computer programmer. I've spent a great deal of time thinking about the technical
                             aspects of web development so you don't have to. Build your brand. Get new business.
