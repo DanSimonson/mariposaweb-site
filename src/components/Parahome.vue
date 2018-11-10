@@ -20,6 +20,21 @@
         <div class="dividertwo"></div>
         <p class="myBtn">Javascript Projects</p>
         <div class="grid myBtn">
+                <div class="flex-card">
+                        <!-- image container -->
+                        <div class="flex-card-image">
+                            <img src="https://res.cloudinary.com/dmglopmul/image/upload/v1541889537/scrabbleResize.jpg" />
+                        </div>
+                        <!-- content container -->
+                        <div class="flex-card-content">
+                            <h3 class="flex-card-heading">Spelling Game</h3>
+                            <p>A spelling game to practice spelling and have fun.</p>
+                            <a href='https://dansimonson.github.io/spelling-game/' target="
+                            _blank" class="flex-card-button"><span
+                                    class="spin myBtn">See
+                                    More</span></a>
+                        </div>
+                    </div>
             <div class="flex-card">
                 <!-- image container -->
                 <div class="flex-card-image">
@@ -63,21 +78,7 @@
                         More</a>
                 </div>
             </div>
-            <div class="flex-card">
-                <!-- image container -->
-                <div class="flex-card-image">
-                    <img src="https://res.cloudinary.com/dmglopmul/image/upload/v1529504760/calculator.jpg" />
-                </div>
-                <!-- content container -->
-                <div class="flex-card-content">
-                    <h3 class="flex-card-heading">Calculator</h3>
-                    <p>A fully functioning calculator made with JavaScript, Jquery, Bootstrap.</p>
-                    <a href='https://dansimonson.github.io/calculator/' target="
-                    _blank" class="flex-card-button"><span
-                            class="spin myBtn">See
-                            More</span></a>
-                </div>
-            </div>
+            
         </div>
 
 
