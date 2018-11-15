@@ -64,6 +64,15 @@
         showLogo: true,
         cards: [
           {
+            title: "Vue.js Tabs",
+            link: "http://empty-ticket.surge.sh/",
+            text:
+              "Goal: Create Vue.js Tabs without any frameworks. Technologies: Vue.js, JavaScript, Flexbox, CSS GRID, CSS3, HTML",
+            src: require("../assets/muted/vibrant.jpg"),
+            flex: 6
+            //'https://res.cloudinary.com/dmglopmul/image/upload/v1529509174/todoList.jpg'
+          },
+          {
             title: "Spelling Game",
             link: "https://dansimonson.github.io/spelling-game/",
             text:
