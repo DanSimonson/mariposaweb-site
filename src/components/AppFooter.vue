@@ -39,7 +39,8 @@
 </script>
 
 <template>
-    <!--<div style="height:200px;">
+    <!--not using this code<div style="height:200px;">
+
         <span><i class="fa fa-facebook-square" aria-hidden="true"></i></span>
     </div>-->
     <div>
@@ -76,7 +77,7 @@
                         <i class="fab fa-twitter lg" title="Twitter"></i></a></li>
                 <li><a class="sociali" href="https://github.com/DanSimonson/" target="_blank" aria-label="GitHub">
                         <i class="fab fa-github-square lg" title="GitHub"></i></a></li>
-                <li><a class="sociali" href="https://www.facebook.com/simonsondan" target="_blank" aria-label="Facebook">
+                <li><a class="sociali" href="https://www.facebook.com/mariposaweb.net/" target="_blank" aria-label="Facebook">
                         <i class="fab fa-facebook-square lg" title="Facebook"></i></i></a></li>
                 <li><a class="sociali" href="https://www.linkedin.com/in/dansimonsonmariposaweb/" target="_blank"
                         aria-label="LinkedIn">
