@@ -24,7 +24,7 @@
                     var win = window.open('https://github.com/DanSimonson/', '_blank');
                     win.focus();
                 } else if (anIcon === 'fa fa-facebook-square fa-fw') {
-                    var win = window.open("https://www.facebook.com/simonsondan", '_blank');
+                    var win = window.open("https://www.facebook.com/mariposaweb.net/", '_blank');
                     win.focus();
                 } else if (anIcon === 'fa fa-linkedin') {
                     var win = window.open('https://www.linkedin.com/in/dansimonsonmariposaweb/', '_blank');
