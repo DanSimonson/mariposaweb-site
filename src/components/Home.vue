@@ -48,9 +48,7 @@
 </script>
 
 <template>
-
   <div id="customer-page">
-    <!--<nav-bar></nav-bar>-->
     <Navigation></Navigation>
     <Slider></Slider>
     <div v-if="showLogo" id="divfix">MariposaWeb</div>
@@ -72,8 +70,6 @@
     font-family: 'Great Vibes', cursive;
     top: 6px;
     left: 75px;
-    /*bottom: 0;
-    right: 0;*/
     position: fixed;
     z-index: 3000;
     color: #FFE082;
@@ -101,16 +97,16 @@
     line-height: 1.6;
   }
 
-  header {
+  /*header {
     margin-bottom: 0;
   }
 
   .strngBtn {
     color: white;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-  }
+  }*/
 
-  #section-a {
+  /*#section-a {
     padding: 20px;
     background: #926239;
     color: #fff;
@@ -121,31 +117,12 @@
     padding: 20px;
     background: #f4f4f4;
     text-align: center;
-  }
+  }*/
 
-  img {
+  /*img {
     width: 500px;
     max-height: 400px;
-  }
-
-  #showcase {
-    /*background-image: url('https://res.cloudinary.com/dmglopmul/image/upload/v1537088446/background2.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 0 20px;*/
-    /*color: black;
-    #8D6E63;*/
-  }
-
-  #showcase:before {
-    /*background: #E8EAF6;*/
-  }
+  } 
 
   #showcase p {
     animation-delay: 1s;
@@ -178,7 +155,6 @@
     animation-duration: 4s;
     animation-iteration-count: infinite;
     font-weight: 500;
-    /*text-shadow: 2px 2px 4px #000000;*/
     text-shadow: 1px 0px 1px #ccc, 0px 1px 1px #eee,
       2px 1px 1px #ccc, 1px 2px 1px #eee,
       3px 2px 1px #ccc, 2px 3px 1px #eee,
@@ -186,10 +162,10 @@
       5px 4px 1px #ccc, 4px 5px 1px #eee,
       6px 5px 1px #ccc, 5px 6px 1px #eee,
       7px 6px 1px #ccc;
-  }
+  }*/
 
 
-  #showcase .button {
+  /*#showcase .button {
     font-size: 18px;
     text-decoration: none;
     color: #926239;
@@ -202,9 +178,9 @@
   #showcase .button:hover {
     background: #926239;
     color: #fff;
-  }
+  }*/
 
-  #section-a {
+  /*#section-a {
     padding: 20px;
     background: #926239;
     color: #fff;
@@ -238,17 +214,5 @@
   .page {
     position: fixed;
     width: inherit;
-  }
-
-
-  /*
-  main {}
-
-  figure {
-    margin: 50px;
-  }
-
-  ul {
-    margin: 50px;
   }*/
 </style>

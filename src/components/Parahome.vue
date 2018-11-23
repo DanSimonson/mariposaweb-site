@@ -4,7 +4,7 @@
             <v-layout align-center column justify-center>
                 <h1 class="display-2 font-weight-thin mb-3 white--text">Build Your Application Today</h1>
                 <h3 class="white--text"> ______________________ </h3>
-                <h3 class="display-2 font-weight-thin mt-3 white--text">MARIPOSAWEB DEVELOPMENT</h3>
+                <h3 class="display-2 font-weight-thin mt-3  white--text">MARIPOSAWEB DEVELOPMENT</h3>
 
             </v-layout>
         </v-parallax>
@@ -28,7 +28,7 @@
                         <!-- content container -->
                         <div class="flex-card-content">
                             <h3 class="flex-card-heading">Spelling Game</h3>
-                            <p>A spelling game to practice spelling and have fun.</p>
+                            <p>A spelling game to practice spelling and have fun, powered with Vanilla Javascript.</p>
                             <a href='https://dansimonson.github.io/spelling-game/' target="
                             _blank" class="flex-card-button"><span
                                     class="spin myBtn">See
@@ -77,99 +77,8 @@
                     <a href='https://dansimonson.github.io/twitchtv/' target="_blank" class="flex-card-button increase myBtn">See
                         More</a>
                 </div>
-            </div>
-            
+            </div>            
         </div>
-
-
-
-        <!--<div class="container-fluid" id="three">
-            <h1 class='title-text'>Javascript Projects</h1>
-          
-             
-
-            <!--<div class="row">
-                <div class="col s12 l4">
-                    <div class="card">
-                        <div class="card-image">
-                            <img src="https://res.cloudinary.com/dmglopmul/image/upload/v1537117177/projectPhotos/simon.jpg"
-                                alt="">
-                            <a href='https://dansimonson.github.io/simongame/' target="_blank" class="halfway-fab btn-floating pink pulse">
-                                <i class="material-icons">favorite</i>
-                            </a>
-                        </div>
-                        <div class="card-content">
-                            <span class="card-title">Simon Game</span>
-                            <p>An application simulating the 70's simon game, created with vanilla
-                                Javascript, CSS3, HTML.</p>
-                        </div>
-                        <div class="card-action">
-                            <a class="tilt" href='https://dansimonson.github.io/simongame/' target="_blank">See More</a>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="col s12 l4">
-                    <div class="card">
-                        <div class="card-image">
-                            <img src="https://res.cloudinary.com/dmglopmul/image/upload/v1537118049/projectPhotos/wikipedia.jpg"
-                                alt="">
-                            <a href='https://dansimonson.github.io/wikiviewer/' target="_blank" class="halfway-fab btn-floating pink pulse">
-                                <i class="material-icons">favorite</i>
-                            </a>
-                        </div>
-                        <div class="card-content">
-                            <span class="card-title">Wikipedia Search</span>
-                            <p>A Wikipedia search engine that uses the Wikipedia API, vanilla
-                                Javascript, CSS3, HTML.</p>
-                        </div>
-                        <div class="card-action">
-                            <a class="border" href='https://dansimonson.github.io/wikiviewer/' target="_blank">See More</a>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="col s12 l4">
-                    <div class="card">
-                        <div class="card-image">
-                            <img src="https://res.cloudinary.com/dmglopmul/image/upload/v1537118827/projectPhotos/twitch.png"
-                                alt="">
-                            <a href='https://dansimonson.github.io/twitchtv/' target="_blank" class="halfway-fab btn-floating pink pulse">
-                                <i class="material-icons">favorite</i>
-                            </a>
-                        </div>
-                        <div class="card-content">
-                            <span class="card-title">Twitch</span>
-                            <p>An application using the twitch API for live streaming, applying
-                                Javascript, CSS3, HTML.</p>
-                        </div>
-                        <div class="card-action">
-                            <a class="increase" href='https://dansimonson.github.io/twitchtv/' target="_blank">See More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s12 l4">
-                    <div class="card">
-                        <div class="card-image">
-                            <img src='https://res.cloudinary.com/dmglopmul/image/upload/v1529504760/calculator.jpg' alt="">
-                            <a href='https://dansimonson.github.io/calculator/' target="_blank" class="halfway-fab btn-floating pink pulse">
-                                <i class="material-icons">favorite</i>
-                            </a>
-                        </div>
-                        <div class="card-content">
-                            <span class="card-title">Calculator</span>
-                            <p>A fully functioning calculator made with JavaScript, Jquery, Bootstrap.</p>
-                        </div>
-                        <div class="card-action">
-                            <a href='https://dansimonson.github.io/calculator/' target="
-                                _blank"><span
-                                    class="spin">See
-                                    More</span></a>
-                        </div>
-                    </div>
-        </div>
-    </div>
-    </div>-->
 
         <v-parallax dark :src="imagethree" height="300"></v-parallax>
 
@@ -251,7 +160,7 @@
         background: linear-gradient(to right, #0083B0, #00B4DB);
         /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
         /*border: 5px solid black;*/
-        height: 580px;
+        height: 600px;
         margin: 0 auto;
         padding: 5px
     }
@@ -294,16 +203,12 @@
     .flex-card-button {
         width: 115px;
         height: 25px;
-        /*background: #4E9CAF;*/
         padding-top: 2px;
         padding-right: 10px;
         padding-left: 10px;
         padding-bottom: 15px;
         margin-bottom: 10px;
         text-align: center;
-        /*border-radius: 5px;
-        color: white;
-        font-weight: bold;*/
         font-size: 1.2em;
     }
 
@@ -315,26 +220,7 @@
         color: wheat
     }
 
-
-    .flex-card-button.border {
-        /*color: #fff;
-        border: 5px solid #fff;*/
-    }
-
-    /*******************/
-
-    /*media queries*/
-    @media only screen and (max-width: 768px) {
-        .grid {
-            grid-template-columns: 1fr 1fr;
-        }
-    }
-
-    @media only screen and (max-width: 500px) {
-        .grid {
-            grid-template-columns: 1fr;
-        }
-    }
+    /*******************/  
 
     /*animated button*/
     .card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating) {
@@ -418,22 +304,11 @@
         -webkit-transform: rotateX(360deg);
         transform: rotateX(360deg);
     }
+    /*end javascript card stuff*/
 
-    #last-row {
+    /*#last-row {
         margin: 0;
-    }
-
-    .card {
-        opacity: 0.8;
-        transition: height 0.3s, box-shadow 0.3s
-    }
-
-    .card:hover {
-        opacity: 1;
-        cursor: pointer;
-        height: 410px;
-        box-shadow: 20px 20px 40px 0px rgba(0, 0, 0, 0.5);
-    }
+    }*/
 
     .dividertwo {
         height: 2px;
@@ -445,30 +320,7 @@
         /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     }
 
-    .title-text {
-        font-family: 'Gravitas One', cursive;
-        font-weight: 700;
-        color: #E3F2FD;
-        font-size: 24px;
-        margin-bottom: 30px;
-    }
-
-    .card {
-        margin: 5px 5px;
-    }
-
-    #three {
-        padding: 20px;
-        background: #000046;
-        /* fallback for old browsers */
-        background: -webkit-linear-gradient(to right, #1CB5E0, #000046);
-        /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to right, #1CB5E0, #000046);
-        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    }
-
     promoBox {
-        /*background: #926239;*/
         font-family: 'Abril Fatface',
             cursive;
         font-weight: bold;
@@ -491,8 +343,6 @@
         font-size: 20px;
         color: #fff;
         background: #00B4DB;
-        /* fallback for old browsers 
-        background: -webkit-linear-gradient(to right, #0083B0, #00B4DB);
         /* Chrome 10-25, Safari 5.1-6 */
         background: linear-gradient(to right, #0083B0, #00B4DB);
         /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -505,26 +355,16 @@
         padding: 5px 5px;
         font-size: 16px;
     }
-
-    #section-c div {
-        padding: 20px;
+      /*media queries*/
+      @media only screen and (max-width: 768px) {
+        .grid {
+            grid-template-columns: 1fr 1fr;
+        }
     }
 
-    #section-c .box-1,
-    #section-c .box-3 {
-        font-family: 'Abril Fatface', cursive;
-        font-weight: bold;
-        font-size: 14px;
-        height: 200px;
-        background: #2193b0;
-    }
-
-    #section-c .box-2 {
-        background: #f9f9f9;
-        font-family: 'Abril Fatface', cursive;
-        font-weight: bold;
-        font-size: 14px;
-        color: #fff;
-        background: #00B4DB;
+    @media only screen and (max-width: 500px) {
+        .grid {
+            grid-template-columns: 1fr;
+        }
     }
 </style>
