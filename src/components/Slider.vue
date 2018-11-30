@@ -1,9 +1,6 @@
 <template>
   <div>
-    <div
-      id="slider"
-      :style="{backgroundImage: 'url(' + images[index].url + ')'}"
-    >
+    <div id="slider" :style="{backgroundImage: 'url(' + images[index].url + ')'}">
       <header id="showcase">
         <div class="gradientMe">
           <p class="rotating">{{ msgs[currentMsg].msg }}</p>
@@ -18,53 +15,41 @@
 
     data() {
       return {
-        msgs: [
-          {
-            msg:
-              "We Focus on solving complex problems with clear and effective solutions."
+        msgs: [{
+            msg: "We Focus on solving complex problems with clear and effective solutions."
           },
           {
-            msg:
-              "We create custom solutions – be it during design, development or deployment."
+            msg: "We create custom solutions – be it during design, development or deployment."
           },
           {
-            msg:
-              "We build a digital E-Commerce bridge between products and customers. "
+            msg: "We build a digital E-Commerce bridge between products and customers. "
           },
           {
-            msg:
-              "We leverage the capabilities of Vue.js and JavaScript to fit needs."
+            msg: "We leverage the capabilities of Vue.js and JavaScript to fit needs."
           },
           {
-            msg:
-              "Transforming ideas. Digitally. We look for ways to provide better solutions."
+            msg: "Transforming ideas. Digitally. We look for ways to provide better solutions."
           }
         ],
-        images: [
-          {
+        images: [{
             id: 0,
-            url:
-              "https://res.cloudinary.com/dmglopmul/image/upload/v1539010572/projectPhotos/mariposaweb/network.jpg"
+            url: "https://res.cloudinary.com/dmglopmul/image/upload/v1539010572/projectPhotos/mariposaweb/network.jpg"
           },
           {
             id: 1,
-            url:
-              "https://res.cloudinary.com/dmglopmul/image/upload/v1539010600/projectPhotos/mariposaweb/ufo.jpg"
+            url: "https://res.cloudinary.com/dmglopmul/image/upload/v1539010600/projectPhotos/mariposaweb/ufo.jpg"
           },
           {
             id: 2,
-            url:
-              "https://res.cloudinary.com/dmglopmul/image/upload/v1539023410/projectPhotos/mariposaweb/syntax.jpg"
+            url: "https://res.cloudinary.com/dmglopmul/image/upload/v1539023410/projectPhotos/mariposaweb/syntax.jpg"
           },
           {
             id: 3,
-            url:
-              "https://res.cloudinary.com/dmglopmul/image/upload/v1539022882/projectPhotos/mariposaweb/internet.jpg"
+            url: "https://res.cloudinary.com/dmglopmul/image/upload/v1539022882/projectPhotos/mariposaweb/internet.jpg"
           },
           {
             id: 4,
-            url:
-              "https://res.cloudinary.com/dmglopmul/image/upload/v1539024962/projectPhotos/mariposaweb/code.jpg"
+            url: "https://res.cloudinary.com/dmglopmul/image/upload/v1539024962/projectPhotos/mariposaweb/code.jpg"
           }
         ],
         index: 0,
@@ -74,7 +59,7 @@
       };
     },
     created() {
-      //set proxy so vue can see "this" object when using move method
+
       var self = this;
       setInterval(() => {
         self.move();
@@ -96,7 +81,7 @@
         this.index = indexFlag;
       },
 
-      next: function() {
+      next: function () {
         if (this.currentMsg + 1 < this.msgs.length) {
           this.currentMsg++;
         } else {
@@ -105,6 +90,7 @@
       }
     }
   };
+
 </script>
 <style scoped>
   @import url("https://fonts.googleapis.com/css?family=Gravitas+One");
@@ -172,7 +158,8 @@
 
   #showcase p {
     font-family: "Gravitas One", cursive;
-    color: white;
+    /*color: white;*/
+    color: #FFE082;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     font-size: 1.5em;
     text-decoration: none;
@@ -218,4 +205,5 @@
       line-height: 1.2 !important;
     }
   }
+
 </style>

@@ -2,12 +2,14 @@
   import butter from '@/buttercms';
   import Parallax from "vue-parallaxy";
   import Slider from './Slider'
+  import SideDrawer from './SideDrawer'
 
   export default {
     name: 'customer-page',
     components: {
       Parallax,
       Slider,
+      SideDrawer
     },
     data() {
       return {
@@ -16,7 +18,7 @@
         showLogo: true,
         page: {
           fields: {}
-        }
+        },
       }
     },
     methods: {
@@ -30,7 +32,9 @@
           })
       },
       goBlog() {
-        this.$router.push({ name: 'blog-home' })
+        this.$router.push({
+          name: 'blog-home'
+        })
       },
       handleScroll() {
         if (window.scrollY > 30) {
@@ -45,14 +49,16 @@
       window.addEventListener('scroll', this.handleScroll);
     }
   }
+
 </script>
 
 <template>
   <div id="customer-page">
-    <Navigation></Navigation>
+    <!--<Navigation></Navigation> -->
     <Slider></Slider>
     <div v-if="showLogo" id="divfix">MariposaWeb</div>
     <div class="divider"></div>
+    <SideDrawer></SideDrawer>
     <para-home />
     <app-footer></app-footer>
   </div>
@@ -91,128 +97,10 @@
 
 
   body {
-    margin: 0;
+    /*margin: 0;*/
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     font-size: 17px;
     line-height: 1.6;
   }
 
-  /*header {
-    margin-bottom: 0;
-  }
-
-  .strngBtn {
-    color: white;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-  }*/
-
-  /*#section-a {
-    padding: 20px;
-    background: #926239;
-    color: #fff;
-    text-align: center;
-  }
-
-  #section-c {
-    padding: 20px;
-    background: #f4f4f4;
-    text-align: center;
-  }*/
-
-  /*img {
-    width: 500px;
-    max-height: 400px;
-  } 
-
-  #showcase p {
-    animation-delay: 1s;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-    font-size: 21px;
-    font-weight: 900;
-    text-shadow: 0 1px #808d93,
-      -1px 0 #cdd2d5,
-      -1px 2px #808d93,
-      -2px 1px #cdd2d5,
-      -2px 3px #808d93,
-      -3px 2px #cdd2d5,
-      -3px 4px #808d93,
-      -4px 3px #cdd2d5,
-      -4px 5px #808d93,
-      -5px 4px #cdd2d5,
-      -5px 6px #808d93,
-      -6px 5px #cdd2d5,
-      -6px 7px #808d93,
-      -7px 6px #cdd2d5,
-      -7px 8px #808d93,
-      -8px 7px #cdd2d5;
-  }
-
-
-  #showcase h1 {
-    font-size: 3em;
-    animation-delay: 1s;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-    font-weight: 500;
-    text-shadow: 1px 0px 1px #ccc, 0px 1px 1px #eee,
-      2px 1px 1px #ccc, 1px 2px 1px #eee,
-      3px 2px 1px #ccc, 2px 3px 1px #eee,
-      4px 3px 1px #ccc, 3px 4px 1px #eee,
-      5px 4px 1px #ccc, 4px 5px 1px #eee,
-      6px 5px 1px #ccc, 5px 6px 1px #eee,
-      7px 6px 1px #ccc;
-  }*/
-
-
-  /*#showcase .button {
-    font-size: 18px;
-    text-decoration: none;
-    color: #926239;
-    border: #926239 1px solid;
-    padding: 10px 20px;
-    border-radius: 10px;
-    margin-top: 20px;
-  }
-
-  #showcase .button:hover {
-    background: #926239;
-    color: #fff;
-  }*/
-
-  /*#section-a {
-    padding: 20px;
-    background: #926239;
-    color: #fff;
-    text-align: center;
-  }
-
-  #section-b {
-    padding: 20px;
-    background: #f4f4f4;
-    text-align: center;
-  }
-
-  #section-c {
-    display: flex;
-  }
-
-  #section-c div {
-    padding: 20px;
-  }
-
-  #section-c .box-1,
-  #section-c .box-3 {
-    background: #926239;
-    color: #fff;
-  }
-
-  #section-c .box-2 {
-    background: #f9f9f9;
-  }
-
-  .page {
-    position: fixed;
-    width: inherit;
-  }*/
 </style>
