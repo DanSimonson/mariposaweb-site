@@ -87,6 +87,7 @@
 
 </script>
 <style scoped>
+  /*google Fonts*/
   @import url('https://fonts.googleapis.com/css?family=Kalam');
   @import url('https://fonts.googleapis.com/css?family=Great+Vibes|Montserrat');
 
