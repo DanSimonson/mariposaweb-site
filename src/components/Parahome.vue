@@ -81,7 +81,7 @@
 
     <v-parallax dark :src="imagethree" height="300"></v-parallax>
 
-    <!--bootstrap row replaced with grid boxes-->
+    <!--bootstrap row replaced with new grid boxes-->
     <!--<div class="row" id="last-row">
             <div style="background: #2193b0;font-family: 'Abril Fatface', cursive;font-weight: bold;font-size: 18px;align-items: center;justify-content: center;"
                 class="col s4 promoBox">
