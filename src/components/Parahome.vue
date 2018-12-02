@@ -81,6 +81,7 @@
 
     <v-parallax dark :src="imagethree" height="300"></v-parallax>
 
+    <!--bootstrap row replaced with grid boxes-->
     <!--<div class="row" id="last-row">
             <div style="background: #2193b0;font-family: 'Abril Fatface', cursive;font-weight: bold;font-size: 18px;align-items: center;justify-content: center;"
                 class="col s4 promoBox">
@@ -96,6 +97,7 @@
                 We offer a visually rich, engaging interactive experience
             </div>
         </div>-->
+    <!--end old bootstrap row-->
     <div class="last-row">
       <div class='left'>
         <p>Web Development with an emphasis on designing, building, and managing web solutions</p>
@@ -332,6 +334,7 @@
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   }
 
+  /*** boxes replaced with grid boxes***/
   /*promoBox {
     font-family: 'Abril Fatface',
       cursive;
