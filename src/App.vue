@@ -10,10 +10,10 @@
 </template>
 
 <script>
-
   export default {
     name: 'App'
   }
+
 </script>
 
 <style>
@@ -57,5 +57,8 @@
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
     color: #2c3e50;
+    min-width: 620px;
+
   }
+
 </style>
