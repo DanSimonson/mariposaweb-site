@@ -31,7 +31,7 @@
             title: "Shining Nature Landscape",
             description: "Landscaping website using Vue, CSS Grid, Flexbox and SASS",
             id: 1,
-            url: "http://faint-plastic.surge.sh/"
+            url: "https://brave-mccarthy-f6fbb2.netlify.com"
           },
           {
             imgLink: require("../assets/vueProjects/hand.jpg"),

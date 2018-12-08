@@ -62,7 +62,7 @@
         showLogo: true,
         cards: [{
             title: "Shining Nature Landscape",
-            link: "http://faint-plastic.surge.sh/",
+            link: "https://brave-mccarthy-f6fbb2.netlify.com",
             text: "Goal: Create an awesome website. Technologies: Vue.js, Flexbox, CSS GRID, SASS",
             src: require("../assets/muted/raindrop.jpg"),
             flex: 6
