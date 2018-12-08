@@ -61,6 +61,14 @@
       return {
         showLogo: true,
         cards: [{
+            title: "Shining Nature Landscape",
+            link: "http://faint-plastic.surge.sh/",
+            text: "Goal: Create an awesome website. Technologies: Vue.js, Flexbox, CSS GRID, SASS",
+            src: require("../assets/muted/raindrop.jpg"),
+            flex: 6
+            //'https://res.cloudinary.com/dmglopmul/image/upload/v1529509174/todoList.jpg'
+          },
+          {
             title: "YouTube Clone",
             link: "http://fierce-volcano.surge.sh/",
             text: "Goal: Create a YouTube Clone. Technologies: Vue.js, Flexbox, CSS GRID, AXIOS, YouTube API",

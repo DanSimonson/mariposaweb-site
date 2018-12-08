@@ -2,12 +2,7 @@
   <div class="carousel-view">
     <div class="button-prev" @click="arrowLeft" name="fade"></div>
     <transition-group class="carousel" tag="div">
-      <div
-        v-for="(slide, index) in slides"
-        class="slide"
-        :key="slide.id"
-        :style="{backgroundImage: 'url(' + slides[index].imgLink + ')'}"
-      ></div>
+      <div v-for="(slide, index) in slides" class="slide" :key="slide.id" :style="{backgroundImage: 'url(' + slides[index].imgLink + ')'}"></div>
     </transition-group>
 
     <div class="carousel-controls">
@@ -19,12 +14,7 @@
         <p class="pslide-two" style="display:inline-block;">
           {{ slides[currentMsg].description }}
         </p>
-        <a
-          style="display:inline-block;"
-          :href="`${slides[currentMsg].url}`"
-          target="__blank"
-          >See More...</a
-        >
+        <a style="display:inline-block;" :href="`${slides[currentMsg].url}`" target="__blank">See More...</a>
       </div>
     </div>
     <div class="button-next" @click="arrowRight"></div>
@@ -36,44 +26,49 @@
     name: "Slide",
     data() {
       return {
-        slides: [
+        slides: [{
+            imgLink: require("../assets/vueProjects/waterfall2.jpg"),
+            title: "Shining Nature Landscape",
+            description: "Landscaping website using Vue, CSS Grid, Flexbox and SASS",
+            id: 1,
+            url: "http://faint-plastic.surge.sh/"
+          },
           {
             imgLink: require("../assets/vueProjects/hand.jpg"),
             title: "Spa Business Website",
-            description:
-              "Spa website using Vue, Firestore Authentication, Route Guards, CSS Grid, Flexbox.",
-            id: 1,
+            description: "Spa website using Vue, Firestore Authentication, Route Guards, CSS Grid, Flexbox.",
+            id: 2,
             url: "https://user-info-ee17c.firebaseapp.com/"
           },
           {
             imgLink: require("../assets/vueProjects/onlineStore.jpg"),
             title: "Online Store",
             description: "A Vue.js online store utilizing vuex and firebase.",
-            id: 2,
+            id: 3,
             url: "https://vue-blog-ed03b.firebaseapp.com/"
           },
           {
             imgLink: require("../assets/vueProjects/hackerNews.png"),
             title: "Hacker-News Clone",
             description: "A Hacker-News Clone, utilizing Vue, Axios, Firestore",
-            id: 3,
+            id: 4,
             url: "http://extra-small-stick.surge.sh"
           },
           {
             imgLink: require("../assets/vueProjects/crud.jpg"),
             title: "Customer Information Application",
-            description:
-              "Customer Information crud app using Vue, Firestore, Bootstrap 4.",
-            id: 4,
+            description: "Customer Information crud app using Vue, Firestore, Bootstrap 4.",
+            id: 5,
             url: "https://human-resources-cb42b.firebaseapp.com/"
-          },
+
+          }
           /*{
                         imgLink: require('../assets/vueProjects/recipeBox.jpg'),
                         title: 'Recipe Box',
                         description: 'Application that can create, edit, delete and save recipes, taking advantage of Vue, Firestore, MaterializeCSS, JavaScript.',
                         id: 5,
                         url: 'https://recipes-ddb43.firebaseapp.com/#/'
-                    },*/
+                    },
           {
             imgLink: require("../assets/vueProjects/childrenKusina2.jpg"),
             title: "Cucina Ni Nanay",
@@ -81,7 +76,7 @@
               "Filipino cuisine restaurant using Vue, CSS Grid, Flexbox",
             id: 6,
             url: "http://aberrant-tendency.surge.sh/#/"
-          }
+          }*/
         ],
         stopMe: null,
         stopMsg: null,
@@ -132,6 +127,7 @@
       }
     }
   };
+
 </script>
 
 <style scoped>
@@ -347,4 +343,5 @@
       flex: 0 0 20em;
     }
   }
+
 </style>

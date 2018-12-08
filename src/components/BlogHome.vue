@@ -13,7 +13,7 @@
       getPosts() {
         butter.post.list({
           page: 1,
-          page_size: 10
+          page_size: 20
         }).then((res) => {
           // console.log(res.data)
           this.posts = res.data.data
